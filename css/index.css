@@ -1,0 +1,15 @@
+#main > div {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#main > div > h1 {
+  font-weight: 400;
+  display: inline;
+}
+#main * {
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+}/*# sourceMappingURL=index.css.map */
