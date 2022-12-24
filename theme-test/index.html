@@ -1,0 +1,21 @@
+﻿<html>
+<head id="theme">
+<title>HAHA! Custom themes go, BRRRRRRRRRR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<a>Current theme: <div id="result"></div></a>
+<br>
+<a href='' onclick='window.localStorage.setItem("theme", "dark.css")'>Set Dark Theme</a>
+<br>
+<a href='' onclick='window.localStorage.setItem("theme", "light.css")'>Set Light Theme</a>
+<br>
+<a href='' onclick='window.localStorage.setItem("theme", "custom.css")'>Set Custom Theme</a>
+<script>
+const themecss = localStorage.getItem("theme");
+document.getElementById("result").innerHTML = "<p>" + themecss + "</p>";
+document.getElementById("theme").innerHTML = '<link href="' + themecss + '" rel="stylesheet">';
+</script>
+
+</body>
+</html>

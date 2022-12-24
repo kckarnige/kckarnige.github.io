@@ -1,0 +1,39 @@
+@font-face {
+    font-family: minecraft;
+    src: url('./minecraft_font.woff') format('woff'),
+    url('./minecraft_font.woff2') format('woff2');
+}
+
+* {
+    font-family: minecraft;
+    color: #ffffff;
+}
+
+font[color="#ffff00"] {
+    color: #ffff00;
+}
+
+html body {
+    background-image: url('./background.png');
+    overflow-y: overlay;
+}
+
+[href] {
+    color: #6677de;
+}
+
+[href]:active {
+  color: #7766de;
+}
+
+*::-webkit-scrollbar {
+  width: 0.4em;
+  background: rgba(0,0,0,0);
+  outline: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgb(187, 187, 187);
+  border-radius: 25px;
+  outline: none;
+}
