@@ -17,7 +17,7 @@ html ::-webkit-scrollbar,
 body ::-webkit-scrollbar {
   width: 0.4em;
   height: 0.4em;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0);
 }
 html ::-webkit-scrollbar-thumb,
 body ::-webkit-scrollbar-thumb {
@@ -66,6 +66,11 @@ div#topbar div#trashyWelcome p {
   div#topbar div#img,
 div#topbar div#trashyWelcome {
     display: none;
+  }
+  div#topbar div#ui {
+    margin: 0;
+    text-align: center !important;
+    height: 64px;
   }
 }
 div#topbar div#ui {
@@ -252,4 +257,7 @@ div#imgLibWrapper img {
   100% {
     opacity: 0;
   }
+}
+div#bottomSpacer {
+  padding: 32px;
 }/*# sourceMappingURL=style.css.map */
