@@ -143,6 +143,7 @@ div#imgPreviewOverlay div#closeImgPreview {
   padding-right: 30px;
   display: none;
   cursor: pointer;
+  z-index: 99;
 }
 div#imgPreviewOverlay div#imgPreviewContainer {
   overflow: auto;
