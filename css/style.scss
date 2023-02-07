@@ -150,6 +150,7 @@ div#imgPreviewOverlay {
         padding-right: 30px;
         display: none;
         cursor: pointer;
+        z-index: 99;
     }
 
     div#imgPreviewContainer {
