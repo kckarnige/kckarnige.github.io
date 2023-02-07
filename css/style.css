@@ -29,6 +29,13 @@ img {
   border-radius: 3px;
 }
 
+@media (max-width: 800px) {
+  div#topbar {
+    display: flex;
+    justify-content: center;
+    width: 185vw;
+  }
+}
 div#topbar {
   background: rgba(34, 34, 34, 0.8666666667);
   -webkit-backdrop-filter: blur(3px);
@@ -77,12 +84,13 @@ div#topbar div#ui {
   margin: 0;
   text-align: right;
   height: 64px;
+  white-space: nowrap;
 }
 div#topbar div#ui ul {
   position: relative;
   list-style-type: none;
-  display: inline-flex;
-  margin-right: 10px;
+  display: inline-block;
+  margin-right: 16px;
 }
 div#topbar div#ui ul li {
   font-family: "Source Sans Pro", sans-serif;
