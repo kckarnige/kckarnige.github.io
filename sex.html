@@ -3,6 +3,6 @@
   const urlParams = new URLSearchParams(queryString);
   const amogussy = urlParams.get('amogussy')
   window.onload = () => {
-    document.location.href = atob(amogussy);
+    document.location.href = atob("${amogussy}");
   }
 </script>
