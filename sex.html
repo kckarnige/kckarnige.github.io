@@ -1,0 +1,8 @@
+<script>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const amogussy = urlParams.get('amogussy')
+  if (window.location.pathname.split('/')[1]) {
+    document.location.href = atob(amogussy);
+  }
+</script>
