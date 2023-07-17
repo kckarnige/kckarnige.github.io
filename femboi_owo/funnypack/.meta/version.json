@@ -1,0 +1,24 @@
+{
+	"instance": {
+		"files": [
+			{
+				"unzip": {
+					"file": []
+				},
+				"key": "misc",
+				"name": "misc.zip",
+				"path": [
+					".data"
+				],
+				"url": "https://kckarnige.is-a.dev/femboi_owo/funnypack/.data/misc.zip",
+				"chk": {
+					"sha1": "10695deb0ec07e59a38f5151b32a46d024297c0f",
+					"size": 1477
+				}
+			}
+		],
+		"assets": {}
+	},
+	"id": "French Vanilla",
+	"inheritsFrom": "1.19.4"
+}

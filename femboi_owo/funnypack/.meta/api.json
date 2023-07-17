@@ -1,0 +1,6 @@
+{
+	"name": "French Vanilla",
+	"version": 1,
+	"sha": "e5d8a7c4bb38c2f55804ea75a5c8a72eb1e3a945",
+	"_comment": "Here for future proofing incase we need to introduce a breaking change to this system."
+}
