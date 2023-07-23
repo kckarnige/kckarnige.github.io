@@ -6,20 +6,19 @@ body {
     background-position: center;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
-    overflow-y: overlay;
-    overflow-x: overlay;
+    overflow: overlay;
     user-select: none;
+}
 
-    ::-webkit-scrollbar {
-        width: 0.4em;
-        height: 0.4em;
-        background: rgba(0, 0, 0, 0);
-    }
+*::-webkit-scrollbar {
+    width: 0.4em;
+    height: 0.4em;
+    background: rgba(0, 0, 0, 0);
+}
 
-    ::-webkit-scrollbar-thumb {
-        background: rgba(0, 0, 0, 0.4);
-        border-radius: 25px;
-    }
+*::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
 }
 
 img {
