@@ -10,7 +10,6 @@ body {
   overflow-x: overlay;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 html ::-webkit-scrollbar,
@@ -57,7 +56,6 @@ div#topbar div#img {
 }
 div#topbar div#trashyWelcome {
   text-align: left;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 8px;
@@ -71,7 +69,7 @@ div#topbar div#trashyWelcome p {
 }
 @media (max-width: 800px) {
   div#topbar div#img,
-div#topbar div#trashyWelcome {
+  div#topbar div#trashyWelcome {
     display: none;
   }
   div#topbar div#ui {
@@ -133,8 +131,7 @@ div#imgPreviewOverlay {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5333333333);
-  -webkit-animation: fadeIn 0.1s ease-in;
-          animation: fadeIn 0.1s ease-in;
+  animation: fadeIn 0.1s ease-in;
   z-index: 2;
 }
 div#imgPreviewOverlay div#closeImgPreview {
@@ -159,11 +156,7 @@ div#imgPreviewOverlay div#imgPreviewContainer {
     height: 75%;
     margin: auto;
     filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
-    -webkit-animation: zoomIn 0.5s ease;
-            animation: zoomIn 0.5s ease;
-  }
-  div#imgPreviewOverlay div#imgPreviewContainer img:hover {
-    cursor: zoom-in;
+    animation: zoomIn 0.5s ease;
   }
 }
 @media (orientation: portrait) {
@@ -176,8 +169,7 @@ div#imgPreviewOverlay div#imgPreviewContainer {
     width: 75%;
     margin: auto;
     filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
-    -webkit-animation: zoomIn 0.5s ease;
-            animation: zoomIn 0.5s ease;
+    animation: zoomIn 0.5s ease;
   }
   div#imgPreviewOverlay div#imgPreviewContainer img:hover {
     cursor: zoom-in;
@@ -202,29 +194,12 @@ div#imgLibWrapper img {
   display: block;
 }
 
-@-webkit-keyframes zoomIn {
-  0% {
-    transform: scale(0, 0);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
-
 @keyframes zoomIn {
   0% {
     transform: scale(0, 0);
   }
   100% {
     transform: scale(1, 1);
-  }
-}
-@-webkit-keyframes zoomOut {
-  0% {
-    transform: scale(1, 1);
-  }
-  100% {
-    transform: scale(0, 0);
   }
 }
 @keyframes zoomOut {
@@ -235,28 +210,12 @@ div#imgLibWrapper img {
     transform: scale(0, 0);
   }
 }
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-  }
-}
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 @keyframes fadeOut {

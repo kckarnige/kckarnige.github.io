@@ -1,6 +1,21 @@
 console.log("Loaded main script :D");
 
-// Topbar (I made it JS so it's easier to change later on)
+function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+        // if any scroll is attempted, set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+
+function enableScroll() {
+    window.onscroll = function() {};
+}
+
+// Topbar (I made it JS so it's easier to change things)
 document.getElementById("topbar").innerHTML = `
 <div id="img"></div><div id="trashyWelcome"><p>Carnige's Dumpster</p></div>
 <div id="ui">
@@ -33,6 +48,14 @@ document.getElementById("topbar").innerHTML = `
                 </svg></a>
         </li>
         <li>
+            <a href="https://twitter.com/kckarnige" target="_blank">Twitter<svg viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path
+                d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+        </svg></a>
+        </li>
+        <li>
             <a href="https://github.com/kckarnige" target="_blank">GitHub<svg viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                     <path fill="none" d="M0 0h24v24H0V0z" />
@@ -51,7 +74,7 @@ document.getElementById("imgPreviewOverlay").innerHTML =`
 </div>
 <div id="imgPreviewContainer">
     <div>
-        <img title="Click to Open" id="imgPreview" src="" />
+        <img id="imgPreview" src="" />
     </div>
 </div>
 `;
@@ -61,22 +84,19 @@ for(var i = 0; i < previewableImgs.length; i++) {
         document.getElementById("closeImgPreview").style.display = "block";
         document.getElementById("imgPreviewOverlay").style.display = "block";
         document.getElementById("imgPreview").src = e.target.getAttribute("src");
+        disableScroll();
     })
 };
 
-document.getElementById("imgPreviewOverlay").addEventListener("click", () => {
+document.getElementById("closeImgPreview").addEventListener("click", () => {
     document.getElementById("closeImgPreview").style.display = "none";
     document.getElementById("imgPreview").style.animation = "zoomOut 0.3s ease";
     document.getElementById("imgPreviewOverlay").style.animation = "fadeOut 0.3s ease-in";
+    enableScroll();
     setTimeout(() => {
         document.getElementById("imgPreviewOverlay").style.display = "none"
         document.getElementById("imgPreview").style.animation = "";
         document.getElementById("imgPreviewOverlay").style.animation = "";
         document.getElementById("imgPreview").src = "";
     }, 295);
-});
-
-document.getElementById("imgPreview").addEventListener("click", (e) => {
-    window.open(
-        e.target.getAttribute("src"), "_blank");
 });

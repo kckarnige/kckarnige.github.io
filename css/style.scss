@@ -168,10 +168,6 @@ div#imgPreviewOverlay {
                 margin: auto;
                 filter: drop-shadow(0 0 3px #0003);
                 animation: zoomIn 0.5s ease;
-
-                &:hover {
-                    cursor: zoom-in;
-                }
             }
         }
 
