@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const discordUserId = urlParams.get('userId')
+    </script>
+    <title>Pickle Tickler</title>
+</head>
+
+<body>
+    <div id="discord_status_wrapper">
+        <div id="discord_pfp_wrapper">
+            <img src="" id="discord_pfp" style="width: 64px; border-radius: 10px;">
+        </div>
+        <p id="discord_status" style="font-family:Arial, Helvetica, sans-serif"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/xaronnn/js-lanyard/lanyard.js"></script>
+    <script>
+        lanyard({
+            userId: discordUserId,
+        }).then((data) => {
+            let userStatus = data.discord_status;
+            let statusColor;
+            console.log(userStatus)
+            if (userStatus == "dnd") {
+                statusColor = "#f04747"
+                statusTitle = "Do Not Disturb"
+            } else if (userStatus == "online") {
+                statusColor = "#43b581"
+                statusTitle = "Online"
+            } else if (userStatus == "idle") {
+                statusColor = "#faa61a"
+                statusTitle = "Idle"
+            }
+            document.getElementById("discord_status").innerHTML = `${statusTitle}`;
+            document.getElementById("discord_pfp").setAttribute("src", `https://cdn.discordapp.com/avatars/${data.discord_user.id}/${data.discord_user.avatar}.webp?size=512`)
+            document.getElementById("discord_pfp_wrapper").setAttribute("style", `width: 64px; border-radius: 13px; background: ${statusColor}; border: 3px solid ${statusColor};`)
+            console.log(data);
+        })
+    </script>
+</body>
+
+</html>
