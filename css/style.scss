@@ -213,13 +213,18 @@ div#imgLibWrapper {
 
 #footer {
     position: fixed;
-    text-align: right;
+    text-align: center;
     font-family: sans-serif;
-    color: #111;
-    margin: 8px;
+    color: #888;
+    font-size: 12px;
+    width: 100vw;
+    margin: 0;
+    padding: 2px;
     right: 0;
     bottom: 0;
     display: block;
+    filter: drop-shadow(0 0 3px #0003);
+    background: #222;
 }
 
 @keyframes zoomIn {
