@@ -38,6 +38,11 @@ img {
        object-fit: contain;
     max-width: 100vw;
   }
+  img.imgPreviewable {
+    margin: 3px;
+    cursor: zoom-in;
+    width: 35% !important;
+  }
 }
 div#topbar {
   background: rgba(34, 34, 34, 0.8666666667);
@@ -124,6 +129,7 @@ a[href] > svg {
 img.imgPreviewable {
   margin: 3px;
   cursor: zoom-in;
+  width: 25%;
 }
 
 div#imgPreviewOverlay {
