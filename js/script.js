@@ -70,7 +70,7 @@ document.getElementById("topbar").innerHTML = `
 // Image expanding
 document.getElementById("imgPreviewOverlay").innerHTML =`
 <div id="closeImgPreview">
-    <a>✖</a>
+    <a>⨉</a>
 </div>
 <div id="imgPreviewContainer">
     <div>
