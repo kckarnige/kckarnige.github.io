@@ -173,7 +173,7 @@ div#imgPreviewOverlay {
                 right: -100%;
                 left: -100%;
                 bottom: -100%;
-                width: 50vw;
+                height: 75vh;
                 object-fit: contain;
                 margin: auto;
                 filter: drop-shadow(0 0 3px #0003);
@@ -188,15 +188,11 @@ div#imgPreviewOverlay {
                 right: -100%;
                 left: -100%;
                 bottom: -100%;
-                height: 50vh;
+                width: 75vw;
                 object-fit: contain;
                 margin: auto;
                 filter: drop-shadow(0 0 3px #0003);
                 animation: zoomIn 0.5s ease;
-
-                &:hover {
-                    cursor: zoom-in;
-                }
             }
         }
     }
