@@ -31,6 +31,10 @@ img {
         justify-content: center;
         width: 185vw;
     }
+    img {
+        object-fit: contain;
+        max-width: 100vw;
+    }
 }
 div#topbar {
     background: #222d;
