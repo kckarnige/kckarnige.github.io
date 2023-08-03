@@ -1,18 +1,17 @@
 console.log("Loaded main script :D");
 
 function disableScroll() {
-    // Get the current page scroll position
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-
-        // if any scroll is attempted, set this to the previous value
-        window.onscroll = function() {
-            window.scrollTo(scrollLeft, scrollTop);
-        };
+  // Get the current page scroll position
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  (scrollLeft = window.pageXOffset || document.documentElement.scrollLeft),
+    // if any scroll is attempted, set this to the previous value
+    (window.onscroll = function () {
+      window.scrollTo(scrollLeft, scrollTop);
+    });
 }
 
 function enableScroll() {
-    window.onscroll = function() {};
+  window.onscroll = function () {};
 }
 
 // Topbar (I made it JS so it's easier to change things)
@@ -68,7 +67,7 @@ document.getElementById("topbar").innerHTML = `
 `;
 
 // Image expanding
-document.getElementById("imgPreviewOverlay").innerHTML =`
+document.getElementById("imgPreviewOverlay").innerHTML = `
 <div id="closeImgPreview">
     <a>⨉</a>
 </div>
@@ -79,24 +78,41 @@ document.getElementById("imgPreviewOverlay").innerHTML =`
 </div>
 `;
 var previewableImgs = document.getElementsByClassName("imgPreviewable");
-for(var i = 0; i < previewableImgs.length; i++) {
-    previewableImgs[i].addEventListener("click", (e) => {
-        document.getElementById("closeImgPreview").style.display = "block";
-        document.getElementById("imgPreviewOverlay").style.display = "block";
-        document.getElementById("imgPreview").src = e.target.getAttribute("src");
-        disableScroll();
-    })
-};
+for (var i = 0; i < previewableImgs.length; i++) {
+  previewableImgs[i].addEventListener("click", (e) => {
+    document.getElementById("closeImgPreview").style.display = "block";
+    document.getElementById("imgPreviewOverlay").style.display = "block";
+    document.getElementById("imgPreview").src = e.target.getAttribute("src");
+    disableScroll();
+  });
+}
 
 document.getElementById("closeImgPreview").addEventListener("click", () => {
-    document.getElementById("closeImgPreview").style.display = "none";
-    document.getElementById("imgPreview").style.animation = "zoomOut 0.3s ease";
-    document.getElementById("imgPreviewOverlay").style.animation = "fadeOut 0.3s ease-in";
-    enableScroll();
-    setTimeout(() => {
-        document.getElementById("imgPreviewOverlay").style.display = "none"
-        document.getElementById("imgPreview").style.animation = "";
-        document.getElementById("imgPreviewOverlay").style.animation = "";
-        document.getElementById("imgPreview").src = "";
-    }, 295);
+  document.getElementById("closeImgPreview").style.display = "none";
+  document.getElementById("imgPreview").style.animation = "zoomOut 0.3s ease";
+  document.getElementById("imgPreviewOverlay").style.animation =
+    "fadeOut 0.3s ease-in";
+  enableScroll();
+  setTimeout(() => {
+    document.getElementById("imgPreviewOverlay").style.display = "none";
+    document.getElementById("imgPreview").style.animation = "";
+    document.getElementById("imgPreviewOverlay").style.animation = "";
+    document.getElementById("imgPreview").src = "";
+  }, 295);
 });
+
+document.body.addEventListener("keydown", (event) => {
+    if (event.isComposing || event.keyCode === 27) {
+        document.getElementById("closeImgPreview").style.display = "none";
+        document.getElementById("imgPreview").style.animation = "zoomOut 0.3s ease";
+        document.getElementById("imgPreviewOverlay").style.animation =
+          "fadeOut 0.3s ease-in";
+        enableScroll();
+        setTimeout(() => {
+          document.getElementById("imgPreviewOverlay").style.display = "none";
+          document.getElementById("imgPreview").style.animation = "";
+          document.getElementById("imgPreviewOverlay").style.animation = "";
+          document.getElementById("imgPreview").src = "";
+        }, 295);
+    }
+  });
