@@ -2,8 +2,8 @@ console.log("Loaded main script :D");
 
 function disableScroll() {
   // Get the current page scroll position
-  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  (scrollLeft = window.pageXOffset || document.documentElement.scrollLeft),
+  scrollTop = window.scrollY || document.documentElement.scrollTop;
+  (scrollLeft = window.scrollX || document.documentElement.scrollLeft),
     // if any scroll is attempted, set this to the previous value
     (window.onscroll = function () {
       window.scrollTo(scrollLeft, scrollTop);
@@ -83,6 +83,7 @@ for (var i = 0; i < previewableImgs.length; i++) {
     document.getElementById("closeImgPreview").style.display = "block";
     document.getElementById("imgPreviewOverlay").style.display = "block";
     document.getElementById("imgPreview").src = e.target.getAttribute("src");
+    document.getElementById("imgPreview").setAttribute("pixelated", e.target.getAttribute("pixelated"));
     disableScroll();
   });
 }
@@ -102,7 +103,7 @@ document.getElementById("closeImgPreview").addEventListener("click", () => {
 });
 
 document.body.addEventListener("keydown", (event) => {
-    if (event.isComposing || event.keyCode === 27) {
+    if (event.isComposing || event.key === "Escape") {
         document.getElementById("closeImgPreview").style.display = "none";
         document.getElementById("imgPreview").style.animation = "zoomOut 0.3s ease";
         document.getElementById("imgPreviewOverlay").style.animation =

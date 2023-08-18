@@ -176,7 +176,6 @@ div#imgPreviewOverlay div#imgPreviewContainer {
        object-fit: contain;
     margin: auto;
     filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
-    image-rendering: pixelated;
     animation: zoomIn 0.5s ease;
   }
 }
@@ -194,7 +193,6 @@ div#imgPreviewOverlay div#imgPreviewContainer {
        object-fit: contain;
     margin: auto;
     filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
-    image-rendering: pixelated;
     animation: zoomIn 0.5s ease;
   }
 }
@@ -256,4 +254,8 @@ div#imgLibWrapper img {
 }
 div#bottomSpacer {
   padding: 32px;
+}
+
+img[pixelated=true] {
+  image-rendering: pixelated;
 }/*# sourceMappingURL=style.css.map */
