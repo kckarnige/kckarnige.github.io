@@ -176,6 +176,7 @@ div#imgPreviewOverlay div#imgPreviewContainer {
        object-fit: contain;
     margin: auto;
     filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+    image-rendering: pixelated;
     animation: zoomIn 0.5s ease;
   }
 }
@@ -193,6 +194,7 @@ div#imgPreviewOverlay div#imgPreviewContainer {
        object-fit: contain;
     margin: auto;
     filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+    image-rendering: pixelated;
     animation: zoomIn 0.5s ease;
   }
 }

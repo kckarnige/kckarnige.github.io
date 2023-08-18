@@ -186,6 +186,7 @@ div#imgPreviewOverlay {
                 object-fit: contain;
                 margin: auto;
                 filter: drop-shadow(0 0 3px #0003);
+                image-rendering: pixelated;
                 animation: zoomIn 0.5s ease;
             }
         }
@@ -203,6 +204,7 @@ div#imgPreviewOverlay {
                 object-fit: contain;
                 margin: auto;
                 filter: drop-shadow(0 0 3px #0003);
+                image-rendering: pixelated;
                 animation: zoomIn 0.5s ease;
             }
         }
