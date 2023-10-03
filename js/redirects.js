@@ -16,4 +16,7 @@ if (window.location.pathname.split('/')[1] == "BoundFight") {
 } else if (window.location.pathname.split('/')[1] == "sans") {
     document.location.href = "https://kckarnige.is-a.dev/BadTimeRevamped";
     document.getElementById("main").remove();
+} else if (window.location.pathname.split('/')[1] == "sex") {
+    document.location.href = "https://kckarnige.is-a.dev";
+    document.getElementById("main").remove();
 }
