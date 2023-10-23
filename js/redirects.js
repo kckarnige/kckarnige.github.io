@@ -3,15 +3,15 @@ if (window.location.pathname.split('/')[1] == "BoundFight") {
     document.title = "Redirecting..";
     document.getElementById("main").remove();
 } else if (window.location.pathname.split('/')[1] == "OrbitNX") {
-    document.location.href = "https://github.com/OrbitNX/OrbitNX";
+    document.location.href = "https://github.com/OrbitNX/OrbitNX#readme";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
 } else if (window.location.pathname.split('/')[1] == "DiscordCSL") {
-    document.location.href = "https://github.com/DiscordCSL/DiscordCSL";
+    document.location.href = "https://github.com/DiscordCSL/DiscordCSL#readme";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
 } else if (window.location.pathname.split('/')[1] == "custom-server-logos") {
-    document.location.href = "https://github.com/DiscordCSL/DiscordCSL";
+    document.location.href = "https://github.com/DiscordCSL/DiscordCSL#readme";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
 } else if (window.location.pathname.split('/')[1] == "armcord") {
@@ -19,7 +19,7 @@ if (window.location.pathname.split('/')[1] == "BoundFight") {
     document.title = "Redirecting..";
     document.getElementById("main").remove();
 } else if (window.location.pathname.split('/')[1] == "sans") {
-    document.location.href = "https://kckarnige.is-a.dev/BadTimeRevamped";
+    document.location.href = "https://kckarnige.is-a.dev/BadTimeRevamped#readme";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
 } else if (window.location.pathname.split('/')[1] == "sex") {
@@ -27,7 +27,7 @@ if (window.location.pathname.split('/')[1] == "BoundFight") {
     document.title = "Redirecting..";
     document.getElementById("main").remove();
 } else if (window.location.pathname.split('/')[1] == "OculusKillSwitch") {
-    document.location.href = "https://github.com/kckarnige/OculusKillSwitch";
+    document.location.href = "https://github.com/kckarnige/OculusKillSwitch#readme";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
 }
