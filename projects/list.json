@@ -10,7 +10,7 @@
         },
         {
             "icon": "https://raw.githubusercontent.com/kckarnige/OculusKillSwitch/main/icon-dark.png",
-            "name": "[Program] Oculus Kill Switch",
+            "name": "Oculus Kill Switch",
             "description": "Toggle Oculus Killer and play how Zuck intended.",
             "link": "https://github.com/kckarnige/OculusKillSwitch",
             "textColor": "#fff",
