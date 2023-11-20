@@ -25,6 +25,7 @@
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
   width: 640px;
+  max-width: 95vw;
   border-radius: 8px;
 }
 #main > #projects #projectEntry > * {
