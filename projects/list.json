@@ -1,0 +1,47 @@
+{
+    "projects": [
+        {
+            "icon": "https://raw.githubusercontent.com/kckarnige/OculusDummy/main/icon.png",
+            "name": "Oculus Dummy",
+            "description": "Oculus Killer, but for the Oculus Client.",
+            "link": "https://github.com/kckarnige/OculusDummy",
+            "textColor": "#fff",
+            "background": "#222"
+        },
+        {
+            "icon": "https://raw.githubusercontent.com/kckarnige/OculusKillSwitch/main/icon-dark.png",
+            "name": "[Program] Oculus Kill Switch",
+            "description": "Toggle Oculus Killer and play how Zuck intended.",
+            "link": "https://github.com/kckarnige/OculusKillSwitch",
+            "textColor": "#fff",
+            "background": "#222"
+        },
+        {
+            "icon": "https://kckarnige.github.io/res/a.png",
+            "name": "Greyscale Ness",
+            "description": "''Finally, Dark Ness'' -CaptainDragon636",
+            "link": "https://gamebanana.com/mods/396920",
+            "textColor": "#d14b48",
+            "background": "#2d2d2d"
+
+        },
+        {
+            "icon": "https://kckarnige.github.io/res/rerenderderder.png",
+            "name": "Minecraft Rerendered",
+            "description": "Actually Smashifies the Minecraft renders.",
+            "link": "https://gamebanana.com/mods/27569",
+            "textColor": "#000",
+            "background": "url(https://kckarnige.github.io/res/mc_back.png)"
+
+        },
+        {
+            "icon": "https://cdn.modrinth.com/data/E7UbuV4L/d2a63bfd255b7bcb6b1b1e98b7cd2800acb6c06e.png",
+            "name": "Consistent Netherite",
+            "description": "Makes Netherite tools fit-in more, while still being unique.",
+            "link": "https://modrinth.com/resourcepack/consistent-netherite",
+            "textColor": "#a00",
+            "background": "#111"
+
+        }
+    ]
+}

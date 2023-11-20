@@ -5,20 +5,9 @@ body {
     background: #333;
     background-position: center;
     background-size: cover;
+    color-scheme: dark;
     font-family: Arial, Helvetica, sans-serif;
-    overflow: overlay;
     user-select: none;
-}
-
-*::-webkit-scrollbar {
-    width: 0.4em;
-    height: 0.4em;
-    background: rgba(0, 0, 0, 0);
-}
-
-*::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 25px;
 }
 
 img {
@@ -40,74 +29,6 @@ img {
         margin: 3px;
         cursor: zoom-in;
         width: 35% !important;
-    }
-}
-div#topbar {
-    background: #222d;
-    backdrop-filter: blur(3px);
-    height: 4em;
-
-    div#img {
-        text-align: left;
-        margin: 8px;
-        position: absolute;
-        border-radius: 8px;
-        display: inline-block;
-        width: 48px;
-        height: 48px;
-        background-size: cover !important;
-        background-position: center;
-        background: url("https://avatars.githubusercontent.com/u/32397453");
-        background-repeat: no-repeat;
-    }
-
-    div#trashyWelcome {
-        text-align: left;
-        width: fit-content;
-        margin: 8px;
-        margin-left: 68px;
-        position: absolute;
-        display: inline-block;
-
-        p {
-            font-family: Arial, Helvetica, sans-serif;
-            font-style: italic;
-        }
-    }
-
-    @media (max-width: 800px) {
-        div#img,
-        div#trashyWelcome {
-            display: none;
-        }
-        div#ui {
-            margin: 0;
-            text-align: center !important;
-            height: 64px;
-        }
-    }
-
-    div#ui {
-        margin: 0;
-        text-align: right;
-        height: 64px;
-        white-space: nowrap;
-
-        ul {
-            position: relative;
-            list-style-type: none;
-            display: inline-block;
-            margin-right: 16px;
-
-            li {
-                $text-size: 18px;
-                font-family: "Source Sans Pro", sans-serif;
-                display: inline-flex;
-                font-size: $text-size;
-                margin: 0 15px;
-                line-height: calc(14px + $text-size);
-            }
-        }
     }
 }
 

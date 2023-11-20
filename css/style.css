@@ -5,22 +5,11 @@ body {
   background: #333;
   background-position: center;
   background-size: cover;
+  color-scheme: dark;
   font-family: Arial, Helvetica, sans-serif;
-  overflow: overlay;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-}
-
-*::-webkit-scrollbar {
-  width: 0.4em;
-  height: 0.4em;
-  background: rgba(0, 0, 0, 0);
-}
-
-*::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 25px;
 }
 
 img {
@@ -44,69 +33,6 @@ img {
     width: 35% !important;
   }
 }
-div#topbar {
-  background: rgba(34, 34, 34, 0.8666666667);
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-  height: 4em;
-}
-div#topbar div#img {
-  text-align: left;
-  margin: 8px;
-  position: absolute;
-  border-radius: 8px;
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  background-size: cover !important;
-  background-position: center;
-  background: url("https://avatars.githubusercontent.com/u/32397453");
-  background-repeat: no-repeat;
-}
-div#topbar div#trashyWelcome {
-  text-align: left;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 8px;
-  margin-left: 68px;
-  position: absolute;
-  display: inline-block;
-}
-div#topbar div#trashyWelcome p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-}
-@media (max-width: 800px) {
-  div#topbar div#img,
-  div#topbar div#trashyWelcome {
-    display: none;
-  }
-  div#topbar div#ui {
-    margin: 0;
-    text-align: center !important;
-    height: 64px;
-  }
-}
-div#topbar div#ui {
-  margin: 0;
-  text-align: right;
-  height: 64px;
-  white-space: nowrap;
-}
-div#topbar div#ui ul {
-  position: relative;
-  list-style-type: none;
-  display: inline-block;
-  margin-right: 16px;
-}
-div#topbar div#ui ul li {
-  font-family: "Source Sans Pro", sans-serif;
-  display: inline-flex;
-  font-size: 18px;
-  margin: 0 15px;
-  line-height: 32px;
-}
-
 div#main {
   padding: 5px;
 }
