@@ -24,8 +24,7 @@
   background-size: auto;
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
-  min-width: 45vw;
-  max-width: 95vw;
+  width: 85vw;
   border-radius: 8px;
 }
 #main > #projects #projectEntry > * {
