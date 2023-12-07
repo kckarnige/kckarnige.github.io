@@ -1,9 +1,11 @@
 #main {
+    :not(:has(#projects))>div {
+        top: 28%;
+    }
     >div {
         text-align: center;
         margin: 0;
         position: absolute;
-        top: 28%;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -26,27 +28,58 @@
         text-align: center;
         #projectEntry {
             height: 152px;
+            width: 152px;
             margin: 8px;
             padding: 8px;
             display: inline-block;
-            background-size: auto;
-            backdrop-filter: blur(12px);
-            width: 85vw;
+            backdrop-filter: blur(15px);
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
             border-radius: 8px;
+            overflow: hidden;
             >* {
                 transition: ease-out 0.2s;
             }
-            &:hover>* {
-                opacity: .7;
-                transition: ease-out 0.2s;
+            &:hover {
+                >* {
+                    transition: ease-out 0.2s;
+                }
+                >#projectIconContainer {
+                    opacity: .25;
+                    filter: blur(25px);
+                }
+                >#projectInfo {
+                    opacity: 1;
+                    filter: blur(0px);
+                }
+            }
+            >#projectInfo {
+                opacity: 0;
+                filter: blur(25px);
+                margin: 2px;
+                height: fit-content;
+                width: 92%;
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-weight: 500;
+                >#projectName {
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+                >#projectDescription {
+                    font-size: 14px;
+                }
             }
             >#projectIconContainer {
-                margin-left: 8px;
                 text-align: left;
                 display: block;
                 position: absolute;
                 top: 50%;
-                transform: translateY(-50%);
+                left: 50%;
+                transform: translate(-50%, -50%);
                 height: 128px;
                 width: 128px;
             }
@@ -61,26 +94,7 @@
                 max-height: 128px;
                 z-index: 20;
             }
-            >#projectInfo {
-                margin-right: 8px;
-                margin: 5px;
-                text-align: right;
-                position: relative;
-                top: 50%;
-                left: 0;
-                transform: translateY(-50%);
-                display: block;
-                line-height: 12px;
-                overflow-x: clip;
-                >#projectDescription {
-                    text-overflow: ellipsis;
-                    z-index: 10;
-                }
-            }
         }
-    }
-    * {
-        filter: drop-shadow(0 0 3px #0003);
     }
 }
 

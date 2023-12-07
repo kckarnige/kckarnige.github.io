@@ -6,7 +6,7 @@
             "description": "Oculus Killer, but for the Oculus Client.",
             "link": "https://github.com/kckarnige/OculusDummy",
             "textColor": "#fff",
-            "background": "#222"
+            "background": "linear-gradient(to bottom right, rgb(22, 22, 22), rgb(38, 14, 28))"
         },
         {
             "icon": "https://raw.githubusercontent.com/kckarnige/OculusKillSwitch/main/icon-dark.png",
@@ -14,10 +14,10 @@
             "description": "Toggle Oculus Killer and play how Zuck intended.",
             "link": "https://github.com/kckarnige/OculusKillSwitch",
             "textColor": "#fff",
-            "background": "#222"
+            "background": "linear-gradient(to bottom right, rgb(22, 22, 22), rgb(38, 14, 28))"
         },
         {
-            "icon": "https://kckarnige.github.io/res/a.png",
+            "icon": "/res/a.png",
             "name": "Greyscale Ness",
             "description": "''Finally, Dark Ness'' -CaptainDragon636",
             "link": "https://gamebanana.com/mods/396920",
@@ -26,12 +26,12 @@
 
         },
         {
-            "icon": "https://kckarnige.github.io/res/rerenderderder.png",
+            "icon": "/res/rerenderderder.png",
             "name": "Minecraft Rerendered",
             "description": "Actually Smashifies the Minecraft renders.",
             "link": "https://gamebanana.com/mods/27569",
-            "textColor": "#000",
-            "background": "url(https://kckarnige.github.io/res/mc_back.png)"
+            "textColor": "#fff",
+            "background": "url(/res/mc_back.png)"
 
         },
         {
@@ -39,8 +39,8 @@
             "name": "Consistent Netherite",
             "description": "Makes Netherite tools fit-in more, while still being unique.",
             "link": "https://modrinth.com/resourcepack/consistent-netherite",
-            "textColor": "#a00",
-            "background": "#111"
+            "textColor": "#231012",
+            "background": "url(/res/invert-slate.png)"
 
         }
     ]

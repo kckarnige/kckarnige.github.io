@@ -9,20 +9,22 @@ if (document.getElementById("projects")) {
     .then((response) => response.json())
     .then((response) => (projectList = response))
 
-  window.onload = () => {
+  setTimeout(() => {
     for (var i = 0; i < projectList.projects.length; i++) {
         //console.log("Name: " + projectList.projects[i].name + "\nDescription: " + projectList.projects[i].description)
         let projectEntry = document.createElement("div");
         let projectEntryContainer = document.createElement("a");
         projectEntry.setAttribute("id", "projectEntry")
-        projectEntry.setAttribute("style", `background: ${projectList.projects[i].background}; color: ${projectList.projects[i].textColor};`)
+        projectEntry.setAttribute("style", `background: ${projectList.projects[i].background}; backdrop-filter: blur(25px);  color: ${projectList.projects[i].textColor};`)
         
         projectEntryContainer.setAttribute("href", projectList.projects[i].link)
         projectEntryContainer.setAttribute("target", "_blank")
+        projectEntryContainer.setAttribute("title", projectList.projects[i].name)
+
 
         let projectIcon = document.createElement("img");
         let projectIconContainer = document.createElement("div");
-        let projectName = document.createElement("h1");
+        let projectName = document.createElement("p");
         let projectDescription = document.createElement("p");
         let projectInfo = document.createElement("div");
 
@@ -43,5 +45,5 @@ if (document.getElementById("projects")) {
         projectEntryContainer.append(projectEntry)
         document.getElementById("projects").append(projectEntryContainer)
     }
-  }
+  }, 500)
 }

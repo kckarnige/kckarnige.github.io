@@ -1,8 +1,10 @@
+#main :not(:has(#projects)) > div {
+  top: 28%;
+}
 #main > div {
   text-align: center;
   margin: 0;
   position: absolute;
-  top: 28%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -26,29 +28,59 @@
 }
 #main > #projects #projectEntry {
   height: 152px;
+  width: 152px;
   margin: 8px;
   padding: 8px;
   display: inline-block;
-  background-size: auto;
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
-  width: 85vw;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
   border-radius: 8px;
+  overflow: hidden;
 }
 #main > #projects #projectEntry > * {
   transition: ease-out 0.2s;
 }
 #main > #projects #projectEntry:hover > * {
-  opacity: 0.7;
   transition: ease-out 0.2s;
 }
+#main > #projects #projectEntry:hover > #projectIconContainer {
+  opacity: 0.25;
+  filter: blur(25px);
+}
+#main > #projects #projectEntry:hover > #projectInfo {
+  opacity: 1;
+  filter: blur(0px);
+}
+#main > #projects #projectEntry > #projectInfo {
+  opacity: 0;
+  filter: blur(25px);
+  margin: 2px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 92%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+}
+#main > #projects #projectEntry > #projectInfo > #projectName {
+  font-weight: 700;
+  font-size: 16px;
+}
+#main > #projects #projectEntry > #projectInfo > #projectDescription {
+  font-size: 14px;
+}
 #main > #projects #projectEntry > #projectIconContainer {
-  margin-left: 8px;
   text-align: left;
   display: block;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 128px;
   width: 128px;
 }
@@ -62,25 +94,6 @@
   max-width: 128px;
   max-height: 128px;
   z-index: 20;
-}
-#main > #projects #projectEntry > #projectInfo {
-  margin-right: 8px;
-  margin: 5px;
-  text-align: right;
-  position: relative;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  display: block;
-  line-height: 12px;
-  overflow-x: clip;
-}
-#main > #projects #projectEntry > #projectInfo > #projectDescription {
-  text-overflow: ellipsis;
-  z-index: 10;
-}
-#main * {
-  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
 }
 
 div#topbar {
