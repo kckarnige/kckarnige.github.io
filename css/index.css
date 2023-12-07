@@ -25,6 +25,7 @@
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
+  position: fixed;
 }
 #main > #projects #projectEntry {
   height: 152px;
