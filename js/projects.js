@@ -15,7 +15,7 @@ if (document.getElementById("projects")) {
         let projectEntry = document.createElement("div");
         let projectEntryContainer = document.createElement("a");
         projectEntry.setAttribute("id", "projectEntry")
-        projectEntry.setAttribute("style", `background: ${projectList.projects[i].background}; backdrop-filter: blur(25px);  color: ${projectList.projects[i].textColor};`)
+        projectEntry.setAttribute("style", `background: ${projectList.projects[i].background};  color: ${projectList.projects[i].textColor};`)
         
         projectEntryContainer.setAttribute("href", projectList.projects[i].link)
         projectEntryContainer.setAttribute("target", "_blank")

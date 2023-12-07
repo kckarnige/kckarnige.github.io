@@ -6,7 +6,7 @@
             "description": "Oculus Killer, but for the Oculus Client.",
             "link": "https://github.com/kckarnige/OculusDummy",
             "textColor": "#fff",
-            "background": "linear-gradient(to bottom right, rgb(22, 22, 22), rgb(38, 14, 28))"
+            "background": "linear-gradient(to bottom right, rgb(12, 21, 30), rgb(38, 14, 28))"
         },
         {
             "icon": "https://raw.githubusercontent.com/kckarnige/OculusKillSwitch/main/icon-dark.png",
@@ -14,7 +14,7 @@
             "description": "Toggle Oculus Killer and play how Zuck intended.",
             "link": "https://github.com/kckarnige/OculusKillSwitch",
             "textColor": "#fff",
-            "background": "linear-gradient(to bottom right, rgb(22, 22, 22), rgb(38, 14, 28))"
+            "background": "linear-gradient(to bottom right, rgb(12, 21, 30), rgb(38, 14, 28))"
         },
         {
             "icon": "/res/a.png",
