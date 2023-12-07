@@ -29,7 +29,7 @@
 }
 #main > #projects #projectEntry {
   height: 152px;
-  width: 152px;
+  width: 304px;
   margin: 8px;
   padding: 8px;
   display: inline-block;
@@ -46,26 +46,18 @@
 #main > #projects #projectEntry:hover > * {
   transition: ease-out 0.2s;
 }
-#main > #projects #projectEntry:hover > #projectIconContainer {
-  opacity: 0.25;
-  filter: blur(25px);
-}
-#main > #projects #projectEntry:hover > #projectInfo {
-  opacity: 1;
-  filter: blur(0px);
-}
 #main > #projects #projectEntry > #projectInfo {
-  opacity: 0;
-  filter: blur(25px);
   margin: 2px;
+  padding-right: 5px;
   height: -moz-fit-content;
   height: fit-content;
-  width: 92%;
+  width: 52%;
   display: block;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 0;
+  float: right;
+  transform: translateY(-50%);
   font-weight: 500;
 }
 #main > #projects #projectEntry > #projectInfo > #projectName {
@@ -80,7 +72,8 @@
   display: block;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 25%;
+  float: left;
   transform: translate(-50%, -50%);
   height: 128px;
   width: 128px;
@@ -95,6 +88,77 @@
   max-width: 128px;
   max-height: 128px;
   z-index: 20;
+}
+@media (min-width: 800px) {
+  #main > #projects #projectEntry {
+    height: 152px;
+    width: 152px;
+    margin: 8px;
+    padding: 8px;
+    display: inline-block;
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  #main > #projects #projectEntry > * {
+    transition: ease-out 0.2s;
+  }
+  #main > #projects #projectEntry:hover > * {
+    transition: ease-out 0.2s;
+  }
+  #main > #projects #projectEntry:hover > #projectIconContainer {
+    opacity: 0.25;
+    filter: blur(25px);
+  }
+  #main > #projects #projectEntry:hover > #projectInfo {
+    opacity: 1;
+    filter: blur(0px);
+  }
+  #main > #projects #projectEntry > #projectInfo {
+    opacity: 0;
+    filter: blur(25px);
+    margin: 2px;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 92%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+  }
+  #main > #projects #projectEntry > #projectInfo > #projectName {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  #main > #projects #projectEntry > #projectInfo > #projectDescription {
+    font-size: 14px;
+  }
+  #main > #projects #projectEntry > #projectIconContainer {
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 128px;
+    width: 128px;
+  }
+  #main > #projects #projectEntry > #projectIconContainer > img {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    max-width: 128px;
+    max-height: 128px;
+    z-index: 20;
+  }
 }
 
 div#topbar {
