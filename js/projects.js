@@ -9,7 +9,7 @@ if (document.getElementById("projects")) {
     .then((response) => response.json())
     .then((response) => (projectList = response))
 
-  setTimeout(() => {
+  window.onload = () => {
     for (var i = 0; i < projectList.projects.length; i++) {
         //console.log("Name: " + projectList.projects[i].name + "\nDescription: " + projectList.projects[i].description)
         let projectEntry = document.createElement("div");
@@ -43,5 +43,5 @@ if (document.getElementById("projects")) {
         projectEntryContainer.append(projectEntry)
         document.getElementById("projects").append(projectEntryContainer)
     }
-  }, 500)
+  }
 }
