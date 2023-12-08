@@ -1,6 +1,4 @@
 #main {
-    width: 100vw;
-    position: fixed;
     >div {
         text-align: center;
         margin: 0;
@@ -14,7 +12,7 @@
         display: inline;
     }
     >#index {
-        padding-top: 2.8%;
+        position: fixed;
         text-align: center;
         margin: 0;
         position: absolute;
@@ -93,6 +91,9 @@
 div#topbar {
     background: #222d;
     backdrop-filter: blur(3px);
+    white-space: wrap;
+    overflow: hidden;
+    width: 100vw;
     height: 4em;
 
     div#img {
@@ -134,11 +135,19 @@ div#topbar {
                 position: relative;
                 list-style-type: none;
                 display: inline-block;
-                margin-right: 16px;
+                margin-right: 16px !important;
     
                 li {
-                    font-size: 2.5vh !important;
-                    line-height: calc(14px + 2.5vh) !important;
+                    font-size: 3.5vw !important;
+                    line-height: calc(14px + 3.5vw) !important;
+                    padding: 0 !important;
+                    margin: 0 !important;
+                    margin-right: 8px !important;
+                    a[href] {
+                        >svg {
+                            height: 3.5vw !important;
+                        }
+                    }
                 }
             }
         }
@@ -163,6 +172,12 @@ div#topbar {
                 font-size: $text-size;
                 margin: 0 15px;
                 line-height: calc(14px + $text-size);
+                a[href] {
+                    >svg {
+                        height: $text-size;
+                        transform: translateY(3px);
+                    }
+                }
             }
         }
     }

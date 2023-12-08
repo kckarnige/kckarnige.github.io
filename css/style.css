@@ -20,7 +20,6 @@ img {
   div#topbar {
     display: flex;
     justify-content: center;
-    width: 100vw;
   }
   img {
     -o-object-fit: contain;
@@ -46,10 +45,6 @@ a[href] {
 a[href]:hover {
   transition: 0.3s;
   color: #9be8c4;
-}
-a[href] > svg {
-  height: 18px;
-  transform: translateY(3px);
 }
 
 img.imgPreviewable {
@@ -130,7 +125,7 @@ div#imgLibWrapper img {
   display: inline;
 }
 
-#footer {
+div#footer {
   position: fixed;
   text-align: center;
   font-family: sans-serif;
@@ -144,6 +139,7 @@ div#imgLibWrapper img {
   display: block;
   filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
   background: #222;
+  overflow: hidden;
 }
 
 @keyframes zoomIn {

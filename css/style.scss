@@ -18,7 +18,6 @@ img {
     div#topbar {
         display: flex;
         justify-content: center;
-        width: 100vw;
     }
     img {
         object-fit: contain;
@@ -49,11 +48,6 @@ a[href] {
         -webkit-transition: 0.3s;
         transition: 0.3s;
         color: #9be8c4;
-    }
-
-    >svg {
-        height: 18px;
-        transform: translateY(3px);
     }
 }
 
@@ -139,7 +133,7 @@ div#imgLibWrapper {
 }
 
 
-#footer {
+div#footer {
     position: fixed;
     text-align: center;
     font-family: sans-serif;
@@ -153,6 +147,7 @@ div#imgLibWrapper {
     display: block;
     filter: drop-shadow(0 0 3px #0003);
     background: #222;
+    overflow: hidden;
 }
 
 @keyframes zoomIn {
