@@ -118,12 +118,11 @@ div#topbar {
         display: inline-block;
 
         p {
-            font-family: Arial, Helvetica, sans-serif;
-            font-style: italic;
+            font-family: "Open Sans";
         }
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 800px) {
         div#img,
         div#trashyWelcome {
             display: none;
@@ -131,7 +130,17 @@ div#topbar {
         div#ui {
             margin: 0;
             text-align: center !important;
-            height: 64px;
+            ul {
+                position: relative;
+                list-style-type: none;
+                display: inline-block;
+                margin-right: 16px;
+    
+                li {
+                    font-size: 2.5vh !important;
+                    line-height: calc(14px + 2.5vh) !important;
+                }
+            }
         }
     }
 
