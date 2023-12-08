@@ -6,7 +6,7 @@
             "description": "Oculus Killer, but for the Oculus Client.",
             "link": "https://github.com/kckarnige/OculusDummy",
             "textColor": "#fff",
-            "background": "linear-gradient(to bottom right, rgb(12, 21, 30), rgb(38, 14, 28))"
+            "background": "linear-gradient(to bottom right, rgb(13, 17, 37), rgb(38, 14, 28))"
         },
         {
             "icon": "https://raw.githubusercontent.com/kckarnige/OculusKillSwitch/main/icon-dark.png",
@@ -14,7 +14,7 @@
             "description": "Toggle Oculus Killer and play how Zuck intended.",
             "link": "https://github.com/kckarnige/OculusKillSwitch",
             "textColor": "#fff",
-            "background": "linear-gradient(to bottom right, rgb(12, 21, 30), rgb(38, 14, 28))"
+            "background": "linear-gradient(to bottom right, rgb(13, 17, 37), rgb(38, 14, 28))"
         },
         {
             "icon": "/res/a.png",
@@ -23,7 +23,6 @@
             "link": "https://gamebanana.com/mods/396920",
             "textColor": "#d14b48",
             "background": "#2d2d2d"
-
         },
         {
             "icon": "/res/rerenderderder.png",
@@ -32,7 +31,6 @@
             "link": "https://gamebanana.com/mods/27569",
             "textColor": "#fff",
             "background": "url(/res/mc_back.png)"
-
         },
         {
             "icon": "https://cdn.modrinth.com/data/E7UbuV4L/d2a63bfd255b7bcb6b1b1e98b7cd2800acb6c06e.png",
@@ -41,7 +39,13 @@
             "link": "https://modrinth.com/resourcepack/consistent-netherite",
             "textColor": "#231012",
             "background": "url(/res/invert-slate.png)"
-
+        },
+        {
+            "icon": "/res/mcob_title_short.png",
+            "name": "A Minecraft Modpack",
+            "description": "Being built, one block at a time...",
+            "textColor": "#db7624",
+            "background": "url(/res/invert-slate.png)"
         }
     ]
 }

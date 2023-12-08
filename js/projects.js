@@ -16,10 +16,12 @@ if (document.getElementById("projects")) {
         let projectEntryContainer = document.createElement("a");
         projectEntry.setAttribute("id", "projectEntry")
         projectEntry.setAttribute("style", `background: ${projectList.projects[i].background};  color: ${projectList.projects[i].textColor};`)
+        projectEntry.setAttribute("title", projectList.projects[i].name)
         
-        projectEntryContainer.setAttribute("href", projectList.projects[i].link)
+        if (projectList.projects[i].link) {
+          projectEntryContainer.setAttribute("href", projectList.projects[i].link)
+        }
         projectEntryContainer.setAttribute("target", "_blank")
-        projectEntryContainer.setAttribute("title", projectList.projects[i].name)
 
 
         let projectIcon = document.createElement("img");

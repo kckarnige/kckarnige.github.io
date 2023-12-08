@@ -20,6 +20,7 @@
   transform: translateX(-50%);
 }
 #main > #projects {
+  width: 100vw;
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
@@ -91,7 +92,7 @@ div#topbar {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   white-space: wrap;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100vw;
   height: 4em;
 }
@@ -136,14 +137,14 @@ div#topbar div#trashyWelcome p {
     margin-right: 16px !important;
   }
   div#topbar div#ui ul li {
-    font-size: 3.5vw !important;
-    line-height: calc(14px + 3.5vw) !important;
+    font-size: 3.8vw !important;
+    line-height: calc(14px + 3.8vw) !important;
     padding: 0 !important;
     margin: 0 !important;
     margin-right: 8px !important;
   }
   div#topbar div#ui ul li a[href] > svg {
-    height: 3.5vw !important;
+    height: 3.8vw !important;
   }
 }
 div#topbar div#ui {

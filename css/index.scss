@@ -21,6 +21,7 @@
         transform: translateX(-50%);
     }
     >#projects {
+        width: 100vw;
         margin: 0;
         margin-bottom: 20px;
         text-align: center;
@@ -92,7 +93,7 @@ div#topbar {
     background: #222d;
     backdrop-filter: blur(3px);
     white-space: wrap;
-    overflow: hidden;
+    overflow-x: hidden;
     width: 100vw;
     height: 4em;
 
@@ -138,14 +139,14 @@ div#topbar {
                 margin-right: 16px !important;
     
                 li {
-                    font-size: 3.5vw !important;
-                    line-height: calc(14px + 3.5vw) !important;
+                    font-size: 3.8vw !important;
+                    line-height: calc(14px + 3.8vw) !important;
                     padding: 0 !important;
                     margin: 0 !important;
                     margin-right: 8px !important;
                     a[href] {
                         >svg {
-                            height: 3.5vw !important;
+                            height: 3.8vw !important;
                         }
                     }
                 }
