@@ -11,10 +11,8 @@
   display: inline;
 }
 #main > #index {
-  position: fixed;
   text-align: center;
   margin: 0;
-  position: absolute;
   top: 23%;
   left: 50%;
   transform: translateX(-50%);
@@ -24,7 +22,6 @@
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
-  position: fixed;
 }
 #main > #projects #projectEntry {
   height: 152px;
@@ -37,7 +34,6 @@
   background-size: cover !important;
   background-repeat: no-repeat !important;
   border-radius: 8px;
-  overflow: hidden;
 }
 #main > #projects #projectEntry > * {
   transition: ease-out 0.2s;
@@ -92,7 +88,7 @@ div#topbar {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   white-space: wrap;
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100vw;
   height: 4em;
 }
