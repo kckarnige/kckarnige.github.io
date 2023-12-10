@@ -22,7 +22,7 @@
             "description": "''Finally, Dark Ness'' -CaptainDragon636",
             "link": "https://gamebanana.com/mods/396920",
             "textColor": "#d14b48",
-            "background": "#2d2d2d"
+            "background": "linear-gradient(to bottom right, #3d3d3d, #1d1d1d)"
         },
         {
             "icon": "/res/rerenderderder.png",
@@ -33,7 +33,7 @@
             "background": "url(/res/mc_back.png)"
         },
         {
-            "icon": "https://cdn.modrinth.com/data/E7UbuV4L/d2a63bfd255b7bcb6b1b1e98b7cd2800acb6c06e.png",
+            "icon": "/res/fuck.png",
             "name": "Consistent Netherite",
             "description": "Makes Netherite tools fit-in more, while still being unique.",
             "link": "https://modrinth.com/resourcepack/consistent-netherite",
@@ -45,7 +45,7 @@
             "name": "A Minecraft Modpack",
             "description": "Being built, one block at a time...",
             "textColor": "#db7624",
-            "background": "url(/res/invert-slate.png)"
+            "background": "#222"
         }
     ]
 }
