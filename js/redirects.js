@@ -22,7 +22,7 @@ if (window.location.pathname.split('/')[1] == "BoundFight") {
     document.location.href = "https://kckarnige.is-a.dev/BadTimeRevamped#readme";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
-} else if (window.location.pathname.split('/')[1] == "sex") {
+} else if (window.location.pathname.split('/')[1] == "redir") {
     document.location.href = "https://kckarnige.is-a.dev";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
