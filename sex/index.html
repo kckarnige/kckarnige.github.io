@@ -2,8 +2,20 @@
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const amogussy = urlParams.get('d')
-  const decryptSussy = atob(amogussy);
+  const amogussyCount = urlParams.get('n')
+  var final = amogussy;
+    if (amogussyCount) {
+      console.log("Attempting to decrypt "+amogussyCount+" time(s)")
+      for (let i = 0; i < amogussyCount; i++) {
+        final = atob(final) + ''
+      }
+    } else {
+      final = atob(final) + ''
+      console.log("No number detected, defaulting to 1")
+    }
   window.onload = () => {
-    document.location.href = decryptSussy
+    setTimeout(() => {
+      document.location.href = final
+    }, 1500)
   }
 </script>
