@@ -46,7 +46,7 @@
             "description": "A modpack meant to give an objectively better Minecraft experience, according to me.",
             "link": "https://modrinth.com/modpack/mcob",
             "textColor": "#db7624",
-            "background": "url(/res/mcob_bg.png)"
+            "background": "url(/res/mcob_back.png)"
         }
     ]
 }
