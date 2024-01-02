@@ -42,10 +42,11 @@
         },
         {
             "icon": "/res/mcob_title_short.png",
-            "name": "A Minecraft Modpack",
-            "description": "Being built, one block at a time...",
+            "name": "Objectively Better",
+            "description": "A modpack meant to give an objectively better Minecraft experience, according to me.",
+            "link": "https://modrinth.com/modpack/mcob",
             "textColor": "#db7624",
-            "background": "#222"
+            "background": "url(/res/mcob_bg.png)"
         }
     ]
 }
