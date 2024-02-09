@@ -41,12 +41,12 @@
             "background": "url(/res/invert-slate.png)"
         },
         {
-            "icon": "/res/mcob_title_short.png",
-            "name": "Objectively Better",
-            "description": "A modpack meant to give an objectively better Minecraft experience, according to me.",
+            "icon": "/res/tscm-icon-transparent.png",
+            "name": "Subjectively Correct",
+            "description": "A modpack that aims to make Minecraft feel better, in my subjective opinion.",
             "link": "https://modrinth.com/modpack/tscm",
-            "textColor": "#db7624",
-            "background": "url(/res/mcob_back.png)"
+            "textColor": "#fff",
+            "background": "url(/res/tscm_back.png)"
         }
     ]
 }
