@@ -30,4 +30,8 @@ if (window.location.pathname.split('/')[1] == "BoundFight") {
     document.location.href = "https://github.com/kckarnige/OculusKillSwitch#readme";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
+} else if (window.location.pathname.split('/')[1] == "tscm") {
+    document.location.href = "https://modrinth.com/modpack/tscm";
+    document.title = "Redirecting..";
+    document.getElementById("main").remove();
 }
