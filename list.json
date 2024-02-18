@@ -1,4 +1,59 @@
 {
+    "portfolio": [
+        {
+            "title": "Icon for this website",
+            "img": "/res/icon.png",
+            "description": "Smoothest bit of graphic design I've made to date.",
+            "pixelated": false
+        },
+        {
+            "title": "ArmCord Logo",
+            "img": "/res/ac_icon.png",
+            "description": "The logo I made for ArmCord back in 2020-2021.",
+            "pixelated": false
+        },
+        {
+            "title": "Minimalist SSBU Game Icon",
+            "img": "/res/smash.png",
+            "description": "I still use this today as my game icon, it looks pretty. :)",
+            "pixelated": false
+        },
+        {
+            "title": "idot",
+            "img": "/res/Untitled-1.png",
+            "description": "dumb stinky",
+            "pixelated": true
+        },
+        {
+            "title": "evl",
+            "img": "/res/violence.png",
+            "description": "THE BABY HAS A GUN!!!",
+            "pixelated": true
+        },
+        {
+            "title": "Greyscale Ness Render",
+            "img": "/res/finished.png",
+            "description": "My first notable attempt at using Blender. (Still used Photoshop for a few touchups)"
+        },
+        {
+            "title": "Minecraft Rerendered Final Logo",
+            "img": "/res/rerenderderder.png",
+            "description": "A logo I made in a few minutes for a mod that took me a few years.",
+            "pixelated": false
+        },
+        {
+            "title": "@infinite_bugz Minecraft Skin",
+            "img": "/res/inf_shot_pub.png",
+            "description": "A Minecraft skin I made for a friend of mine, check em out on Instagram!",
+            "pixelated": false
+        },
+        {
+            "title": "Steve Rerendered",
+            "img": "/res/RendaSteve00.png",
+            "description": "This was made using a mix of Mine-imator and Photopea, for fake lighting.",
+            "pixelated": false
+        }
+    ],
     "projects": [
         {
             "icon": "https://raw.githubusercontent.com/kckarnige/OculusDummy/main/icon.png",
