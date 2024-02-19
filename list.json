@@ -64,12 +64,20 @@
             "background": "linear-gradient(to bottom right, rgb(13, 17, 37), rgb(38, 14, 28))"
         },
         {
-            "icon": "https://raw.githubusercontent.com/kckarnige/OculusKillSwitch/main/icon-dark.png",
-            "name": "Oculus Kill Switch",
-            "description": "Toggle Oculus Killer and play how Zuck intended.",
-            "link": "https://github.com/kckarnige/OculusKillSwitch",
+            "icon": "https://raw.githubusercontent.com/kckarnige/EcstaTab/main/src/res/icons/white-256.png",
+            "name": "Ecsta",
+            "description": "A simple new tab extension meant to stay out of your way while still making for great eye-candy.",
+            "link": "https://github.com/kckarnige/EcstaTab",
             "textColor": "#fff",
-            "background": "linear-gradient(to bottom right, rgb(13, 17, 37), rgb(38, 14, 28))"
+            "background": "linear-gradient(to bottom right, rgb(1, 222, 219), rgb(30, 135, 253))"
+        },
+        {
+            "icon": "/res/fug-igg.png",
+            "name": "FUG IGG",
+            "description": "Fast Url Generator for IGG-games.com, because why wait to install cryptominers?",
+            "link": "https://gist.github.com/kckarnige/6dfff1025b5da69399c26957ee47b445",
+            "textColor": "#fff",
+            "background": "linear-gradient(to bottom right, rgb(75, 124, 143), rgb(58, 91, 88))"
         },
         {
             "icon": "/res/a.png",
