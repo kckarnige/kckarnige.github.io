@@ -42,15 +42,21 @@
             "pixelated": false
         },
         {
+            "title": "Steve Rerendered",
+            "img": "/res/RendaSteve00.png",
+            "description": "This was made using a mix of Mine-imator and Photopea, for fake lighting.",
+            "pixelated": false
+        },
+        {
             "title": "@infinite_bugz Minecraft Skin",
             "img": "/res/inf_shot_pub.png",
             "description": "A Minecraft skin I made for a friend of mine, check em out on Instagram!",
             "pixelated": false
         },
         {
-            "title": "Steve Rerendered",
-            "img": "/res/RendaSteve00.png",
-            "description": "This was made using a mix of Mine-imator and Photopea, for fake lighting.",
+            "title": "My Minecraft Skin",
+            "img": "/res/kck_mc-skin.png",
+            "description": "My personal Minecraft skin, I'm proud of this one!",
             "pixelated": false
         }
     ],
