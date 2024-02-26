@@ -1,5 +1,5 @@
 #main > div {
-  width: 80%;
+  min-width: 80%;
   text-align: center;
   margin: 0;
   position: absolute;
