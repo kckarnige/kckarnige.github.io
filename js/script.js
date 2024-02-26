@@ -16,7 +16,7 @@ function enableScroll() {
 
 // Topbar (I made it JS so it's easier to change things)
 document.getElementById("topbar").innerHTML = `
-<div id="img"></div><div id="trashyWelcome"><p>Carnige's Dumpster</p></div>
+<div id="img"></div><div id="trashyWelcome"><p>Carnige's ${document.title.split(" ")[0]}</p></div>
 <div id="ui">
     <ul>
         <li>
