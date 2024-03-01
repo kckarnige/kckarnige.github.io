@@ -1,6 +1,9 @@
 #main {
+    .nowrap {
+        white-space: nowrap;
+    }
     >div {
-        min-width: 80%;
+        min-width: 75%;
         text-align: center;
         margin: 0;
         position: absolute;
