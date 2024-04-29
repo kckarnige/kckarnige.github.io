@@ -67,19 +67,21 @@ document.getElementById("imgPreviewOverlay").innerHTML = `
 </div>
 `;
 var previewableImgs = document.getElementsByClassName("imgPreviewable");
-setTimeout(() => {
-  for (var i = 0; i < previewableImgs.length; i++) {
-    previewableImgs[i].addEventListener("click", (e) => {
-      document.getElementById("closeImgPreview").style.display = "block";
-      document.getElementById("imgPreviewOverlay").style.display = "block";
-      document.getElementById("imgPreview").src = e.target.getAttribute("src");
-      document.getElementById("imgPreview").setAttribute("pixelated", e.target.getAttribute("pixelated"));
-      document.getElementById("imgTitle").innerText = e.target.getAttribute("imgTitle")
-      document.getElementById("imgDesc").innerText = e.target.getAttribute("imgDesc")
-      disableScroll();
-    });
-  }
-}, 500)
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    for (var i = 0; i < previewableImgs.length; i++) {
+      previewableImgs[i].addEventListener("click", (e) => {
+        document.getElementById("closeImgPreview").style.display = "block";
+        document.getElementById("imgPreviewOverlay").style.display = "block";
+        document.getElementById("imgPreview").src = e.target.getAttribute("src");
+        document.getElementById("imgPreview").setAttribute("pixelated", e.target.getAttribute("pixelated"));
+        document.getElementById("imgTitle").innerText = e.target.getAttribute("imgTitle")
+        document.getElementById("imgDesc").innerText = e.target.getAttribute("imgDesc")
+        disableScroll();
+      });
+    }
+  }, 500)
+})
 document.getElementById("closeImgPreview").addEventListener("click", () => {
   document.getElementById("closeImgPreview").style.display = "none";
   document.getElementById("imgPreview").style.animation = "zoomOut 0.3s ease";
