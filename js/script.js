@@ -26,7 +26,7 @@ document.getElementById("topbar").innerHTML = `
             <a href="/projects">Projects</a>
         </li>
         <li>
-            <a href="https://gamebanana.com/members/1716410" target="_blank">GameBanana<svg viewBox="0 0 24 24"
+            <a href="https://buymeacoffee.com/kckarnige" target="_blank">Donate<svg viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                     <path fill="none" d="M0 0h24v24H0V0z" />
                     <path
