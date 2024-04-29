@@ -58,6 +58,24 @@
             "img": "/res/kck_mc-skin.png",
             "description": "My personal Minecraft skin, I'm proud of this one!",
             "pixelated": false
+        },
+        {
+            "title": "Upgraded Frisk Spritesheet",
+            "img": "/res/frisky.png",
+            "description": "Fun little thing I made :3",
+            "pixelated": true
+        },
+        {
+            "title": "Upgraded Chara Spritesheet",
+            "img": "/res/character.png",
+            "description": "Yet another fun little thing I made :)",
+            "pixelated": true
+        },
+        {
+            "title": "Upgraded Frisk Spritesheet",
+            "img": "/res/frisky_fanon.png",
+            "description": "A varient of one of the fun little things I made :3",
+            "pixelated": true
         }
     ],
     "projects": [
