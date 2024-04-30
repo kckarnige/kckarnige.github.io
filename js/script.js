@@ -67,7 +67,7 @@ document.getElementById("imgPreviewOverlay").innerHTML = `
 </div>
 `;
 var previewableImgs = document.getElementsByClassName("imgPreviewable");
-document.addEventListener("DOMContentLoaded", () => {
+window.onload = () => {
   setTimeout(() => {
     for (var i = 0; i < previewableImgs.length; i++) {
       previewableImgs[i].addEventListener("click", (e) => {
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   }, 500)
-})
+}
 document.getElementById("closeImgPreview").addEventListener("click", () => {
   document.getElementById("closeImgPreview").style.display = "none";
   document.getElementById("imgPreview").style.animation = "zoomOut 0.3s ease";
