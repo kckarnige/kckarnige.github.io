@@ -1,17 +1,17 @@
 console.log("Loaded main script :D");
-
+var portfolioListNum = localStorage.getItem("portfolio")
 function disableScroll() {
-  // Get the current page scroll position
-  scrollTop = window.scrollY || document.documentElement.scrollTop;
-  (scrollLeft = window.scrollX || document.documentElement.scrollLeft),
-    // if any scroll is attempted, set this to the previous value
-    (window.onscroll = function () {
-      window.scrollTo(scrollLeft, scrollTop);
-    });
+  document.documentElement.classList.add("scrollByebye")
+  for (var i = 0; i < document.getElementsByClassName("link").length; i++) {
+    document.getElementsByClassName("link")[i].setAttribute("tabindex","-1")
+  }
 }
 
 function enableScroll() {
-  window.onscroll = function () { };
+  document.documentElement.classList.remove("scrollByebye")
+  for (var i = 0; i < document.getElementsByClassName("link").length; i++) {
+    document.getElementsByClassName("link")[i].removeAttribute("tabindex","-1")
+  }
 }
 
 // Topbar (I made it JS so it's easier to change things)
@@ -20,13 +20,13 @@ document.getElementById("topbar").innerHTML = `
 <div id="ui">
     <ul>
         <li>
-            <a href="/">Home</a>
+            <a href="/" class="link">Home</a>
         </li>
         <li>
-            <a href="/projects">Projects</a>
+            <a href="/projects" class="link">Projects</a>
         </li>
         <li>
-            <a href="https://buymeacoffee.com/kckarnige" target="_blank">Donate<svg viewBox="0 0 24 24"
+            <a href="https://buymeacoffee.com/kckarnige" class="link" target="_blank">Donate<svg viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                     <path fill="none" d="M0 0h24v24H0V0z" />
                     <path
@@ -34,7 +34,7 @@ document.getElementById("topbar").innerHTML = `
                 </svg></a>
         </li>
         <li>
-            <a href="https://twitter.com/kckarnige" target="_blank">Twitter<svg viewBox="0 0 24 24"
+            <a href="https://twitter.com/kckarnige" class="link" target="_blank">Twitter<svg viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg" width="24" height="24">
             <path fill="none" d="M0 0h24v24H0V0z" />
             <path
@@ -42,7 +42,7 @@ document.getElementById("topbar").innerHTML = `
         </svg></a>
         </li>
         <li>
-            <a href="https://github.com/kckarnige" target="_blank">GitHub<svg viewBox="0 0 24 24"
+            <a href="https://github.com/kckarnige" class="link" target="_blank">GitHub<svg viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                     <path fill="none" d="M0 0h24v24H0V0z" />
                     <path
@@ -54,18 +54,6 @@ document.getElementById("topbar").innerHTML = `
 `;
 
 // Image expanding
-document.getElementById("imgPreviewOverlay").innerHTML = `
-<div id="closeImgPreview">
-    <a>⨉</a>
-</div>
-<div id="imgPreviewContainer">
-    <img id="imgPreview" src="" />
-</div>
-<div id="imgContent">
-    <h2 id="imgTitle"></h2>
-    <p id="imgDesc"></p>
-</div>
-`;
 var previewableImgs = document.getElementsByClassName("imgPreviewable");
 window.onload = () => {
   setTimeout(() => {
@@ -75,6 +63,7 @@ window.onload = () => {
         document.getElementById("imgPreviewOverlay").style.display = "block";
         document.getElementById("imgPreview").src = e.target.getAttribute("src");
         document.getElementById("imgPreview").setAttribute("pixelated", e.target.getAttribute("pixelated"));
+        document.getElementById("imgPreview").setAttribute("imgId", e.target.getAttribute("imgId"));
         document.getElementById("imgTitle").innerText = e.target.getAttribute("imgTitle")
         document.getElementById("imgDesc").innerText = e.target.getAttribute("imgDesc")
         disableScroll();
@@ -111,5 +100,32 @@ document.body.addEventListener("keydown", (event) => {
       document.getElementById("imgTitle").innerText = "";
       document.getElementById("imgDesc").innerText = "";
     }, 295);
+  }
+});
+
+
+document.getElementById("navLeft").addEventListener("click", () => {
+  var pe = parseInt(document.getElementById("imgPreview").getAttribute("imgId"),10)
+  var nis = pe-1
+  var warmer = document.querySelectorAll(`.imgPreviewable[imgId="${nis}"]`)[0];
+  console.log(pe+" -> "+nis)
+  if(pe!=0){
+    console.log("ALLOWED")
+    console.log(warmer.getAttribute("src")) 
+  } else {
+    console.log("NOT_ALLOWED")
+  }
+});
+
+document.getElementById("navRight").addEventListener("click", () => {
+  var pe = parseInt(document.getElementById("imgPreview").getAttribute("imgId"),10)
+  var nis = pe+1
+  var warmer = document.querySelectorAll(`.imgPreviewable[imgId="${nis}"]`)[0];
+  console.log(pe+" -> "+nis)
+  if(pe!=portfolioListNum){
+    console.log("ALLOWED")
+    console.log(warmer.getAttribute("src")) 
+  } else {
+    console.log("NOT_ALLOWED")
   }
 });

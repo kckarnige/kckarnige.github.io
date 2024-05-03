@@ -28,7 +28,7 @@ img {
   }
   img.imgPreviewable {
     margin: 3px;
-    cursor: zoom-in;
+    cursor: pointer;
     height: initial;
     width: 15%;
   }
@@ -53,7 +53,7 @@ a[href]:hover {
 
 img.imgPreviewable {
   margin: 3px;
-  cursor: zoom-in;
+  cursor: pointer;
   height: 192px;
   width: initial;
 }
@@ -212,4 +212,67 @@ div#bottomSpacer {
 
 img[pixelated=true] {
   image-rendering: pixelated;
+}
+
+.scrollByebye {
+  overflow: hidden;
+}
+
+a#navLeft,
+a#navRight {
+  cursor: pointer;
+}
+
+div.icon-navRight {
+  position: fixed;
+  right: 0;
+  float: right;
+  bottom: 50%;
+  height: 15%;
+  transform: translate(-25%, 50%);
+  content: url("../res/icons/navSpace.svg");
+  -webkit-mask-image: url("../res/icons/navRight.svg");
+          mask-image: url("../res/icons/navRight.svg");
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-position: center center;
+          mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-color: currentColor;
+  color: #fff;
+  transition: 0.15s ease-out;
+  opacity: 0.5;
+}
+div.icon-navRight:hover {
+  transition: 0.15s ease-out;
+  opacity: 0.25;
+}
+
+div.icon-navLeft {
+  position: fixed;
+  left: 0;
+  float: left;
+  bottom: 50%;
+  height: 15%;
+  transform: translate(25%, 50%);
+  content: url("../res/icons/navSpace.svg");
+  -webkit-mask-image: url("../res/icons/navLeft.svg");
+          mask-image: url("../res/icons/navLeft.svg");
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-position: center center;
+          mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-color: currentColor;
+  color: #fff;
+  transition: 0.15s ease-out;
+  opacity: 0.5;
+}
+div.icon-navLeft:hover {
+  transition: 0.15s ease-out;
+  opacity: 0.25;
 }/*# sourceMappingURL=style.css.map */

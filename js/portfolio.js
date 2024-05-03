@@ -1,3 +1,4 @@
+
 if (document.getElementById("imgLibWrapper")) {
   let portfolioList;
   fetch("/list.json", {
@@ -9,6 +10,7 @@ if (document.getElementById("imgLibWrapper")) {
     .then((response) => response.json())
     .then((response) => (portfolioList = response))
     .then(() => {
+      console.log(portfolioList.portfolio.length-1)
       for (var i = 0; i < portfolioList.portfolio.length; i++) {
           let portfolioEntry = document.createElement("img");
           portfolioEntry.setAttribute("imgTitle", portfolioList.portfolio[i].title);
@@ -16,7 +18,11 @@ if (document.getElementById("imgLibWrapper")) {
           portfolioEntry.classList.add("imgPreviewable");
           portfolioEntry.setAttribute("src", portfolioList.portfolio[i].img)
           portfolioEntry.setAttribute("pixelated", portfolioList.portfolio[i].pixelated);
+          portfolioEntry.setAttribute("imgId", portfolioList.portfolio[i].id);
           document.getElementById("imgLibWrapper").append(portfolioEntry)
+          if(i+1 == portfolioList.portfolio.length){
+            localStorage.setItem("portfolio",i)
+          }
       }
     })
 }
