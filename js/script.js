@@ -3,14 +3,14 @@ var portfolioListNum = parseInt(localStorage.getItem("portfolio"))
 function disableScroll() {
   document.documentElement.classList.add("scrollByebye")
   for (var i = 0; i < document.getElementsByClassName("link").length; i++) {
-    document.getElementsByClassName("link")[i].setAttribute("tabindex","-1")
+    document.getElementsByClassName("link")[i].setAttribute("tabindex", "-1")
   }
 }
 
 function enableScroll() {
   document.documentElement.classList.remove("scrollByebye")
   for (var i = 0; i < document.getElementsByClassName("link").length; i++) {
-    document.getElementsByClassName("link")[i].removeAttribute("tabindex","-1")
+    document.getElementsByClassName("link")[i].removeAttribute("tabindex", "-1")
   }
 }
 
@@ -56,7 +56,19 @@ window.onload = () => {
         document.getElementById("imgPreview").setAttribute("pixelated", e.target.getAttribute("pixelated"));
         document.getElementById("imgPreview").setAttribute("imgId", e.target.getAttribute("imgId"));
         document.getElementById("imgTitle").innerText = e.target.getAttribute("imgTitle")
-        document.getElementById("imgDesc").innerText = e.target.getAttribute("imgDesc")
+        var temp = e.target.getAttribute("imgDesc") + ""
+        if (!temp.includes("|link|")) {
+          document.getElementById("imgDesc").innerText = temp
+          document.getElementById("imgLink").style.display = "none";
+        } else if (temp.split("|link|")[1]) {
+          document.getElementById("imgDesc").innerText = temp.split("|link|")[0]
+          document.getElementById("imgLink").setAttribute("href", temp.split("|link|")[1])
+          document.getElementById("imgLink").innerText = "LINK"
+          document.getElementById("imgLink").style.display = "block";
+          if (temp.split("|link|")[2]) {
+            document.getElementById("imgLink").innerText = temp.split("|link|")[2]
+          }
+        }
         disableScroll();
       });
     }
@@ -78,30 +90,54 @@ document.getElementById("closeImgPreview").addEventListener("click", () => {
 });
 
 function previousImg() {
-  var pe = parseInt(document.getElementById("imgPreview").getAttribute("imgId"),10)
-  var nis = pe-1
+  var pe = parseInt(document.getElementById("imgPreview").getAttribute("imgId"), 10)
+  var nis = pe - 1
   var warmer = document.querySelectorAll(`.imgPreviewable[imgId="${nis}"]`)[0];
-  if(pe!=0){
+  if (pe != 0) {
     document.getElementById("imgPreview").src = warmer.getAttribute("src");
     document.getElementById("imgPreview").setAttribute("pixelated", warmer.getAttribute("pixelated"));
     document.getElementById("imgPreview").setAttribute("imgId", warmer.getAttribute("imgId"));
     document.getElementById("imgTitle").innerText = warmer.getAttribute("imgTitle")
-    document.getElementById("imgDesc").innerText = warmer.getAttribute("imgDesc")
+    var temp = warmer.getAttribute("imgDesc") + ""
+    if (!temp.includes("|link|")) {
+      document.getElementById("imgDesc").innerText = temp
+      document.getElementById("imgLink").style.display = "none";
+    } else if (temp.split("|link|")[1]) {
+      document.getElementById("imgDesc").innerText = temp.split("|link|")[0]
+      document.getElementById("imgLink").setAttribute("href", temp.split("|link|")[1])
+      document.getElementById("imgLink").innerText = "LINK"
+      document.getElementById("imgLink").style.display = "block";
+      if (temp.split("|link|")[2]) {
+        document.getElementById("imgLink").innerText = temp.split("|link|")[2]
+      }
+    }
   } else {
     console.log("NOT_ALLOWED")
   }
 }
 
 function nextImg() {
-  var pe = parseInt(document.getElementById("imgPreview").getAttribute("imgId"),10)
-  var nis = pe+1
+  var pe = parseInt(document.getElementById("imgPreview").getAttribute("imgId"), 10)
+  var nis = pe + 1
   var warmer = document.querySelectorAll(`.imgPreviewable[imgId="${nis}"]`)[0];
-  if(pe!=portfolioListNum){
+  if (pe != portfolioListNum) {
     document.getElementById("imgPreview").src = warmer.getAttribute("src");
     document.getElementById("imgPreview").setAttribute("pixelated", warmer.getAttribute("pixelated"));
     document.getElementById("imgPreview").setAttribute("imgId", warmer.getAttribute("imgId"));
     document.getElementById("imgTitle").innerText = warmer.getAttribute("imgTitle")
-    document.getElementById("imgDesc").innerText = warmer.getAttribute("imgDesc")
+    var temp = warmer.getAttribute("imgDesc") + ""
+    if (!temp.includes("|link|")) {
+      document.getElementById("imgDesc").innerText = temp
+      document.getElementById("imgLink").style.display = "none";
+    } else if (temp.split("|link|")[1]) {
+      document.getElementById("imgDesc").innerText = temp.split("|link|")[0]
+      document.getElementById("imgLink").setAttribute("href", temp.split("|link|")[1])
+      document.getElementById("imgLink").innerText = "LINK"
+      document.getElementById("imgLink").style.display = "block";
+      if (temp.split("|link|")[2]) {
+        document.getElementById("imgLink").innerText = temp.split("|link|")[2]
+      }
+    }
   } else {
     console.log("NOT_ALLOWED")
   }

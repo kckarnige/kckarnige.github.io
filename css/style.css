@@ -58,7 +58,16 @@ img.imgPreviewable {
   width: initial;
 }
 
+div#imgPreviewOverlay:has(#imgPreview:hover) div#imgContent {
+  filter: blur(2px);
+  opacity: 0.1;
+  transition: 0.3s;
+}
+
 div#imgContent {
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
   background-color: rgba(0, 0, 0, 0.25);
   text-align: center;
   position: fixed;
@@ -69,16 +78,16 @@ div#imgContent {
   z-index: 2;
   transition: 0.3s;
 }
-div#imgContent:hover {
-  filter: blur(2px);
-  opacity: 0.1;
-  transition: 0.3s;
-}
 div#imgContent h2#imgTitle,
 div#imgContent p#imgDesc {
   margin: 8px;
   overflow: auto;
   display: block;
+}
+div#imgContent a#imgLink {
+  text-decoration: underline;
+  font-style: italic !important;
+  font-weight: bold !important;
 }
 
 div#imgPreviewOverlay {
