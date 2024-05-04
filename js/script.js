@@ -1,5 +1,5 @@
 console.log("Loaded main script :D");
-var portfolioListNum = localStorage.getItem("portfolio")
+var portfolioListNum = parseInt(localStorage.getItem("portfolio"))
 function disableScroll() {
   document.documentElement.classList.add("scrollByebye")
   for (var i = 0; i < document.getElementsByClassName("link").length; i++) {
@@ -34,21 +34,12 @@ document.getElementById("topbar").innerHTML = `
                 </svg></a>
         </li>
         <li>
-            <a href="https://twitter.com/kckarnige" class="link" target="_blank">Twitter<svg viewBox="0 0 24 24"
+            <a href="https://github.com/kckarnige#-my-socials-" class="link" target="_blank">Socials<svg viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg" width="24" height="24">
             <path fill="none" d="M0 0h24v24H0V0z" />
             <path
                 d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
         </svg></a>
-        </li>
-        <li>
-            <a href="https://github.com/kckarnige" class="link" target="_blank">GitHub<svg viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0V0z" />
-                    <path
-                        d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
-                </svg></a>
-        </li>
     </ul>
 </div>
 `;
@@ -86,8 +77,38 @@ document.getElementById("closeImgPreview").addEventListener("click", () => {
   }, 295);
 });
 
-document.body.addEventListener("keydown", (event) => {
-  if (event.isComposing || event.key === "Escape") {
+function previousImg() {
+  var pe = parseInt(document.getElementById("imgPreview").getAttribute("imgId"),10)
+  var nis = pe-1
+  var warmer = document.querySelectorAll(`.imgPreviewable[imgId="${nis}"]`)[0];
+  if(pe!=0){
+    document.getElementById("imgPreview").src = warmer.getAttribute("src");
+    document.getElementById("imgPreview").setAttribute("pixelated", warmer.getAttribute("pixelated"));
+    document.getElementById("imgPreview").setAttribute("imgId", warmer.getAttribute("imgId"));
+    document.getElementById("imgTitle").innerText = warmer.getAttribute("imgTitle")
+    document.getElementById("imgDesc").innerText = warmer.getAttribute("imgDesc")
+  } else {
+    console.log("NOT_ALLOWED")
+  }
+}
+
+function nextImg() {
+  var pe = parseInt(document.getElementById("imgPreview").getAttribute("imgId"),10)
+  var nis = pe+1
+  var warmer = document.querySelectorAll(`.imgPreviewable[imgId="${nis}"]`)[0];
+  if(pe!=portfolioListNum){
+    document.getElementById("imgPreview").src = warmer.getAttribute("src");
+    document.getElementById("imgPreview").setAttribute("pixelated", warmer.getAttribute("pixelated"));
+    document.getElementById("imgPreview").setAttribute("imgId", warmer.getAttribute("imgId"));
+    document.getElementById("imgTitle").innerText = warmer.getAttribute("imgTitle")
+    document.getElementById("imgDesc").innerText = warmer.getAttribute("imgDesc")
+  } else {
+    console.log("NOT_ALLOWED")
+  }
+}
+
+document.body.addEventListener("keyup", (e) => {
+  if (e.isComposing || e.key === "Escape") {
     document.getElementById("closeImgPreview").style.display = "none";
     document.getElementById("imgPreview").style.animation = "zoomOut 0.3s ease";
     document.getElementById("imgPreviewOverlay").style.animation = "fadeOut 0.3s ease-in";
@@ -101,31 +122,19 @@ document.body.addEventListener("keydown", (event) => {
       document.getElementById("imgDesc").innerText = "";
     }, 295);
   }
+  if (e.key === "ArrowRight") {
+    nextImg()
+  }
+  if (e.key === "ArrowLeft") {
+    previousImg()
+  }
 });
 
 
 document.getElementById("navLeft").addEventListener("click", () => {
-  var pe = parseInt(document.getElementById("imgPreview").getAttribute("imgId"),10)
-  var nis = pe-1
-  var warmer = document.querySelectorAll(`.imgPreviewable[imgId="${nis}"]`)[0];
-  console.log(pe+" -> "+nis)
-  if(pe!=0){
-    console.log("ALLOWED")
-    console.log(warmer.getAttribute("src")) 
-  } else {
-    console.log("NOT_ALLOWED")
-  }
+  previousImg()
 });
 
 document.getElementById("navRight").addEventListener("click", () => {
-  var pe = parseInt(document.getElementById("imgPreview").getAttribute("imgId"),10)
-  var nis = pe+1
-  var warmer = document.querySelectorAll(`.imgPreviewable[imgId="${nis}"]`)[0];
-  console.log(pe+" -> "+nis)
-  if(pe!=portfolioListNum){
-    console.log("ALLOWED")
-    console.log(warmer.getAttribute("src")) 
-  } else {
-    console.log("NOT_ALLOWED")
-  }
+  nextImg()
 });
