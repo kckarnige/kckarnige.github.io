@@ -233,6 +233,7 @@ a#navRight {
 }
 
 div.icon-navRight {
+  display: block;
   position: fixed;
   right: 0;
   float: right;
@@ -256,10 +257,11 @@ div.icon-navRight {
 }
 div.icon-navRight:hover {
   transition: 0.15s ease-out;
-  opacity: 0.25;
+  opacity: 0.75;
 }
 
 div.icon-navLeft {
+  display: block;
   position: fixed;
   left: 0;
   float: left;
@@ -283,5 +285,5 @@ div.icon-navLeft {
 }
 div.icon-navLeft:hover {
   transition: 0.15s ease-out;
-  opacity: 0.25;
+  opacity: 0.75;
 }/*# sourceMappingURL=style.css.map */

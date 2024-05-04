@@ -56,6 +56,17 @@ window.onload = () => {
         document.getElementById("imgPreview").setAttribute("pixelated", e.target.getAttribute("pixelated"));
         document.getElementById("imgPreview").setAttribute("imgId", e.target.getAttribute("imgId"));
         document.getElementById("imgTitle").innerText = e.target.getAttribute("imgTitle")
+        var currentImgPrev = parseInt(document.getElementById("imgPreview").getAttribute("imgId"), 10);
+        if (currentImgPrev == 0) {
+          document.getElementById("navLeft").style.display = "none";
+        } else {
+          document.getElementById("navLeft").style.display = "block";
+        }
+        if (currentImgPrev == portfolioListNum) {
+          document.getElementById("navRight").style.display = "none";
+        } else {
+          document.getElementById("navRight").style.display = "block";
+        }
         var temp = e.target.getAttribute("imgDesc") + ""
         if (!temp.includes("|link|")) {
           document.getElementById("imgDesc").innerText = temp
@@ -94,6 +105,8 @@ function previousImg() {
   var nis = pe - 1
   var warmer = document.querySelectorAll(`.imgPreviewable[imgId="${nis}"]`)[0];
   if (pe != 0) {
+    document.getElementById("navLeft").style.display = "block";
+    document.getElementById("navRight").style.display = "block";
     document.getElementById("imgPreview").src = warmer.getAttribute("src");
     document.getElementById("imgPreview").setAttribute("pixelated", warmer.getAttribute("pixelated"));
     document.getElementById("imgPreview").setAttribute("imgId", warmer.getAttribute("imgId"));
@@ -111,7 +124,18 @@ function previousImg() {
         document.getElementById("imgLink").innerText = temp.split("|link|")[2]
       }
     }
+    if (nis == 0) {
+      document.getElementById("navLeft").style.display = "none";
+    } else {
+      document.getElementById("navLeft").style.display = "block";
+    }
+    if (nis == portfolioListNum) {
+      document.getElementById("navRight").style.display = "none";
+    } else {
+      document.getElementById("navRight").style.display = "block";
+    }
   } else {
+    document.getElementById("navLeft").style.display = "none";
     console.log("NOT_ALLOWED")
   }
 }
@@ -121,6 +145,8 @@ function nextImg() {
   var nis = pe + 1
   var warmer = document.querySelectorAll(`.imgPreviewable[imgId="${nis}"]`)[0];
   if (pe != portfolioListNum) {
+    document.getElementById("navLeft").style.display = "block";
+    document.getElementById("navRight").style.display = "block";
     document.getElementById("imgPreview").src = warmer.getAttribute("src");
     document.getElementById("imgPreview").setAttribute("pixelated", warmer.getAttribute("pixelated"));
     document.getElementById("imgPreview").setAttribute("imgId", warmer.getAttribute("imgId"));
@@ -138,7 +164,18 @@ function nextImg() {
         document.getElementById("imgLink").innerText = temp.split("|link|")[2]
       }
     }
+    if (nis == 0) {
+      document.getElementById("navLeft").style.display = "none";
+    } else {
+      document.getElementById("navLeft").style.display = "block";
+    }
+    if (nis == portfolioListNum) {
+      document.getElementById("navRight").style.display = "none";
+    } else {
+      document.getElementById("navRight").style.display = "block";
+    }
   } else {
+    document.getElementById("navRight").style.display = "none";
     console.log("NOT_ALLOWED")
   }
 }

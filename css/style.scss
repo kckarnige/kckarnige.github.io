@@ -246,6 +246,7 @@ a#navRight {
 }
 
 div.icon-navRight {
+    display: block;
     position: fixed;
     right: 0;
     float: right;
@@ -264,10 +265,11 @@ div.icon-navRight {
     opacity: 0.5;
     &:hover {
         transition: 0.15s ease-out;
-        opacity: 0.25;
+        opacity: 0.75;
     }
 }
 div.icon-navLeft {
+    display: block;
     position: fixed;
     left: 0;
     float: left;
@@ -286,6 +288,6 @@ div.icon-navLeft {
     opacity: 0.5;
     &:hover {
         transition: 0.15s ease-out;
-        opacity: 0.25;
+        opacity: 0.75;
     }
 }
