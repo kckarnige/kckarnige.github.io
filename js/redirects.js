@@ -1,5 +1,5 @@
 if (window.location.pathname.split('/')[1] == "BoundFight") {
-    document.location.href = "https://kckarnige.is-a.dev/hoat";
+    document.location.href = "https://kckarnige.github.io/hoat";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
 } else if (window.location.pathname.split('/')[1] == "OrbitNX") {
@@ -19,11 +19,11 @@ if (window.location.pathname.split('/')[1] == "BoundFight") {
     document.title = "Redirecting..";
     document.getElementById("main").remove();
 } else if (window.location.pathname.split('/')[1] == "sans") {
-    document.location.href = "https://kckarnige.is-a.dev/BadTimeRevamped#readme";
+    document.location.href = "https://kckarnige.github.io/BadTimeRevamped#readme";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
 } else if (window.location.pathname.split('/')[1] == "redir") {
-    document.location.href = "https://kckarnige.is-a.dev";
+    document.location.href = "https://kckarnige.github.io";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
 } else if (window.location.pathname.split('/')[1] == "OculusKillSwitch") {
