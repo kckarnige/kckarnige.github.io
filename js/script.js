@@ -34,7 +34,7 @@ document.getElementById("topbar").innerHTML = `
                 </svg></a>
         </li>
         <li>
-            <a href="https://github.com/kckarnige#-my-socials-" class="link" target="_blank">Socials<svg viewBox="0 0 24 24"
+            <a href="https://kckarnige.carrd.co/" class="link" target="_blank">Socials<svg viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg" width="24" height="24">
             <path fill="none" d="M0 0h24v24H0V0z" />
             <path
