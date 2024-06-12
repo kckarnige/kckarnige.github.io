@@ -141,7 +141,7 @@
             "background": "url(/res/invert-slate.png)"
         },
         {
-            "icon": "/res/tscm-icon-transparent.png",
+            "icon": "/res/tscm-icon_justlogo.png",
             "name": "Subjectively Correct",
             "description": "A modpack that aims to make Minecraft feel better, in my subjective opinion.",
             "link": "https://modrinth.com/modpack/tscm",
