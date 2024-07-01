@@ -101,7 +101,7 @@
             "background": "linear-gradient(to bottom right, rgb(13, 17, 37), rgb(38, 14, 28))"
         },
         {
-            "icon": "https://raw.githubusercontent.com/kckarnige/OculusKillSwitch/main/icon.png",
+            "icon": "https://raw.githubusercontent.com/kckarnige/OculusKillSwitch/main/icon-dark.png",
             "name": "Oculus Kill Switch",
             "description": "Toggle Oculus Killer and play your Oculus games how Zuck intended.",
             "link": "https://github.com/kckarnige/OculusKillSwitch",
