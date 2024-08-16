@@ -1,7 +1,7 @@
 
 if (document.getElementById("imgLibWrapper")) {
   let portfolioList;
-  fetch("/list.json", {
+  fetch("/portfolio.json", {
     method: "GET",
     headers: {
       Accept: "application/json",

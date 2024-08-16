@@ -1,6 +1,6 @@
 if (document.getElementById("projects")) {
   let projectList;
-  fetch("/list.json", {
+  fetch("/projects.json", {
     method: "GET",
     headers: {
       Accept: "application/json",
