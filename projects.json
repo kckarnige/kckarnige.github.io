@@ -66,17 +66,33 @@
             "link": "https://modrinth.com/resourcepack/consistent-netherite",
             "textColor": "#382031",
             "textColorDesc": "#fff",
-            "background": "/res/invert-slate.png"
+            "background": "/res/invert-slate.png",
+            "minecraftify": true,
+            "infoShadow": true
         },
         {
             "icon": "/res/tscm-icon_justlogo.png",
             "name": "Subjectively Correct",
-            "description": "A modpack that previously aimed to make Minecraft feel better, in my subjective opinion.",
+            "description": "A now discontinued modpack that made Minecraft subjectively better.",
             "link": "https://modrinth.com/modpack/tscm",
             "textColor": "#4fd85d",
             "textColorDesc": "#fff",
             "background": "/res/tscm_back.png",
-            "backgroundBlur": true
+            "backgroundBlur": true,
+            "minecraftify": true,
+            "infoShadow": true
+        },
+        {
+            "icon": "/res/oyet.png",
+            "name": "Open Your Eye",
+            "description": "A data pack that makes Eyes of Ender a late game item.",
+            "link": "https://modrinth.com/datapack/open-your-eye",
+            "textColor": "#00c111",
+            "textColorDesc": "#fd56fb",
+            "background": "/res/oyebg.png",
+            "backgroundBlur": true,
+            "minecraftify": true,
+            "infoShadow": true
         },
         {
             "icon": "/res/wst.png",
@@ -86,7 +102,9 @@
             "textColor": "#658382",
             "textColorDesc": "#fff",
             "background": "/res/wsbg.png",
-            "backgroundBlur": true
+            "backgroundBlur": true,
+            "minecraftify": true,
+            "infoShadow": true
         }
     ]
 }

@@ -1,3 +1,4 @@
+@import url(/css/fonts/Minecraft/MinecraftSeven.css);
 #main {
     .nowrap {
         white-space: nowrap;
@@ -28,7 +29,7 @@
         margin-bottom: 20px;
         text-align: center;
         #projectEntry {
-            height: 152px;
+            height: 182px;
             width: 336px;
             margin: 8px;
             padding: 8px;
@@ -63,6 +64,7 @@
                     font-size: 16px;
                 }
                 >#projectDescription {
+                    font-weight: 600;
                     font-size: 14px;
                 }
             }
@@ -108,8 +110,7 @@
                 transform: translate(-50%, -50%);
                 position: absolute;
                 object-fit: cover;
-                height: 100%;
-                width: 100%;
+                width: 125%;
             }
         }
     }

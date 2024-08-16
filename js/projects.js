@@ -14,13 +14,13 @@ if (document.getElementById("projects")) {
           let projectEntry = document.createElement("div");
           let projectEntryContainer = document.createElement("a");
           let projectBgBlur;
-          let projectEntryBg
+          let projectMinecraftify;
+          let projectEntryBg;
           if (projectList.projects[i].backgroundBlur == true) {
             projectBgBlur = "blur(2.5px);"
           } else {
-            projectBgBlur = "blur(0px)"
+            projectBgBlur = "blur(0px);"
           }
-          
           if (projectList.projects[i].backgroundGradient == true){
             projectEntryBg = projectList.projects[i].background
           } else {
@@ -55,12 +55,26 @@ if (document.getElementById("projects")) {
           projectDescription.append(projectList.projects[i].description)
           projectDescription.setAttribute("id", "projectDescription")
           projectDescription.style.color = projectList.projects[i].textColorDesc
+          if (projectList.projects[i].infoShadow == true) {
+            projectName.style.textShadow = "#000a 0 0 5px"
+            projectDescription.style.textShadow = "#000a 0 0 5px"
+          }
 
           projectBg.setAttribute("src", projectList.projects[i].background)
           projectBgContainer.append(projectBg)
           projectBgContainer.setAttribute("id", "projectBgContainer")
           projectBgContainer.setAttribute("style", `filter:${projectBgBlur};`)
+          if (projectList.projects[i].minecraftify == true) {
+            projectName.style.fontSize = "20px"
+            projectName.style.margin = "2px"
+            projectName.style.fontWeight = "normal"
+            projectName.style.fontFamily = "MinecraftSeven"
 
+            projectDescription.style.fontSize = "18px"
+            projectDescription.style.margin = "0"
+            projectDescription.style.fontWeight = "normal"
+            projectDescription.style.fontFamily = "MinecraftSeven"
+          }
           projectInfo.append(projectName, projectDescription)
           projectInfo.setAttribute("id", "projectInfo")
   

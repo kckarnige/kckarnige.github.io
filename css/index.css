@@ -1,3 +1,4 @@
+@import url(/css/fonts/Minecraft/MinecraftSeven.css);
 #main .nowrap {
   white-space: nowrap;
 }
@@ -28,7 +29,7 @@
   text-align: center;
 }
 #main > #projects #projectEntry {
-  height: 152px;
+  height: 182px;
   width: 336px;
   margin: 8px;
   padding: 8px;
@@ -64,6 +65,7 @@
   font-size: 16px;
 }
 #main > #projects #projectEntry > #projectInfo > #projectDescription {
+  font-weight: 600;
   font-size: 14px;
 }
 #main > #projects #projectEntry > #projectIconContainer {
@@ -110,8 +112,7 @@
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
-  width: 100%;
+  width: 125%;
 }
 
 div#topbar {
