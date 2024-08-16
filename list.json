@@ -1,90 +1,77 @@
 {
     "portfolio": [
         {
-            "id": 0,
             "title": "Icon for this website",
             "img": "/res/icon.png",
             "description": "Smoothest bit of graphic design I've made to date.",
             "pixelated": false
         },
         {
-            "id": 1,
             "title": "ArmCord Logo",
             "img": "/res/ac_icon.png",
             "description": "The logo I made for ArmCord back in 2021, it's still being used today!|link|https://github.com/ArmCord/ArmCord|link|Here's a link so you could check it out",
             "pixelated": false
         },
         {
-            "id": 2,
             "title": "Minimalist SSBU Game Icon",
             "img": "/res/smash.png",
             "description": "I still use this today as my game icon, it looks pretty. :)|link|https://gamebanana.com/mods/460343|link|You can set it as your game icon too",
             "pixelated": false
         },
         {
-            "id": 3,
             "title": "stoopid",
             "img": "/res/Untitled-1.png",
             "description": "dumb stinky",
             "pixelated": true
         },
         {
-            "id": 4,
             "title": "what gta does to young children (100% true)",
             "img": "/res/violence.png",
             "description": "THE BABY HAS A GUN!!!",
             "pixelated": true
         },
         {
-            "id": 5,
             "title": "Greyscale Ness Render",
             "img": "/res/finished.png",
             "description": "My first notable attempt at using Blender. (Still used Photoshop for a few touchups)|link|https://gamebanana.com/mods/396920|link|Check out the mod!"
         },
         {
-            "id": 6,
             "title": "Minecraft Rerendered Final Logo",
             "img": "/res/rerenderderder.png",
             "description": "A logo I made in a few minutes for a mod that took me a few years.|link|https://gamebanana.com/mods/27569|link|Check it out!",
             "pixelated": false
         },
         {
-            "id": 7,
             "title": "Steve Rerendered",
             "img": "/res/RendaSteve00.png",
             "description": "This was made using a mix of Mine-imator and Photopea, for fake lighting.|link|https://gamebanana.com/mods/27569|link|Check out the mod!",
             "pixelated": false
         },
         {
-            "id": 8,
             "title": "@infinite_bugz Minecraft Skin",
             "img": "/res/inf_shot_pub.png",
             "description": "A Minecraft skin I made for a friend of mine.|link|https://www.instagram.com/infinite_bugz|link|Check em out on Instagram!",
             "pixelated": false
         },
         {
-            "id": 9,
             "title": "My Minecraft Skin",
             "img": "/res/kck_mc-skin.png",
             "description": "My personal Minecraft skin, I'm proud of this one!",
             "pixelated": false
         },
         {
-            "id": 10,
             "title": "Upgraded Frisk Spritesheet",
             "img": "/res/frisky.png",
             "description": "Fun little thing I made :3",
             "pixelated": false
         },
         {
-            "id": 11,
             "title": "Upgraded Chara Spritesheet",
             "img": "/res/character.png",
             "description": "Yet another fun little thing I made :)",
             "pixelated": false
         },
         {
-            "id": 12,
             "title": "Upgraded Frisk Spritesheet",
             "img": "/res/frisky_fanon.png",
             "description": "A varient of one of the fun little things I made :3",

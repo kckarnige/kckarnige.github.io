@@ -18,7 +18,7 @@ if (document.getElementById("imgLibWrapper")) {
           portfolioEntry.classList.add("imgPreviewable");
           portfolioEntry.setAttribute("src", portfolioList.portfolio[i].img)
           portfolioEntry.setAttribute("pixelated", portfolioList.portfolio[i].pixelated);
-          portfolioEntry.setAttribute("imgId", portfolioList.portfolio[i].id);
+          portfolioEntry.setAttribute("imgId", i);
           document.getElementById("imgLibWrapper").append(portfolioEntry)
           if(i+1 == portfolioList.portfolio.length){
             localStorage.setItem("portfolio",i)
