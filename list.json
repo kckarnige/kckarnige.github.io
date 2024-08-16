@@ -97,7 +97,8 @@
             "name": "Oculus Dummy",
             "description": "Oculus Killer, but for the Oculus Client.",
             "link": "https://github.com/kckarnige/OculusDummy",
-            "textColor": "#fff",
+            "textColor": "#fab939",
+            "textColorDesc": "#fff",
             "background": "linear-gradient(to bottom right, rgb(13, 17, 37), rgb(38, 14, 28))",
             "backgroundGradient": true
         },
@@ -106,7 +107,8 @@
             "name": "Oculus Kill Switch",
             "description": "Toggle Oculus Killer and play your Oculus games how Zuck intended.",
             "link": "https://github.com/kckarnige/OculusKillSwitch",
-            "textColor": "#fff",
+            "textColor": "#0f0",
+            "textColorDesc": "#fff",
             "background": "linear-gradient(to bottom right, rgb(13, 17, 37), rgb(38, 14, 28))",
             "backgroundGradient": true
         },
@@ -116,6 +118,7 @@
             "description": "A simple new tab extension meant to stay out of your way while still making for great eye-candy.",
             "link": "https://github.com/kckarnige/EcstaTab",
             "textColor": "#fff",
+            "textColorDesc": "#fff",
             "background": "linear-gradient(to bottom right, rgb(1, 222, 219), rgb(30, 135, 253))",
             "backgroundGradient": true
         },
@@ -125,6 +128,7 @@
             "description": "Fast Url Generator for IGG-games.com, because why wait to install cryptominers?",
             "link": "https://gist.github.com/kckarnige/6dfff1025b5da69399c26957ee47b445",
             "textColor": "#fff",
+            "textColorDesc": "#fff",
             "background": "linear-gradient(to bottom right, rgb(75, 124, 143), rgb(58, 91, 88))",
             "backgroundGradient": true
         },
@@ -134,6 +138,7 @@
             "description": "''Finally, Dark Ness'' -CaptainDragon636",
             "link": "https://gamebanana.com/mods/396920",
             "textColor": "#d14b48",
+            "textColorDesc": "#696969",
             "background": "linear-gradient(to bottom right, #3d3d3d, #1d1d1d)",
             "backgroundGradient": true
         },
@@ -143,6 +148,7 @@
             "description": "Actually Smashifies the Minecraft renders.",
             "link": "https://gamebanana.com/mods/27569",
             "textColor": "#fff",
+            "textColorDesc": "#fff",
             "background": "/res/mc_back.png"
         },
         {
@@ -150,15 +156,17 @@
             "name": "Consistent Netherite",
             "description": "Makes Netherite tools fit-in more, while still being unique.",
             "link": "https://modrinth.com/resourcepack/consistent-netherite",
-            "textColor": "#231012",
+            "textColor": "#382031",
+            "textColorDesc": "#fff",
             "background": "/res/invert-slate.png"
         },
         {
             "icon": "/res/tscm-icon_justlogo.png",
             "name": "Subjectively Correct",
-            "description": "A modpack that aimed to make Minecraft feel better, in my subjective opinion.",
+            "description": "A modpack that previously aimed to make Minecraft feel better, in my subjective opinion.",
             "link": "https://modrinth.com/modpack/tscm",
-            "textColor": "#fff",
+            "textColor": "#4fd85d",
+            "textColorDesc": "#fff",
             "background": "/res/tscm_back.png",
             "backgroundBlur": true
         },
@@ -167,7 +175,8 @@
             "name": "Wither Shrines",
             "description": "A data pack that adds Wither shrines across the Nether.",
             "link": "https://modrinth.com/datapack/wither-shrines",
-            "textColor": "#fff",
+            "textColor": "#658382",
+            "textColorDesc": "#fff",
             "background": "/res/wsbg.png",
             "backgroundBlur": true
         }

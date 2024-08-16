@@ -26,7 +26,7 @@ if (document.getElementById("projects")) {
           } else {
             projectEntryBg = "transparent"
           }
-          projectEntry.setAttribute("style", `box-sizing: border-box; background-image: ${projectEntryBg};color: ${projectList.projects[i].textColor};`)
+          projectEntry.setAttribute("style", `box-sizing: border-box; background-image: ${projectEntryBg};`)
           projectEntry.setAttribute("id", "projectEntry")
           projectEntry.setAttribute("title", projectList.projects[i].name)
           
@@ -50,9 +50,11 @@ if (document.getElementById("projects")) {
   
           projectName.append(projectList.projects[i].name)
           projectName.setAttribute("id", "projectName")
+          projectName.style.color = projectList.projects[i].textColor
   
           projectDescription.append(projectList.projects[i].description)
           projectDescription.setAttribute("id", "projectDescription")
+          projectDescription.style.color = projectList.projects[i].textColorDesc
 
           projectBg.setAttribute("src", projectList.projects[i].background)
           projectBgContainer.append(projectBg)
