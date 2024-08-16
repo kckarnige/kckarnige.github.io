@@ -38,6 +38,7 @@
   background-size: cover !important;
   background-repeat: no-repeat !important;
   border-radius: 8px;
+  overflow: hidden;
 }
 #main > #projects #projectEntry > * {
   transition: ease-out 0.2s;
@@ -85,6 +86,32 @@
   max-width: 128px;
   max-height: 128px;
   z-index: 20;
+}
+#main > #projects #projectEntry > #projectBgContainer {
+  margin: 0;
+  display: block;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+#main > #projects #projectEntry > #projectBgContainer > img {
+  margin: 0;
+  display: inline;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 div#topbar {

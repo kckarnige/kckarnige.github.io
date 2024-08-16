@@ -13,8 +13,21 @@ if (document.getElementById("projects")) {
           //console.log("Name: " + projectList.projects[i].name + "\nDescription: " + projectList.projects[i].description)
           let projectEntry = document.createElement("div");
           let projectEntryContainer = document.createElement("a");
+          let projectBgBlur;
+          let projectEntryBg
+          if (projectList.projects[i].backgroundBlur == true) {
+            projectBgBlur = "blur(2.5px);"
+          } else {
+            projectBgBlur = "blur(0px)"
+          }
+          
+          if (projectList.projects[i].backgroundGradient == true){
+            projectEntryBg = projectList.projects[i].background
+          } else {
+            projectEntryBg = "transparent"
+          }
+          projectEntry.setAttribute("style", `box-sizing: border-box; background-image: ${projectEntryBg};color: ${projectList.projects[i].textColor};`)
           projectEntry.setAttribute("id", "projectEntry")
-          projectEntry.setAttribute("style", `background: ${projectList.projects[i].background};  color: ${projectList.projects[i].textColor};`)
           projectEntry.setAttribute("title", projectList.projects[i].name)
           
           if (projectList.projects[i].link) {
@@ -28,6 +41,8 @@ if (document.getElementById("projects")) {
           let projectName = document.createElement("p");
           let projectDescription = document.createElement("p");
           let projectInfo = document.createElement("div");
+          let projectBg = document.createElement("img");
+          let projectBgContainer = document.createElement("div");
   
           projectIcon.setAttribute("src", projectList.projects[i].icon)
           projectIconContainer.append(projectIcon)
@@ -38,11 +53,20 @@ if (document.getElementById("projects")) {
   
           projectDescription.append(projectList.projects[i].description)
           projectDescription.setAttribute("id", "projectDescription")
-  
+
+          projectBg.setAttribute("src", projectList.projects[i].background)
+          projectBgContainer.append(projectBg)
+          projectBgContainer.setAttribute("id", "projectBgContainer")
+          projectBgContainer.setAttribute("style", `filter:${projectBgBlur};`)
+
           projectInfo.append(projectName, projectDescription)
           projectInfo.setAttribute("id", "projectInfo")
   
-          projectEntry.append(projectIconContainer,  projectInfo)
+          if (projectList.projects[i].backgroundGradient == true){
+            projectEntry.append(projectIconContainer, projectInfo)
+          } else {
+            projectEntry.append(projectIconContainer, projectInfo, projectBgContainer)
+          }
           projectEntryContainer.append(projectEntry)
           document.getElementById("projects").append(projectEntryContainer)
       }
