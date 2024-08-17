@@ -89,7 +89,7 @@
             "description": "A compatibility mod to make the 'Bronze' mod compatible with 'Slow Your Roll'.",
             "link": "https://modrinth.com/mod/slowbronze",
             "textColor": "#f2c15e",
-            "textColorDesc": "#7c5915",
+            "textColorDesc": "#b88218",
             "background": "/res/bronzepllazy.png",
             "backgroundBlur": true,
             "minecraftify": true,
