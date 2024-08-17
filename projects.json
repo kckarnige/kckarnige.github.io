@@ -64,9 +64,10 @@
             "name": "Consistent Netherite",
             "description": "Makes Netherite tools fit-in more, while still being unique.",
             "link": "https://www.planetminecraft.com/texture-pack/consistent-netherite-6046856",
-            "textColor": "#382031",
+            "textColor": "#806678",
             "textColorDesc": "#fff",
-            "background": "/res/invert-slate.png",
+            "background": "/res/constisnt.png",
+            "backgroundBlur": true,
             "minecraftify": true,
             "infoShadow": true
         },
