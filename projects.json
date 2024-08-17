@@ -84,7 +84,7 @@
         },
         {
             "icon": "/res/bronzepl.png",
-            "name": "Bronze: SYR Compat",
+            "name": "Slow Your Bronze",
             "description": "A compatibility mod to make the 'Bronze' mod compatible with 'Slow Your Roll'.",
             "link": "https://modrinth.com/mod/slowbronze",
             "textColor": "#f2c15e",
