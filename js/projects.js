@@ -61,9 +61,9 @@ if (document.getElementById("projects")) {
           }
 
           projectBg.setAttribute("src", projectList.projects[i].background)
+          projectBg.setAttribute("style", `filter:${projectBgBlur};`)
           projectBgContainer.append(projectBg)
           projectBgContainer.setAttribute("id", "projectBgContainer")
-          projectBgContainer.setAttribute("style", `filter:${projectBgBlur};`)
           if (projectList.projects[i].minecraftify == true) {
             projectName.style.fontSize = "20px"
             projectName.style.margin = "2px"
