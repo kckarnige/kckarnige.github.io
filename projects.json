@@ -96,13 +96,13 @@
             "infoShadow": true
         },
         {
-            "icon": "/res/oyet.png",
-            "name": "Open Your Eye",
+            "icon": "/res/oyelt.png",
+            "name": "Open Your Eye: Legacy",
             "description": "A data pack that makes Eyes of Ender a late game item.",
             "link": "https://www.planetminecraft.com/data-pack/open-your-eye",
             "textColor": "#00c111",
             "textColorDesc": "#fd56fb",
-            "background": "/res/oyebg.png",
+            "background": "/res/oyelbg.png",
             "backgroundBlur": true,
             "minecraftify": true,
             "infoShadow": true
