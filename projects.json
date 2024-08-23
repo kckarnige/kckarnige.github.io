@@ -108,6 +108,18 @@
             "infoShadow": true
         },
         {
+            "icon": "/res/oyet.png",
+            "name": "Open Your Eye",
+            "description": "A mod that makes Eyes of Ender a late game item.",
+            "link": "https://modrinth.com/mod/open-your-eye",
+            "textColor": "#00c111",
+            "textColorDesc": "#00a6a6",
+            "background": "/res/oyebg.png",
+            "backgroundBlur": true,
+            "minecraftify": true,
+            "infoShadow": true
+        },
+        {
             "icon": "/res/wst.png",
             "name": "Wither Shrines",
             "description": "A data pack that adds Wither shrines across the Nether.",
