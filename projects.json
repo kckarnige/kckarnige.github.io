@@ -84,6 +84,18 @@
             "infoShadow": true
         },
         {
+            "icon": "https://kckarnige.github.io/iatj/res/modpack_icont.png",
+            "name": "It's About The Journey",
+            "description": "A modpack focused on exploration, survival, creativity, and good times.",
+            "link": "https://modrinth.com/modpack/iatj",
+            "textColor": "#c30ffd",
+            "textColorDesc": "#fff",
+            "background": "https://kckarnige.github.io/iatj/res/background.png",
+            "backgroundBlur": true,
+            "minecraftify": true,
+            "infoShadow": true
+        },
+        {
             "icon": "/res/bronzepl.png",
             "name": "Slow Your Bronze",
             "description": "A compatibility mod to make the 'Bronze' mod compatible with 'Slow Your Roll'.",
