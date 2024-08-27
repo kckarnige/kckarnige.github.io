@@ -60,18 +60,6 @@
             "background": "/res/mc_back.png"
         },
         {
-            "icon": "/res/fuck.png",
-            "name": "Consistent Netherite",
-            "description": "Makes Netherite tools fit-in more, while still being unique.",
-            "link": "https://www.planetminecraft.com/texture-pack/consistent-netherite-6046856",
-            "textColor": "#806678",
-            "textColorDesc": "#fff",
-            "background": "/res/constisnt.png",
-            "backgroundBlur": true,
-            "minecraftify": true,
-            "infoShadow": true
-        },
-        {
             "icon": "/res/tscm-icon_justlogo.png",
             "name": "Subjectively Correct",
             "description": "A now discontinued modpack that made Minecraft subjectively better.",
@@ -79,18 +67,6 @@
             "textColor": "#4fd85d",
             "textColorDesc": "#fff",
             "background": "/res/tscm_back.png",
-            "backgroundBlur": true,
-            "minecraftify": true,
-            "infoShadow": true
-        },
-        {
-            "icon": "/res/bronzepl.png",
-            "name": "Slow Your Bronze",
-            "description": "A compatibility mod to make the 'Bronze' mod compatible with 'Slow Your Roll'.",
-            "link": "https://modrinth.com/mod/slowbronze",
-            "textColor": "#f2c15e",
-            "textColorDesc": "#b88218",
-            "background": "/res/bronzepllazy.png",
             "backgroundBlur": true,
             "minecraftify": true,
             "infoShadow": true
@@ -108,6 +84,30 @@
             "infoShadow": true
         },
         {
+            "icon": "/res/fuck.png",
+            "name": "Consistent Netherite",
+            "description": "Makes Netherite tools fit-in more, while still being unique.",
+            "link": "https://www.planetminecraft.com/texture-pack/consistent-netherite-6046856",
+            "textColor": "#806678",
+            "textColorDesc": "#fff",
+            "background": "/res/constisnt.png",
+            "backgroundBlur": true,
+            "minecraftify": true,
+            "infoShadow": true
+        },
+        {
+            "icon": "/res/ntpap_icont.png",
+            "name": "Now THAT'LL Pack a Punch!",
+            "description": "Makes the mace less like a hammer and more like a mace.",
+            "link": "https://modrinth.com/datapack/actual-mace",
+            "textColor": "#d97a64",
+            "textColorDesc": "#fff",
+            "background": "/res/ntpap_preview.png",
+            "backgroundBlur": true,
+            "minecraftify": true,
+            "infoShadow": true
+        },
+        {
             "icon": "https://kckarnige.github.io/iatj/res/modpack_icont.png",
             "name": "It's About The Journey",
             "description": "A modpack focused on exploration, survival, creativity, and good times.",
@@ -115,6 +115,18 @@
             "textColor": "#c30ffd",
             "textColorDesc": "#fff",
             "background": "https://kckarnige.github.io/iatj/res/background.png",
+            "backgroundBlur": true,
+            "minecraftify": true,
+            "infoShadow": true
+        },
+        {
+            "icon": "/res/bronzepl.png",
+            "name": "Slow Your Bronze",
+            "description": "A compatibility mod to make the 'Bronze' mod compatible with 'Slow Your Roll'.",
+            "link": "https://modrinth.com/mod/slowbronze",
+            "textColor": "#f2c15e",
+            "textColorDesc": "#b88218",
+            "background": "/res/bronzepllazy.png",
             "backgroundBlur": true,
             "minecraftify": true,
             "infoShadow": true
