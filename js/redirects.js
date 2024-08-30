@@ -34,4 +34,9 @@ if (window.location.pathname.split('/')[1] == "BoundFight") {
     document.location.href = "https://modrinth.com/modpack/tscm";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
+} else if (window.location.pathname.split('/')[1] == "iatj") {
+    document.location.href = "https://iatj-modpack.github.io";
+    document.title = "Redirecting..";
+    document.getElementById("main").remove();
 }
+
