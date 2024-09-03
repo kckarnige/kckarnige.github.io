@@ -98,7 +98,7 @@
         {
             "icon": "/res/ntpap_icont.png",
             "name": "Now THAT'LL Pack a Punch!",
-            "description": "Makes the mace less like a hammer and more like a mace.",
+            "description": "Makes the mace look more threatening.",
             "link": "https://modrinth.com/datapack/actual-mace",
             "textColor": "#d97a64",
             "textColorDesc": "#fff",
