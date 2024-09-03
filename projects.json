@@ -108,13 +108,13 @@
             "infoShadow": true
         },
         {
-            "icon": "https://kckarnige.github.io/iatj/res/modpack_icont.png",
+            "icon": "https://iatj-modpack.github.io/res/modpack_icont.png",
             "name": "It's About The Journey",
             "description": "A modpack focused on exploration, survival, creativity, and good times.",
             "link": "https://modrinth.com/modpack/iatj",
             "textColor": "#c30ffd",
             "textColorDesc": "#fff",
-            "background": "https://kckarnige.github.io/iatj/res/background.png",
+            "background": "https://iatj-modpack.github.io/res/background.png",
             "backgroundBlur": true,
             "minecraftify": true,
             "infoShadow": true
@@ -127,6 +127,18 @@
             "textColor": "#f2c15e",
             "textColorDesc": "#b88218",
             "background": "/res/bronzepllazy.png",
+            "backgroundBlur": true,
+            "minecraftify": true,
+            "infoShadow": true
+        },
+        {
+            "icon": "/res/csyrft_t.png",
+            "name": "Slow Your Flint",
+            "description": "My take on flint tools for the 'Slow Your Roll' mod.",
+            "link": "https://www.planetminecraft.com/texture-pack/slow-your-flint-custom-flint-tools-for-the-slow-your-roll-mod/",
+            "textColor": "#a6a6a6",
+            "textColorDesc": "#fff",
+            "background": "/res/csyrft_bg.png",
             "backgroundBlur": true,
             "minecraftify": true,
             "infoShadow": true
