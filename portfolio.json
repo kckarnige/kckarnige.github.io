@@ -54,6 +54,12 @@
             "pixelated": false
         },
         {
+            "title": "An Updated Version!",
+            "img": "/res/fireCreature.png",
+            "description": "An updated version of that skin :3|link|https://www.instagram.com/infinite_bugz|link|Check em out on Instagram!",
+            "pixelated": false
+        },
+        {
             "title": "My Minecraft Skin",
             "img": "/res/kck_mc-skin.png",
             "description": "My personal Minecraft skin, I'm proud of this one!",
