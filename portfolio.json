@@ -48,20 +48,26 @@
             "pixelated": false
         },
         {
-            "title": "@infinite_bugz Minecraft Skin",
-            "img": "/res/inf_shot_pub.png",
+            "title": "A friend's Minecraft skin: Front",
+            "img": "/res/fireCreature0.png",
             "description": "A Minecraft skin I made for a friend of mine.|link|https://www.pinterest.com/infbalk74|link|Follow them on Pinterest!",
             "pixelated": false
         },
         {
-            "title": "An Updated Version!",
-            "img": "/res/fireCreature.png",
-            "description": "An updated version of that skin :3|link|https://www.pinterest.com/infbalk74|link|Follow them on Pinterest!",
+            "title": "A friend's Minecraft skin: Back",
+            "img": "/res/fireCreature1.png",
+            "description": "A Minecraft skin I made for a friend of mine.|link|https://www.pinterest.com/infbalk74|link|Follow them on Pinterest!",
             "pixelated": false
         },
         {
-            "title": "My Minecraft Skin",
-            "img": "/res/kck_mc-skin.png",
+            "title": "My Minecraft skin: Front",
+            "img": "/res/stinky0.png",
+            "description": "My personal Minecraft skin, I'm proud of this one!",
+            "pixelated": false
+        },
+        {
+            "title": "My Minecraft skin: Back",
+            "img": "/res/stinky1.png",
             "description": "My personal Minecraft skin, I'm proud of this one!",
             "pixelated": false
         },
