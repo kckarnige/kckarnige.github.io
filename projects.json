@@ -1,21 +1,21 @@
 {
     "projects": [
         {
-            "icon": "https://raw.githubusercontent.com/kckarnige/OculusDummy/main/icon.png",
-            "name": "Oculus Dummy",
-            "description": "Oculus Killer, but for the Oculus Client.",
-            "link": "https://github.com/kckarnige/OculusDummy",
-            "textColor": "#fab939",
-            "textColorDesc": "#fff",
-            "background": "linear-gradient(to bottom right, rgb(13, 17, 37), rgb(38, 14, 28))",
-            "backgroundGradient": true
-        },
-        {
             "icon": "https://raw.githubusercontent.com/kckarnige/OculusKillSwitch/main/logo-dark.png",
             "name": "Oculus Kill Switch",
             "description": "Toggle Oculus Killer and play your Oculus games how Zuck intended.",
             "link": "https://github.com/kckarnige/OculusKillSwitch",
             "textColor": "#0f0",
+            "textColorDesc": "#fff",
+            "background": "linear-gradient(to bottom right, rgb(13, 17, 37), rgb(38, 14, 28))",
+            "backgroundGradient": true
+        },
+        {
+            "icon": "https://raw.githubusercontent.com/kckarnige/OculusDummy/main/icon.png",
+            "name": "Oculus Dummy",
+            "description": "(Discontinued) Oculus Killer, but for the Oculus Client.",
+            "link": "https://github.com/kckarnige/OculusDummy",
+            "textColor": "#fab939",
             "textColorDesc": "#fff",
             "background": "linear-gradient(to bottom right, rgb(13, 17, 37), rgb(38, 14, 28))",
             "backgroundGradient": true
@@ -60,18 +60,6 @@
             "background": "/res/mc_back.png"
         },
         {
-            "icon": "/res/tscm-icon_justlogo.png",
-            "name": "Subjectively Correct",
-            "description": "A now discontinued modpack that made Minecraft subjectively better.",
-            "link": "https://modrinth.com/modpack/tscm",
-            "textColor": "#4fd85d",
-            "textColorDesc": "#fff",
-            "background": "/res/tscm_back.png",
-            "backgroundBlur": true,
-            "minecraftify": true,
-            "infoShadow": true
-        },
-        {
             "icon": "/res/oyelt.png",
             "name": "Open Your Eye: Legacy",
             "description": "A data pack that makes Eyes of Ender a late game item.",
@@ -84,13 +72,13 @@
             "infoShadow": true
         },
         {
-            "icon": "/res/fuck.png",
-            "name": "Consistent Netherite",
-            "description": "Makes Netherite tools fit-in more, while still being unique.",
-            "link": "https://www.planetminecraft.com/texture-pack/consistent-netherite-6046856",
-            "textColor": "#806678",
-            "textColorDesc": "#fff",
-            "background": "/res/constisnt.png",
+            "icon": "/res/oyet.png",
+            "name": "Open Your Eye",
+            "description": "A mod that makes Eyes of Ender a late game item.",
+            "link": "https://modrinth.com/mod/open-your-eye",
+            "textColor": "#00c111",
+            "textColorDesc": "#00a6a6",
+            "background": "/res/oyebg.png",
             "backgroundBlur": true,
             "minecraftify": true,
             "infoShadow": true
@@ -108,13 +96,13 @@
             "infoShadow": true
         },
         {
-            "icon": "https://iatj-modpack.github.io/res/modpack_icont.png",
-            "name": "It's About The Journey",
-            "description": "A modpack focused on exploration, survival, creativity, and good times.",
-            "link": "https://modrinth.com/modpack/iatj",
-            "textColor": "#c30ffd",
+            "icon": "/res/mace.gif",
+            "name": "Wham!",
+            "description": "A mod that gives the mace a complete overhaul!",
+            "link": "https://youtu.be/VTTuhlxPds0",
+            "textColor": "#d97a64",
             "textColorDesc": "#fff",
-            "background": "https://iatj-modpack.github.io/res/background.png",
+            "background": "/res/wham_bg.png",
             "backgroundBlur": true,
             "minecraftify": true,
             "infoShadow": true
@@ -144,13 +132,13 @@
             "infoShadow": true
         },
         {
-            "icon": "/res/oyet.png",
-            "name": "Open Your Eye",
-            "description": "A mod that makes Eyes of Ender a late game item.",
-            "link": "https://modrinth.com/mod/open-your-eye",
-            "textColor": "#00c111",
-            "textColorDesc": "#00a6a6",
-            "background": "/res/oyebg.png",
+            "icon": "/res/fuck.png",
+            "name": "Consistent Netherite",
+            "description": "Makes Netherite tools fit-in more, while still being unique.",
+            "link": "https://www.planetminecraft.com/texture-pack/consistent-netherite-6046856",
+            "textColor": "#806678",
+            "textColorDesc": "#fff",
+            "background": "/res/constisnt.png",
             "backgroundBlur": true,
             "minecraftify": true,
             "infoShadow": true
@@ -163,6 +151,18 @@
             "textColor": "#658382",
             "textColorDesc": "#fff",
             "background": "/res/wsbg.png",
+            "backgroundBlur": true,
+            "minecraftify": true,
+            "infoShadow": true
+        },
+        {
+            "icon": "https://iatj-modpack.github.io/res/modpack_icont.png",
+            "name": "It's About The Journey",
+            "description": "A modpack focused on exploration, survival, creativity, and good times.",
+            "link": "https://modrinth.com/modpack/iatj",
+            "textColor": "#c30ffd",
+            "textColorDesc": "#fff",
+            "background": "https://iatj-modpack.github.io/res/background.png",
             "backgroundBlur": true,
             "minecraftify": true,
             "infoShadow": true
