@@ -13,8 +13,14 @@
             "pixelated": false
         },
         {
-            "title": "ArmCord Logo Redesign Concept",
+            "title": "ArmCord Logo Redesign Concept 1",
             "img": "/res/ac_icon_round.png",
+            "description": "Logo redesign I did because of the little legal threat from ARM, they didn't like it. :(",
+            "pixelated": false
+        },
+        {
+            "title": "ArmCord Logo Redesign Concept 2",
+            "img": "/res/ac_logo_redesign.png",
             "description": "Logo redesign I did because of the little legal threat from ARM, they didn't like it. :(",
             "pixelated": false
         },
