@@ -9,7 +9,19 @@
         {
             "title": "ArmCord Logo",
             "img": "/res/ac_icon.png",
-            "description": "The logo I made for ArmCord back in 2021, it's still being used today!|link|https://github.com/ArmCord/ArmCord|link|Here's a link so you could check it out",
+            "description": "The logo I made for ArmCord, RIP 2021 - 2024|link|https://github.com/Legcord/Legcord|link|Here's a link so you could check it out, it's called Legcord now!",
+            "pixelated": false
+        },
+        {
+            "title": "ArmCord Logo Redesign Concept",
+            "img": "/res/ac_icon_round.png",
+            "description": "Logo redesign I did because of the little legal threat from ARM, they didn't like it. :(",
+            "pixelated": false
+        },
+        {
+            "title": "Legcord Logo",
+            "img": "/res/lc_plug.png",
+            "description": "Still need to make it an actual logo, depression's a bitch.|link|https://github.com/Legcord/Legcord|link|Check out Legcord!",
             "pixelated": false
         },
         {
