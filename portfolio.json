@@ -1,12 +1,6 @@
 {
     "portfolio": [
         {
-            "title": "Icon for this website",
-            "img": "/res/icon.png",
-            "description": "Smoothest bit of graphic design I've made to date.",
-            "pixelated": false
-        },
-        {
             "title": "ArmCord Logo",
             "img": "/res/ac_icon.png",
             "description": "The logo I made for ArmCord, RIP 2021 - 2024|link|https://github.com/Legcord/Legcord|link|Here's a link so you could check it out, it's called Legcord now!",
@@ -15,19 +9,31 @@
         {
             "title": "ArmCord Logo Redesign Concept 1",
             "img": "/res/ac_icon_round.png",
-            "description": "Logo redesign I did because of the little legal threat from ARM, they didn't like it. :(",
+            "description": "Logo redesign I did because of the little legal threat from ARM, they stil weren't happy. :(",
             "pixelated": false
         },
         {
             "title": "ArmCord Logo Redesign Concept 2",
             "img": "/res/ac_logo_redesign.png",
-            "description": "Logo redesign I did because of the little legal threat from ARM, they didn't like it. :(",
+            "description": "Logo redesign I did because of the little legal threat from ARM, they stil weren't happy. :(",
+            "pixelated": false
+        },
+        {
+            "title": "Legcord Icon",
+            "img": "/res/lc_plug.png",
+            "description": "Took a whole month to make the actual (extremely simple) logo, depression's a bitch.|link|https://github.com/Legcord/Legcord|link|Check out Legcord!",
             "pixelated": false
         },
         {
             "title": "Legcord Logo",
-            "img": "/res/lc_plug.png",
-            "description": "Still need to make it an actual logo, depression's a bitch.|link|https://github.com/Legcord/Legcord|link|Check out Legcord!",
+            "img": "/res/legcord-banner.png",
+            "description": "Took a whole month to make the (extremely simple) actual logo, depression's a bitch.|link|https://github.com/Legcord/Legcord|link|Check out Legcord!",
+            "pixelated": false
+        },
+        {
+            "title": "Icon for this website",
+            "img": "/res/icon.png",
+            "description": "Smoothest bit of graphic design I've made to date.",
             "pixelated": false
         },
         {

@@ -59,12 +59,6 @@ img.imgPreviewable {
   width: initial;
 }
 
-div#imgPreviewOverlay:has(#imgPreview:hover) div#imgContent {
-  filter: blur(2px);
-  opacity: 0.1;
-  transition: 0.3s;
-}
-
 div#imgContent {
   -webkit-user-select: text;
      -moz-user-select: text;

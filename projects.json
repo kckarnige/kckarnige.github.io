@@ -1,23 +1,13 @@
 {
     "projects": [
         {
-            "icon": "https://raw.githubusercontent.com/kckarnige/OculusKillSwitch/main/logo-dark.png",
-            "name": "Oculus Kill Switch",
-            "description": "Toggle Oculus Killer and play your Oculus games how Zuck intended.",
-            "link": "https://github.com/kckarnige/OculusKillSwitch",
-            "textColor": "#0f0",
-            "textColorDesc": "#fff",
-            "background": "linear-gradient(to bottom right, rgb(13, 17, 37), rgb(38, 14, 28))",
-            "backgroundGradient": true
-        },
-        {
-            "icon": "https://raw.githubusercontent.com/kckarnige/OculusDummy/main/icon.png",
-            "name": "Oculus Dummy",
-            "description": "(Discontinued) Oculus Killer, but for the Oculus Client.",
-            "link": "https://github.com/kckarnige/OculusDummy",
-            "textColor": "#fab939",
-            "textColorDesc": "#fff",
-            "background": "linear-gradient(to bottom right, rgb(13, 17, 37), rgb(38, 14, 28))",
+            "icon": "/res/lc_plug.png",
+            "name": "Legcord",
+            "description": "Though technically not my project, it's still something I'm very proud of!",
+            "link": "https://legcord.app",
+            "textColor": "#cdc6fd",
+            "textColorDesc": "#111725",
+            "background": "linear-gradient(to bottom right, rgb(146, 51, 234), rgb(38, 99, 235))",
             "backgroundGradient": true
         },
         {
@@ -41,6 +31,16 @@
             "backgroundGradient": true
         },
         {
+            "icon": "https://raw.githubusercontent.com/kckarnige/OculusKillSwitch/main/logo-dark.png",
+            "name": "Oculus Kill Switch",
+            "description": "Toggle Oculus Killer and play your Oculus games how Zuck intended.",
+            "link": "https://github.com/kckarnige/OculusKillSwitch",
+            "textColor": "#0f0",
+            "textColorDesc": "#fff",
+            "background": "linear-gradient(to bottom right, rgb(13, 17, 37), rgb(38, 14, 28))",
+            "backgroundGradient": true
+        },
+        {
             "icon": "/res/a.png",
             "name": "Greyscale Ness",
             "description": "''Finally, Dark Ness'' -CaptainDragon636",
@@ -60,43 +60,7 @@
             "background": "/res/mc_back.png"
         },
         {
-            "icon": "/res/oyelt.png",
-            "name": "Open Your Eye: Legacy",
-            "description": "A data pack that makes Eyes of Ender a late game item.",
-            "link": "https://www.planetminecraft.com/data-pack/open-your-eye",
-            "textColor": "#00c111",
-            "textColorDesc": "#fd56fb",
-            "background": "/res/oyelbg.png",
-            "backgroundBlur": true,
-            "minecraftify": true,
-            "infoShadow": true
-        },
-        {
-            "icon": "/res/oyet.png",
-            "name": "Open Your Eye",
-            "description": "A mod that makes Eyes of Ender a late game item.",
-            "link": "https://modrinth.com/mod/open-your-eye",
-            "textColor": "#00c111",
-            "textColorDesc": "#00a6a6",
-            "background": "/res/oyebg.png",
-            "backgroundBlur": true,
-            "minecraftify": true,
-            "infoShadow": true
-        },
-        {
-            "icon": "/res/ntpap_icont.png",
-            "name": "Now THAT'LL Pack a Punch!",
-            "description": "Makes the mace look more threatening.",
-            "link": "https://modrinth.com/datapack/actual-mace",
-            "textColor": "#d97a64",
-            "textColorDesc": "#fff",
-            "background": "/res/ntpap_preview.png",
-            "backgroundBlur": true,
-            "minecraftify": true,
-            "infoShadow": true
-        },
-        {
-            "icon": "/res/mace.gif",
+            "icon": "/res/wham_icon.png",
             "name": "Wham!",
             "description": "A mod that gives the mace a complete overhaul!",
             "link": "https://youtu.be/VTTuhlxPds0",
@@ -108,13 +72,13 @@
             "infoShadow": true
         },
         {
-            "icon": "/res/bronzepl.png",
-            "name": "Slow Your Bronze",
-            "description": "A mod which allows the 'Bronze' mod to be fully compatible with 'Slow Your Roll'.",
-            "link": "https://modrinth.com/mod/slow-your-bronze",
-            "textColor": "#f2c15e",
-            "textColorDesc": "#b88218",
-            "background": "/res/bronzepllazy.png",
+            "icon": "/res/tos_icon.png",
+            "name": "Tools of Steel",
+            "description": "Give equipment progression more depth with a steel mod like no other!",
+            "link": "https://modrinth.com/mod/tools-of-steel",
+            "textColor": "#747376",
+            "textColorDesc": "#fff",
+            "background": "/res/tos_bg.png",
             "backgroundBlur": true,
             "minecraftify": true,
             "infoShadow": true
@@ -156,13 +120,13 @@
             "infoShadow": true
         },
         {
-            "icon": "https://iatj-modpack.github.io/res/modpack_icont.png",
-            "name": "It's About The Journey",
-            "description": "A modpack focused on exploration, survival, creativity, and good times.",
-            "link": "https://modrinth.com/modpack/iatj",
-            "textColor": "#c30ffd",
+            "icon": "https://mc-sns.github.io/res/modpack_icont.png",
+            "name": "Sticks n' Stones",
+            "description": "The kitchen-sink modpack no one asked for.",
+            "link": "https://modrinth.com/modpack/mc-sns",
+            "textColor": "#10ad5f",
             "textColorDesc": "#fff",
-            "background": "https://iatj-modpack.github.io/res/background.png",
+            "background": "https://mc-sns.github.io/res/background_alt.png",
             "backgroundBlur": true,
             "minecraftify": true,
             "infoShadow": true
