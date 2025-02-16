@@ -25,7 +25,7 @@
             "name": "FUG IGG",
             "description": "Fast Url Generator for IGG-games.com, because why wait to install cryptominers?",
             "link": "https://gist.github.com/kckarnige/6dfff1025b5da69399c26957ee47b445",
-            "textColor": "#fff",
+            "textColor": "#ec9044",
             "textColorDesc": "#fff",
             "background": "linear-gradient(to bottom right, rgb(75, 124, 143), rgb(58, 91, 88))",
             "backgroundGradient": true
@@ -46,7 +46,7 @@
             "description": "''Finally, Dark Ness'' -CaptainDragon636",
             "link": "https://gamebanana.com/mods/396920",
             "textColor": "#d14b48",
-            "textColorDesc": "#696969",
+            "textColorDesc": "#fff",
             "background": "linear-gradient(to bottom right, #3d3d3d, #1d1d1d)",
             "backgroundGradient": true
         },
@@ -55,7 +55,7 @@
             "name": "Minecraft Rerendered",
             "description": "Actually Smashifies the Minecraft renders.",
             "link": "https://gamebanana.com/mods/27569",
-            "textColor": "#fff",
+            "textColor": "#c54cb6",
             "textColorDesc": "#fff",
             "background": "/res/mc_back.png"
         },
