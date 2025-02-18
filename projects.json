@@ -76,7 +76,7 @@
             "name": "Tools of Steel",
             "description": "Give equipment progression more depth with a steel mod like no other!",
             "link": "https://modrinth.com/mod/tools-of-steel",
-            "textColor": "#747376",
+            "textColor": "#7d7d7d",
             "textColorDesc": "#fff",
             "background": "/res/tos_bg.png",
             "backgroundBlur": true,
