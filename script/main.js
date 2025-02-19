@@ -345,7 +345,7 @@ if (document.getElementById("portfolio")) {
 };
 
 // Splash Text
-if (document.getElementById("warmSplashText")) {
+if (document.getElementById("warmSplashText") && !document.getElementById("huh")) {
   let splashList;
   fetch("/json/splashes.json", {
     method: "GET",
@@ -380,4 +380,6 @@ if (document.getElementById("warmSplashText")) {
         document.getElementById("warmSplashText").innerText = splashList[rng];
       }
     })
+} else if (document.getElementById("huh")) {
+  document.getElementById("warmSplashText").innerText = "404: Page does not exist";
 }

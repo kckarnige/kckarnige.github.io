@@ -1,6 +1,5 @@
 html {
     $sidebarWidth: 112px;
-    
     @media (max-width: 800px) {
         $sidebarWidth: 82px;
     }
@@ -285,11 +284,19 @@ html {
 
             div#mainContent {
                 margin: 16px;
-
+                img#huh {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    position: relative;
+                }
                 p#label {
                     font-size: 24px;
                     text-align: center;
                     transform: translateY(8px);
+                    @media (max-width: 800px) {
+                        font-size: 18px;
+                        transform: translateY(4px);
+                    }
                 }
             }
 
@@ -299,6 +306,9 @@ html {
             div#topProjects {
                 margin: 0;
                 padding: 16px 8px;
+                left: 50%;
+                transform: translateX(-50%);
+                position: relative;
                 width: 100%;
                 margin-bottom: 20px;
                 text-align: center;
@@ -314,6 +324,10 @@ html {
                     background-repeat: no-repeat !important;
                     border-radius: 8px;
                     overflow: hidden;
+                    @media (max-width: 800px) {
+                        height: 142px;
+                        width: 211px;
+                    }
 
                     * {
                         transition: ease-out 0.2s;
@@ -343,11 +357,17 @@ html {
                             background-color: rgba(0, 0, 0, 0.5);
                             border-radius: 8px;
                             padding: 4px 8px;
+                            @media (max-width: 800px) {
+                                font-size: 12px;
+                            }
                         }
 
                         p#projectDescription {
                             font-weight: 600;
                             font-size: 14px;
+                            @media (max-width: 800px) {
+                                font-size: 10px;
+                            }
                         }
                     }
 
@@ -360,6 +380,10 @@ html {
                         transform: translate(-50%, -50%);
                         height: 128px;
                         width: 128px;
+                        @media (max-width: 800px) {
+                            max-width: 90px;
+                            max-height: 90px;
+                        }
                     }
 
                     div#projectIconContainer>img {
@@ -371,6 +395,10 @@ html {
                         border-radius: 6px;
                         max-width: 128px;
                         max-height: 128px;
+                        @media (max-width: 800px) {
+                            max-width: 90px;
+                            max-height: 90px;
+                        }
                         z-index: 20;
                     }
 
@@ -397,6 +425,10 @@ html {
                         position: absolute;
                         object-fit: cover;
                         width: 125%;
+                        @media (max-width: 800px) {
+                            height: 125%;
+                            width: initial;
+                        }
                     }
                 }
             }
@@ -411,10 +443,7 @@ html {
                     cursor: pointer;
                     height: 192px;
                     width: initial;
-
-                }
-                @media (max-width: 800px) {
-                    img.imgPreviewable {
+                    @media (max-width: 800px) {
                         height: initial !important;
                         width: 45% !important;
                     }

@@ -253,16 +253,30 @@ html body div#main {
 html body div#main div#mainContent {
   margin: 16px;
 }
+html body div#main div#mainContent img#huh {
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
 html body div#main div#mainContent p#label {
   font-size: 24px;
   text-align: center;
   transform: translateY(8px);
+}
+@media (max-width: 800px) {
+  html body div#main div#mainContent p#label {
+    font-size: 18px;
+    transform: translateY(4px);
+  }
 }
 html body div#main div#projects,
 html body div#main div#recentProjects,
 html body div#main div#topProjects {
   margin: 0;
   padding: 16px 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
   width: 100%;
   margin-bottom: 20px;
   text-align: center;
@@ -281,6 +295,14 @@ html body div#main div#topProjects div#projectEntry {
   background-repeat: no-repeat !important;
   border-radius: 8px;
   overflow: hidden;
+}
+@media (max-width: 800px) {
+  html body div#main div#projects div#projectEntry,
+  html body div#main div#recentProjects div#projectEntry,
+  html body div#main div#topProjects div#projectEntry {
+    height: 142px;
+    width: 211px;
+  }
 }
 html body div#main div#projects div#projectEntry *,
 html body div#main div#recentProjects div#projectEntry *,
@@ -316,11 +338,25 @@ html body div#main div#topProjects div#projectEntry div#projectInfo p#projectNam
   border-radius: 8px;
   padding: 4px 8px;
 }
+@media (max-width: 800px) {
+  html body div#main div#projects div#projectEntry div#projectInfo p#projectName,
+  html body div#main div#recentProjects div#projectEntry div#projectInfo p#projectName,
+  html body div#main div#topProjects div#projectEntry div#projectInfo p#projectName {
+    font-size: 12px;
+  }
+}
 html body div#main div#projects div#projectEntry div#projectInfo p#projectDescription,
 html body div#main div#recentProjects div#projectEntry div#projectInfo p#projectDescription,
 html body div#main div#topProjects div#projectEntry div#projectInfo p#projectDescription {
   font-weight: 600;
   font-size: 14px;
+}
+@media (max-width: 800px) {
+  html body div#main div#projects div#projectEntry div#projectInfo p#projectDescription,
+  html body div#main div#recentProjects div#projectEntry div#projectInfo p#projectDescription,
+  html body div#main div#topProjects div#projectEntry div#projectInfo p#projectDescription {
+    font-size: 10px;
+  }
 }
 html body div#main div#projects div#projectEntry div#projectIconContainer,
 html body div#main div#recentProjects div#projectEntry div#projectIconContainer,
@@ -334,6 +370,14 @@ html body div#main div#topProjects div#projectEntry div#projectIconContainer {
   height: 128px;
   width: 128px;
 }
+@media (max-width: 800px) {
+  html body div#main div#projects div#projectEntry div#projectIconContainer,
+  html body div#main div#recentProjects div#projectEntry div#projectIconContainer,
+  html body div#main div#topProjects div#projectEntry div#projectIconContainer {
+    max-width: 90px;
+    max-height: 90px;
+  }
+}
 html body div#main div#projects div#projectEntry div#projectIconContainer > img,
 html body div#main div#recentProjects div#projectEntry div#projectIconContainer > img,
 html body div#main div#topProjects div#projectEntry div#projectIconContainer > img {
@@ -346,6 +390,14 @@ html body div#main div#topProjects div#projectEntry div#projectIconContainer > i
   max-width: 128px;
   max-height: 128px;
   z-index: 20;
+}
+@media (max-width: 800px) {
+  html body div#main div#projects div#projectEntry div#projectIconContainer > img,
+  html body div#main div#recentProjects div#projectEntry div#projectIconContainer > img,
+  html body div#main div#topProjects div#projectEntry div#projectIconContainer > img {
+    max-width: 90px;
+    max-height: 90px;
+  }
 }
 html body div#main div#projects div#projectEntry div#projectBgContainer,
 html body div#main div#recentProjects div#projectEntry div#projectBgContainer,
@@ -375,6 +427,14 @@ html body div#main div#topProjects div#projectEntry div#projectBgContainer > img
   -o-object-fit: cover;
      object-fit: cover;
   width: 125%;
+}
+@media (max-width: 800px) {
+  html body div#main div#projects div#projectEntry div#projectBgContainer > img,
+  html body div#main div#recentProjects div#projectEntry div#projectBgContainer > img,
+  html body div#main div#topProjects div#projectEntry div#projectBgContainer > img {
+    height: 125%;
+    width: initial;
+  }
 }
 html body div#main div#portfolio {
   margin: 0;
