@@ -1,0 +1,454 @@
+html {
+    $sidebarWidth: 112px;
+    $contentMargin: $sidebarWidth + 30px;
+    color-scheme: dark;
+    margin: 0;
+
+    body {
+        color: #fff;
+        background: #15121f;
+        font-family: 'DM Sans', sans-serif;
+
+        a[href] {
+            -moz-transition: 0.3s;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            text-decoration: none;
+            color: #fff;
+            fill: currentColor;
+
+            &:hover {
+                -moz-transition: 0.3s;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+                color: #6e63a1;
+            }
+        }
+
+        div#imgPreviewOverlay {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: none;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.533);
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.1s ease-in;
+            z-index: 2;
+
+            div#closeImgPreview {
+                float: right;
+                width: 64px;
+                height: 64px;
+                line-height: 64px;
+                display: none;
+                font-size: 24px;
+                cursor: pointer;
+                z-index: 10;
+                text-align: center;
+
+                a {
+                    display: inline-block;
+                }
+            }
+
+            div#imgPreviewContainer {
+                overflow: auto;
+                width: 100%;
+                z-index: 3;
+
+                @media (orientation:landscape) {
+                    img {
+                        position: fixed;
+                        top: -100%;
+                        right: -100%;
+                        left: -100%;
+                        bottom: -100%;
+                        height: 75vh;
+                        max-height: 80vh;
+                        max-width: 80vw;
+                        object-fit: contain;
+                        margin: auto;
+                        filter: drop-shadow(0 0 3px #0003);
+                        animation: zoomIn 0.5s ease;
+                    }
+                }
+
+                @media (orientation:portrait) {
+                    img {
+                        position: fixed;
+                        top: -100%;
+                        right: -100%;
+                        left: -100%;
+                        bottom: -100%;
+                        width: 75vw;
+                        max-height: 80vh;
+                        max-width: 80vw;
+                        object-fit: contain;
+                        margin: auto;
+                        filter: drop-shadow(0 0 3px #0003);
+                        animation: zoomIn 0.5s ease;
+                    }
+                }
+            }
+
+
+            div#imgContent {
+                user-select: text;
+                background-color: rgba(0, 0, 0, 0.25);
+                text-align: center;
+                position: fixed;
+                bottom: 32px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                width: 100%;
+                z-index: 2;
+                -moz-transition: 0.3s;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+
+                h2#imgTitle,
+                p#imgDesc {
+                    margin: 8px;
+                    overflow: auto;
+                    display: block;
+                }
+
+                a#imgLink {
+                    text-decoration: underline;
+                    font-style: italic !important;
+                    font-weight: bold !important;
+                }
+            }
+        }
+
+
+
+        img[pixelated="true"] {
+            image-rendering: pixelated;
+        }
+
+        .scrollByebye {
+            overflow: hidden;
+        }
+
+        a#navLeft,
+        a#navRight {
+            cursor: pointer;
+        }
+
+        div.icon-navRight {
+            display: block;
+            position: fixed;
+            right: 0;
+            float: right;
+            bottom: 50%;
+            height: 15%;
+            transform: translate(-25%, 50%);
+            content: url("/res/icons/navSpace.svg");
+            mask-image: url("/res/icons/navRight.svg");
+            mask-size: 100%;
+            mask-position: center center;
+            mask-repeat: no-repeat;
+            background-repeat: no-repeat;
+            background-color: currentColor;
+            color: #fff;
+            transition: 0.15s ease-out;
+            opacity: 0.5;
+
+            &:hover {
+                transition: 0.15s ease-out;
+                opacity: 0.75;
+            }
+        }
+
+        div.icon-navLeft {
+            display: block;
+            position: fixed;
+            left: 0;
+            float: left;
+            bottom: 50%;
+            height: 15%;
+            transform: translate(25%, 50%);
+            content: url("/res/icons/navSpace.svg");
+            mask-image: url("/res/icons/navLeft.svg");
+            mask-size: 100%;
+            mask-position: center center;
+            mask-repeat: no-repeat;
+            background-repeat: no-repeat;
+            background-color: currentColor;
+            color: #fff;
+            transition: 0.15s ease-out;
+            opacity: 0.5;
+
+            &:hover {
+                transition: 0.15s ease-out;
+                opacity: 0.75;
+            }
+        }
+
+        div#sidebar {
+            top: 0;
+            bottom: 0;
+            max-height: 100vh;
+            font-size: 18px;
+            width: $sidebarWidth;
+            padding: 6px;
+            margin: 12px 4px;
+            border-radius: 16px;
+            background-color: #3a3455;
+            position: fixed;
+
+            div#sidebarContent {
+                img#profilePic {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-radius: 100%;
+                    padding: 8px;
+                    top: 0;
+                }
+
+                div#sidebarNotice {
+                    color: #15121f;
+                    font-size: 12px;
+                    font-weight: 800;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 0;
+                }
+
+                a {
+                    text-align: center;
+                    margin-top: 4px;
+                    padding: 6px 8px;
+                    text-decoration: none;
+                    display: block;
+
+                    &#sidebarNav {
+                        color: #fff;
+                        transition: ease-out 0.2s;
+
+                        &:hover {
+                            color: #fff;
+                            transition: ease-out 0.2s;
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
+
+        div#topbar {
+            padding: 6px;
+            border-radius: 16px;
+            background-color: #3a3455;
+
+            div#topbarContent {
+                margin: 16px;
+
+                div#warmWelcome {
+                    margin: 0;
+                    text-align: center;
+
+                    p#warmSplashText {
+                        font-size: 20px;
+                        color: #ffff00;
+                        font-family: 'MinecraftSeven';
+                        text-shadow: 2px 2px #3f3f00;
+                    }
+                }
+
+                p {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        div#main {
+            margin: 12px 4px;
+            margin-left: $contentMargin;
+            border-radius: 16px;
+            background-color: #201d2f;
+            height: 100vh;
+            margin-bottom: 12px;
+            overflow: scroll;
+
+            div#mainContent {
+                margin: 16px;
+
+                p#label {
+                    font-size: 24px;
+                    text-align: center;
+                    transform: translateY(8px);
+                }
+            }
+
+            // Projects in "projects" page
+            div#projects,
+            div#recentProjects,
+            div#topProjects {
+                margin: 0;
+                padding: 16px 8px;
+                width: 100%;
+                margin-bottom: 20px;
+                text-align: center;
+
+                div#projectEntry {
+                    height: 182px;
+                    width: 336px;
+                    margin: 8px;
+                    padding: 8px;
+                    display: inline-block;
+                    backdrop-filter: blur(15px);
+                    background-size: cover !important;
+                    background-repeat: no-repeat !important;
+                    border-radius: 8px;
+                    overflow: hidden;
+
+                    * {
+                        transition: ease-out 0.2s;
+                    }
+
+                    &:hover {
+                        >* {
+                            transition: ease-out 0.2s;
+                        }
+                    }
+
+                    div#projectInfo {
+                        font-family: 'Open Sans';
+                        margin: 2px;
+                        padding-right: 5px;
+                        height: fit-content;
+                        width: 52%;
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+
+                        p#projectName {
+                            font-weight: 700;
+                            font-size: 16px;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            border-radius: 8px;
+                            padding: 4px 8px;
+                        }
+
+                        p#projectDescription {
+                            font-weight: 600;
+                            font-size: 14px;
+                        }
+                    }
+
+                    div#projectIconContainer {
+                        text-align: left;
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        left: 24%;
+                        transform: translate(-50%, -50%);
+                        height: 128px;
+                        width: 128px;
+                    }
+
+                    div#projectIconContainer>img {
+                        margin: 0;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        border-radius: 6px;
+                        max-width: 128px;
+                        max-height: 128px;
+                        z-index: 20;
+                    }
+
+                    div#projectBgContainer {
+                        margin: 0;
+                        display: block;
+                        position: absolute;
+                        object-fit: cover;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        height: 100%;
+                        width: 100%;
+                        overflow: hidden;
+                        z-index: -1;
+                    }
+
+                    div#projectBgContainer>img {
+                        margin: 0;
+                        display: inline;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        position: absolute;
+                        object-fit: cover;
+                        width: 125%;
+                    }
+                }
+            }
+
+            div#portfolio {
+                margin: 0;
+                padding: 16px 8px;
+                width: 100%;
+                margin-bottom: 20px;
+                img.imgPreviewable {
+                    margin: 3px;
+                    cursor: pointer;
+                    height: 192px;
+                    width: initial;
+
+                }
+            }
+
+            @keyframes zoomIn {
+                0% {
+                    transform: scale(0, 0);
+                }
+
+                100% {
+                    transform: scale(1, 1);
+                }
+            }
+
+            @keyframes zoomOut {
+                0% {
+                    transform: scale(1, 1);
+                }
+
+                100% {
+                    transform: scale(0, 0);
+                }
+            }
+
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes fadeOut {
+                0% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
