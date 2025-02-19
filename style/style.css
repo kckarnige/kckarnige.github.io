@@ -178,7 +178,7 @@ html body div#sidebar {
   bottom: 0;
   max-height: 100vh;
   font-size: 18px;
-  width: 112px;
+  width: 82px;
   padding: 6px;
   margin: 12px 4px;
   border-radius: 16px;
@@ -242,12 +242,13 @@ html body div#topbar div#topbarContent p {
 }
 html body div#main {
   margin: 12px 4px;
-  margin-left: 142px;
+  margin-left: 112px;
   border-radius: 16px;
   background-color: #201d2f;
   height: 100vh;
   margin-bottom: 12px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 html body div#main div#mainContent {
   margin: 16px;
@@ -270,7 +271,7 @@ html body div#main div#projects div#projectEntry,
 html body div#main div#recentProjects div#projectEntry,
 html body div#main div#topProjects div#projectEntry {
   height: 182px;
-  width: 336px;
+  width: 321px;
   margin: 8px;
   padding: 8px;
   display: inline-block;
@@ -386,6 +387,12 @@ html body div#main div#portfolio img.imgPreviewable {
   cursor: pointer;
   height: 192px;
   width: initial;
+}
+@media (max-width: 800px) {
+  html body div#main div#portfolio img.imgPreviewable {
+    height: initial !important;
+    width: 45% !important;
+  }
 }
 @keyframes zoomIn {
   0% {

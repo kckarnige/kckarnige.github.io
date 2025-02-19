@@ -1,5 +1,9 @@
 html {
     $sidebarWidth: 112px;
+    
+    @media (max-width: 800px) {
+        $sidebarWidth: 82px;
+    }
     $contentMargin: $sidebarWidth + 30px;
     color-scheme: dark;
     margin: 0;
@@ -276,7 +280,8 @@ html {
             background-color: #201d2f;
             height: 100vh;
             margin-bottom: 12px;
-            overflow: scroll;
+            overflow-y: scroll;
+            overflow-x: hidden;
 
             div#mainContent {
                 margin: 16px;
@@ -300,7 +305,7 @@ html {
 
                 div#projectEntry {
                     height: 182px;
-                    width: 336px;
+                    width: 321px;
                     margin: 8px;
                     padding: 8px;
                     display: inline-block;
@@ -407,6 +412,12 @@ html {
                     height: 192px;
                     width: initial;
 
+                }
+                @media (max-width: 800px) {
+                    img.imgPreviewable {
+                        height: initial !important;
+                        width: 45% !important;
+                    }
                 }
             }
 
