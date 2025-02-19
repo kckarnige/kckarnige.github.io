@@ -277,17 +277,20 @@ html {
             margin-left: $contentMargin;
             border-radius: 16px;
             background-color: #201d2f;
-            height: 100vh;
+            bottom: 0;
+            height: 97.44vh;
             margin-bottom: 12px;
             overflow-y: scroll;
             overflow-x: hidden;
 
             div#mainContent {
                 margin: 16px;
+                bottom: 0;
                 img#huh {
                     left: 50%;
                     transform: translateX(-50%);
                     position: relative;
+                    width: 50vw;
                 }
                 p#label {
                     font-size: 24px;

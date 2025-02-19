@@ -245,18 +245,21 @@ html body div#main {
   margin-left: 112px;
   border-radius: 16px;
   background-color: #201d2f;
-  height: 100vh;
+  bottom: 0;
+  height: 97.44vh;
   margin-bottom: 12px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 html body div#main div#mainContent {
   margin: 16px;
+  bottom: 0;
 }
 html body div#main div#mainContent img#huh {
   left: 50%;
   transform: translateX(-50%);
   position: relative;
+  width: 50vw;
 }
 html body div#main div#mainContent p#label {
   font-size: 24px;
