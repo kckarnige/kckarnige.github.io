@@ -273,13 +273,15 @@ html {
         }
 
         div#main {
-            margin: 12px 4px;
+            top: 0;
+            bottom: 0;
+            position: fixed;
+            max-height: 100vh;
+            width: calc(100vw - $sidebarWidth*2 + 32px);
+            margin: 12px 10px;
             margin-left: $contentMargin;
             border-radius: 16px;
             background-color: #201d2f;
-            bottom: 0;
-            height: 97.44vh;
-            margin-bottom: 12px;
             overflow-y: scroll;
             overflow-x: hidden;
 
