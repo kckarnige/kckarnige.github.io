@@ -280,7 +280,7 @@ html body div#main div#topProjects {
   margin: 0;
   padding: 16px 8px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(calc(-50% - 0.5px));
   position: relative;
   width: 100%;
   margin-bottom: 20px;
@@ -290,7 +290,7 @@ html body div#main div#projects div#projectEntry,
 html body div#main div#recentProjects div#projectEntry,
 html body div#main div#topProjects div#projectEntry {
   height: 182px;
-  width: 321px;
+  width: 320px;
   margin: 8px;
   padding: 8px;
   display: inline-block;
@@ -306,7 +306,7 @@ html body div#main div#topProjects div#projectEntry {
   html body div#main div#recentProjects div#projectEntry,
   html body div#main div#topProjects div#projectEntry {
     height: 142px;
-    width: 211px;
+    width: 210px;
   }
 }
 html body div#main div#projects div#projectEntry *,
@@ -332,7 +332,7 @@ html body div#main div#topProjects div#projectEntry div#projectInfo {
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translateY(-50%);
+  transform: translateY(calc(-50% - 0.5px));
 }
 html body div#main div#projects div#projectEntry div#projectInfo p#projectName,
 html body div#main div#recentProjects div#projectEntry div#projectInfo p#projectName,

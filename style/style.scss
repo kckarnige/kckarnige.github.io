@@ -298,7 +298,7 @@ html {
                 bottom: 0;
                 img#huh {
                     left: 50%;
-                    transform: translateX(-50%);
+                    transform: translateX(calc(-50% - .5px));
                     position: relative;
                     width: 50vw;
                 }
@@ -320,7 +320,7 @@ html {
                 margin: 0;
                 padding: 16px 8px;
                 left: 50%;
-                transform: translateX(-50%);
+                transform: translateX(calc(-50% - .5px));
                 position: relative;
                 width: 100%;
                 margin-bottom: 20px;
@@ -328,7 +328,7 @@ html {
 
                 div#projectEntry {
                     height: 182px;
-                    width: 321px;
+                    width: 320px;
                     margin: 8px;
                     padding: 8px;
                     display: inline-block;
@@ -339,7 +339,7 @@ html {
                     overflow: hidden;
                     @media (max-width: 800px) {
                         height: 142px;
-                        width: 211px;
+                        width: 210px;
                     }
 
                     * {
@@ -362,7 +362,7 @@ html {
                         position: absolute;
                         top: 50%;
                         right: 0;
-                        transform: translateY(-50%);
+                        transform: translateY(calc(-50% - .5px));
 
                         p#projectName {
                             font-weight: 700;
