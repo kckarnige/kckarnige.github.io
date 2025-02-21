@@ -259,9 +259,14 @@ html body div#main div#mainContent {
 }
 html body div#main div#mainContent img#huh {
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(calc(-50% - 0.5px));
   position: relative;
-  width: 50vw;
+  width: 32vw;
+}
+@media (max-width: 800px) {
+  html body div#main div#mainContent img#huh {
+    width: 52vw;
+  }
 }
 html body div#main div#mainContent p#label {
   font-size: 24px;

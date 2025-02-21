@@ -300,7 +300,10 @@ html {
                     left: 50%;
                     transform: translateX(calc(-50% - .5px));
                     position: relative;
-                    width: 50vw;
+                    width: 32vw;
+                    @media (max-width: 800px) {
+                        width: 52vw;
+                    }
                 }
                 p#label {
                     font-size: 24px;
