@@ -4,7 +4,7 @@ html {
 }
 html body {
   color: #fff;
-  background: #15121f;
+  background: #121e12;
   font-family: "DM Sans", sans-serif;
 }
 html body a[href] {
@@ -15,7 +15,7 @@ html body a[href] {
 }
 html body a[href]:hover {
   transition: 0.3s;
-  color: #6e63a1;
+  color: #63a063;
 }
 html body div#imgPreviewOverlay {
   position: fixed;
@@ -182,7 +182,7 @@ html body div#sidebar {
   padding: 6px;
   margin: 12px 4px;
   border-radius: 16px;
-  background-color: #3a3455;
+  background-color: #345434;
   position: fixed;
 }
 html body div#sidebar div#sidebarContent img#profilePic {
@@ -194,7 +194,7 @@ html body div#sidebar div#sidebarContent img#profilePic {
   top: 0;
 }
 html body div#sidebar div#sidebarContent div#sidebarNotice {
-  color: #15121f;
+  color: #121e12;
   font-size: 12px;
   font-weight: 800;
   text-align: center;
@@ -222,7 +222,7 @@ html body div#sidebar div#sidebarContent a#sidebarNav:hover {
 html body div#topbar {
   padding: 6px;
   border-radius: 16px;
-  background-color: #3a3455;
+  background-color: #345434;
 }
 html body div#topbar div#topbarContent {
   margin: 16px;
@@ -249,7 +249,7 @@ html body div#main {
   margin: 12px 10px;
   margin-left: 112px;
   border-radius: 16px;
-  background-color: #201d2f;
+  background-color: #1d2e1d;
   overflow-y: scroll;
   overflow-x: hidden;
 }
