@@ -3,7 +3,7 @@
         {
             "icon": "/res/lc_plug.png",
             "name": "Legcord",
-            "description": "Not my project, but I did help with the pre-rebrand earlier versions, and I made the logo!",
+            "description": "Not my project, but I did help with the pre-rebrand, pre-TypeScript versions, and I made the logo!",
             "link": "https://legcord.app",
             "textColor": "#cdc6fd",
             "textColorDesc": "#111725",
@@ -22,7 +22,7 @@
         {
             "icon": "/res/greyscale_ness_icon.png",
             "name": "Greyscale Ness",
-            "description": "''Finally, Dark Ness'' -CaptainDragon636",
+            "description": "\"Finally, Dark Ness\" -CaptainDragon636",
             "link": "https://gamebanana.com/mods/396920",
             "textColor": "#d14b48",
             "textColorDesc": "#fff",
