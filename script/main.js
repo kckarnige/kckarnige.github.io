@@ -1,4 +1,4 @@
-var topProjectNums = [0, 8, 10, 9];
+var topProjectNums = [0, 8, 9, 10];
 let portfolioListNum;
 function disableScroll() {
   document.documentElement.classList.add("scrollByebye")
@@ -88,15 +88,12 @@ if (document.getElementById("projects") || document.getElementById("topProjects"
       }
 
       if (document.getElementById("topProjects")) {
-        // Get the 4 top projects
+        // Get the 4 most popular projects
         var i = 0;
-        for (i; i < topProjectNums.length; i++) {var i = 0;
-          var e = 0;
-          for (e; e < projectList.projects.length; e++) {
-            if (topProjectNums.includes(e) && (i == e)) {
-              //console.log("Name: " + projectList.projects[i].name + "\nDescription: " + projectList.projects[i].description)
-              addProjectsTo(document.getElementById("topProjects"))
-            }
+        for (i; i < projectList.projects.length; i++) {
+          if (topProjectNums.includes(i)) {
+            //console.log("Name: " + projectList.projects[i].name + "\nDescription: " + projectList.projects[i].description)
+            addProjectsTo(document.getElementById("topProjects"))
           }
         }
       }
