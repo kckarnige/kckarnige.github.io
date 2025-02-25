@@ -70,10 +70,6 @@ if (document.getElementById("projects") || document.getElementById("topProjects"
         projectDescription.append(projectList.projects[i].description)
         projectDescription.setAttribute("id", "projectDescription")
         projectDescription.style.color = projectList.projects[i].textColorDesc
-        if (projectList.projects[i].infoShadow == true) {
-          projectName.style.textShadow = "#000a 0 0 5px"
-          projectDescription.style.textShadow = "#000a 0 0 5px"
-        }
 
         projectBg.setAttribute("src", projectList.projects[i].background)
         projectBg.setAttribute("style", `filter:${projectBgBlur};`)

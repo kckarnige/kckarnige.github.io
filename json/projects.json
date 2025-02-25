@@ -67,8 +67,7 @@
             "textColor": "#806678",
             "textColorDesc": "#fff",
             "background": "/res/constisnt.png",
-            "backgroundBlur": true,
-            "infoShadow": true
+            "backgroundBlur": true
         },
         {
             "icon": "/res/csyrft_t.png",
@@ -78,8 +77,7 @@
             "textColor": "#a6a6a6",
             "textColorDesc": "#fff",
             "background": "/res/csyrft_bg.png",
-            "backgroundBlur": true,
-            "infoShadow": true
+            "backgroundBlur": true
         },
         {
             "icon": "/res/wst.png",
@@ -89,19 +87,27 @@
             "textColor": "#658382",
             "textColorDesc": "#fff",
             "background": "/res/wsbg.png",
-            "backgroundBlur": true,
-            "infoShadow": true
+            "backgroundBlur": true
+        },
+        {
+            "icon": "/res/atlyssModPack.png",
+            "name": "The KCK Modpack",
+            "description": "My personal Atlyss modpack, and the first one publicly available on Thunderstore!",
+            "link": "https://thunderstore.io/c/atlyss/p/kckarnige/TheKCKModpack/",
+            "textColor": "#fbbf24",
+            "textColorDesc": "#fff",
+            "background": "/res/atlyssModPack.png",
+            "backgroundBlur": true
         },
         {
             "icon": "/res/wham_icon.png",
             "name": "Wham!",
             "description": "A mod that gives the mace a complete overhaul!",
-            "link": "https://youtu.be/VTTuhlxPds0",
+            "link": "https://youtu.be/BVWEEPgVJUc",
             "textColor": "#d97a64",
             "textColorDesc": "#fff",
             "background": "/res/wham_bg.png",
-            "backgroundBlur": true,
-            "infoShadow": true
+            "backgroundBlur": true
         },
         {
             "icon": "/res/tos_icon.png",
@@ -111,8 +117,7 @@
             "textColor": "#7d7d7d",
             "textColorDesc": "#fff",
             "background": "/res/tos_bg.png",
-            "backgroundBlur": true,
-            "infoShadow": true
+            "backgroundBlur": true
         },
         {
             "icon": "https://mc-sns.github.io/res/modpack_icont.png",
@@ -122,8 +127,7 @@
             "textColor": "#10ad5f",
             "textColorDesc": "#fff",
             "background": "https://mc-sns.github.io/res/background_alt.png",
-            "backgroundBlur": true,
-            "infoShadow": true
+            "backgroundBlur": true
         }
     ]
 }
