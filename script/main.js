@@ -1,4 +1,4 @@
-var topProjectNums = [8, 0, 10, 6];
+var topProjectNums = [0, 8, 10, 6];
 let portfolioListNum;
 function disableScroll() {
   document.documentElement.classList.add("scrollByebye")
