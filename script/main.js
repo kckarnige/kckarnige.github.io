@@ -240,7 +240,7 @@ if (document.getElementById("portfolio")) {
       }
     } else {
       document.getElementById("navLeft").style.display = "none";
-      console.log("NOT_ALLOWED")
+      //console.log("NOT_ALLOWED")
     }
   }
 
@@ -280,7 +280,7 @@ if (document.getElementById("portfolio")) {
       }
     } else {
       document.getElementById("navRight").style.display = "none";
-      console.log("NOT_ALLOWED")
+      //console.log("NOT_ALLOWED")
     }
   }
 
@@ -326,7 +326,6 @@ if (document.getElementById("portfolio")) {
     .then((response) => response.json())
     .then((response) => (portfolioList = response))
     .then(() => {
-      console.log(portfolioList.portfolio.length - 1)
       for (var i = 0; i < portfolioList.portfolio.length; i++) {
         let portfolioEntry = document.createElement("img");
         portfolioEntry.setAttribute("imgTitle", portfolioList.portfolio[i].title);
