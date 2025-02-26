@@ -185,6 +185,10 @@ html body div#sidebar {
   background-color: #1f4527;
   position: fixed;
 }
+html body div#sidebar div#sidebarContent a:has(img#profilePic) {
+  display: block;
+  padding: 0 !important;
+}
 html body div#sidebar div#sidebarContent img#profilePic {
   display: block;
   margin-left: auto;

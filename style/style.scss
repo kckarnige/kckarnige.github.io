@@ -213,6 +213,10 @@ html {
             position: fixed;
 
             div#sidebarContent {
+                a:has(img#profilePic) {
+                    display: block;
+                    padding: 0 !important;
+                }
                 img#profilePic {
                     display: block;
                     margin-left: auto;
