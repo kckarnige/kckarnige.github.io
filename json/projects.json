@@ -70,13 +70,13 @@
             "backgroundBlur": true
         },
         {
-            "icon": "/res/csyrft_t.png",
-            "name": "Slow Your Flint",
-            "description": "My take on flint tools for the 'Slow Your Roll' mod.",
-            "link": "https://www.planetminecraft.com/texture-pack/slow-your-flint-custom-flint-tools-for-the-slow-your-roll-mod/",
-            "textColor": "#a6a6a6",
+            "icon": "https://lbp.littlebigrefresh.com/api/v3/assets/399c62484f343a4a42ea451a97b7c03eae5786f2/image",
+            "name": "LBP3 Mod Menu Selector",
+            "description": "The world's first LittleBigPlanet 3 Mod Menu selector!",
+            "link": "https://www.youtube.com/watch?v=_d07zaJF85s",
+            "textColor": "#fe6600",
             "textColorDesc": "#fff",
-            "background": "/res/csyrft_bg.png",
+            "background": "https://lbp.littlebigrefresh.com/api/v3/assets/399c62484f343a4a42ea451a97b7c03eae5786f2/image",
             "backgroundBlur": true
         },
         {
@@ -87,6 +87,16 @@
             "textColor": "#658382",
             "textColorDesc": "#fff",
             "background": "/res/wsbg.png",
+            "backgroundBlur": true
+        },
+        {
+            "icon": "/res/csyrft_t.png",
+            "name": "Slow Your Flint",
+            "description": "My take on flint tools for the 'Slow Your Roll' mod.",
+            "link": "https://www.planetminecraft.com/texture-pack/slow-your-flint-custom-flint-tools-for-the-slow-your-roll-mod/",
+            "textColor": "#a6a6a6",
+            "textColorDesc": "#fff",
+            "background": "/res/csyrft_bg.png",
             "backgroundBlur": true
         },
         {
