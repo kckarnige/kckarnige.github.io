@@ -128,6 +128,16 @@
             "textColorDesc": "#fff",
             "background": "https://mc-sns.github.io/res/background_alt.png",
             "backgroundBlur": true
+        },
+        {
+            "icon": "/res/undeadleather_icon.png",
+            "name": "Undead Leather",
+            "description": "Just another rotten flesh to leather mod.",
+            "link": "https://www.curseforge.com/minecraft/mc-mods/undead-leather",
+            "textColor": "#c36340",
+            "textColorDesc": "#fff",
+            "background": "/res/undeadleather_bg.png",
+            "backgroundBlur": true
         }
     ]
 }
