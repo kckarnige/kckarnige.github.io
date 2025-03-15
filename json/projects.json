@@ -158,6 +158,16 @@
             "textColorDesc": "#fff",
             "background": "/res/undeadleather_bg.png",
             "backgroundBlur": true
+        },
+        {
+            "icon": "/res/moderntorch_icon.png",
+            "name": "Modern Torches",
+            "description": "Updated torches that match Minecraft's art-style as close as possible.",
+            "link": "https://www.curseforge.com/minecraft/texture-packs/modern-torches",
+            "textColor": "#dea121",
+            "textColorDesc": "#fff",
+            "background": "/res/moderntorch_bg.png",
+            "backgroundBlur": true
         }
     ]
 }
