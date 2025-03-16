@@ -30,11 +30,17 @@ if (document.getElementById("projects") || document.getElementById("topProjects"
         let projectEntry = document.createElement("div");
         let projectEntryContainer = document.createElement("a");
         let projectBgBlur;
+        let projectBgBrightness;
         let projectEntryBg;
         if (projectList.projects[i].backgroundBlur == true) {
-          projectBgBlur = "blur(2.5px);"
+          projectBgBlur = "blur(2.5px)"
         } else {
-          projectBgBlur = "blur(0px);"
+          projectBgBlur = ""
+        }
+        if (projectList.projects[i].backgroundBrightness) {
+          projectBgBrightness = `brightness(${projectList.projects[i].backgroundBrightness})`
+        } else {
+          projectBgBrightness = ""
         }
         if (projectList.projects[i].backgroundGradient == true) {
           projectEntryBg = projectList.projects[i].background
@@ -72,7 +78,7 @@ if (document.getElementById("projects") || document.getElementById("topProjects"
         projectDescription.style.color = projectList.projects[i].textColorDesc
 
         projectBg.setAttribute("src", projectList.projects[i].background)
-        projectBg.setAttribute("style", `filter:${projectBgBlur};`)
+        projectBg.setAttribute("style", `filter:${projectBgBlur} ${projectBgBrightness};`)
         projectBgContainer.append(projectBg)
         projectBgContainer.setAttribute("id", "projectBgContainer")
         projectInfo.append(projectName, projectDescription)
