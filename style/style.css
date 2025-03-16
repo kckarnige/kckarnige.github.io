@@ -442,14 +442,6 @@ html body div#main div#topProjects div#projectEntry div#projectBgContainer > img
      object-fit: cover;
   width: 125%;
 }
-@media (max-width: 800px) {
-  html body div#main div#projects div#projectEntry div#projectBgContainer > img,
-  html body div#main div#recentProjects div#projectEntry div#projectBgContainer > img,
-  html body div#main div#topProjects div#projectEntry div#projectBgContainer > img {
-    height: 125%;
-    width: initial;
-  }
-}
 html body div#main div#portfolio {
   margin: 0;
   padding: 16px 8px;

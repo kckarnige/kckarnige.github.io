@@ -445,10 +445,6 @@ html {
                         position: absolute;
                         object-fit: cover;
                         width: 125%;
-                        @media (max-width: 800px) {
-                            height: 125%;
-                            width: initial;
-                        }
                     }
                 }
             }

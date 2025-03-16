@@ -79,6 +79,7 @@ if (document.getElementById("projects") || document.getElementById("topProjects"
 
         projectBg.setAttribute("src", projectList.projects[i].background)
         projectBg.setAttribute("style", `filter:${projectBgBlur} ${projectBgBrightness};`)
+        projectBg.setAttribute("id", "projectBg")
         projectBgContainer.append(projectBg)
         projectBgContainer.setAttribute("id", "projectBgContainer")
         projectInfo.append(projectName, projectDescription)
