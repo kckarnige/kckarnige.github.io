@@ -38,5 +38,15 @@ if (window.location.pathname.split('/')[1] == "BoundFight") {
     document.location.href = "https://iatj-modpack.github.io";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
+} else if (window.location.pathname.split('/')[1] == "mc-sns") {
+    document.location.href = "https://mc-sns.github.io";
+    document.title = "Redirecting..";
+    document.getElementById("main").remove();
+} else if (window.location.pathname.split('/')[1] == "atlyss-pack") {
+    document.location.href = "https://thunderstore.io/c/atlyss/p/kckarnige/TheKCKModpack/";
+    document.title = "Redirecting..";
+    document.getElementById("main").remove();
 }
+
+
 
