@@ -7,11 +7,10 @@
             "link": "https://www.youtube.com/watch?v=_d07zaJF85s",
             "textColor": "#fe6600",
             "textColorDesc": "#fff",
-            "background": "https://lbp.littlebigrefresh.com/api/v3/assets/399c62484f343a4a42ea451a97b7c03eae5786f2/image",
             "backgroundBlur": true
         },
         {
-            "icon": "/res/lc_plug.png",
+            "icon": "/res/projects/lc_plug_icon.png",
             "name": "Legcord",
             "description": "Not my project, but I did help with the pre-rebrand, pre-TypeScript versions, and I made the logo!",
             "link": "https://legcord.app",
@@ -21,16 +20,16 @@
             "backgroundGradient": true
         },
         {
-            "icon": "/res/rerenderderder.png",
+            "icon": "/res/projects/rerender_icon.png",
             "name": "Minecraft Rerendered",
             "description": "Actually Smashifies the Minecraft renders.",
             "link": "https://gamebanana.com/mods/27569",
             "textColor": "#c54cb6",
             "textColorDesc": "#fff",
-            "background": "/res/mc_back.png"
+            "background": "/res/projects/rerender_bg.png"
         },
         {
-            "icon": "/res/greyscale_ness_icon.png",
+            "icon": "/res/projects/greyscale_ness_icon.png",
             "name": "Greyscale Ness",
             "description": "\"Finally, Dark Ness\" -CaptainDragon636",
             "link": "https://gamebanana.com/mods/396920",
@@ -40,7 +39,7 @@
             "backgroundGradient": true
         },
         {
-            "icon": "https://raw.githubusercontent.com/kckarnige/OculusKillSwitch/main/logo-dark.png",
+            "icon": "/res/projects/oculusKS_icon.png",
             "name": "Oculus Kill Switch",
             "description": "Toggle Oculus Killer and play your Oculus games how Zuck intended.",
             "link": "https://github.com/kckarnige/OculusKillSwitch",
@@ -50,7 +49,7 @@
             "backgroundGradient": true
         },
         {
-            "icon": "https://raw.githubusercontent.com/kckarnige/OculusDummy/main/icon.png",
+            "icon": "/res/projects/oculusDummy_icon.png",
             "name": "Oculus Dummy",
             "description": "Sorta like Oculus Killer, but for the Oculus Client.",
             "link": "https://github.com/kckarnige/OculusDummy",
@@ -60,7 +59,7 @@
             "backgroundGradient": true
         },
         {
-            "icon": "https://raw.githubusercontent.com/kckarnige/EcstaTab/main/src/res/icons/white-256.png",
+            "icon": "/res/projects/ecsta_icon.png",
             "name": "Ecsta",
             "description": "A simple new tab extension meant to stay out of your way while still making for great eye-candy.",
             "link": "https://github.com/kckarnige/EcstaTab",
@@ -70,7 +69,7 @@
             "backgroundGradient": true
         },
         {
-            "icon": "/res/fug-igg.png",
+            "icon": "/res/fuckigg/fug-igg.png",
             "name": "FUG IGG",
             "description": "Fast Url Generator for IGG-games.com, because why wait to install cryptominers?",
             "link": "https://gist.github.com/kckarnige/6dfff1025b5da69399c26957ee47b445",
@@ -80,100 +79,99 @@
             "backgroundGradient": true
         },
         {
-            "icon": "/res/consisnetherite_icon.png",
+            "icon": "/res/projects/consisnetherite_icon.png",
             "name": "Consistent Netherite",
             "description": "Makes Netherite tools fit-in more, while still being unique.",
             "link": "https://www.planetminecraft.com/texture-pack/consistent-netherite-6046856",
             "textColor": "#806678",
             "textColorDesc": "#fff",
-            "background": "/res/constisnt.png",
+            "background": "/res/projects/consisnetherite_bg.png",
             "backgroundBlur": true
         },
         {
-            "icon": "/res/wst.png",
+            "icon": "/res/projects/ws_icon.png",
             "name": "Wither Shrines",
             "description": "A data pack that adds Wither shrines across the Nether.",
             "link": "https://www.planetminecraft.com/data-pack/wither-shrines",
             "textColor": "#658382",
             "textColorDesc": "#fff",
-            "background": "/res/wsbg.png",
+            "background": "/res/projects/ws_bg.png",
             "backgroundBrightness": 0.8,
             "backgroundBlur": true
         },
         {
-            "icon": "/res/csyrft_t.png",
+            "icon": "/res/projects/csyrft_icon.png",
             "name": "Slow Your Flint",
             "description": "My take on flint tools for the 'Slow Your Roll' mod.",
             "link": "https://www.planetminecraft.com/texture-pack/slow-your-flint-custom-flint-tools-for-the-slow-your-roll-mod/",
             "textColor": "#a6a6a6",
             "textColorDesc": "#fff",
-            "background": "/res/csyrft_bg.png",
+            "background": "/res/projects/csyrft_bg.png",
             "backgroundBrightness": 0.8,
             "backgroundBlur": true
         },
         {
-            "icon": "/res/atlyssModPack.png",
+            "icon": "/res/projects/atlyssModpack_icon.png",
             "name": "TheKCKModpack",
             "description": "My personal Atlyss modpack, and the first one publicly available on Thunderstore!",
             "link": "https://thunderstore.io/c/atlyss/p/kckarnige/TheKCKModpack/",
             "textColor": "#fbbf24",
             "textColorDesc": "#fff",
-            "background": "/res/atlyssModPack.png",
             "backgroundBrightness": 0.8,
             "backgroundBlur": true
         },
         {
-            "icon": "/res/wham_icon.png",
+            "icon": "/res/projects/wham_icon.png",
             "name": "Wham!",
             "description": "A mod that gives the mace a complete overhaul!",
             "link": "https://www.youtube.com/watch?v=BVWEEPgVJUc",
             "textColor": "#d97a64",
             "textColorDesc": "#fff",
-            "background": "/res/wham_bg.png",
+            "background": "/res/projects/wham_bg.png",
             "backgroundBrightness": 0.8,
             "backgroundBlur": true
         },
         {
-            "icon": "/res/tos_icon.png",
+            "icon": "/res/projects/tos_icon.png",
             "name": "Tools of Steel",
             "description": "Give equipment progression more depth with a steel mod like no other!",
             "link": "https://modrinth.com/mod/tools-of-steel",
             "textColor": "#7d7d7d",
             "textColorDesc": "#fff",
-            "background": "/res/tos_bg.png",
+            "background": "/res/projects/tos_bg.png",
             "backgroundBrightness": 0.8,
             "backgroundBlur": true
         },
         {
-            "icon": "https://mc-sns.github.io/res/modpack_icont.png",
+            "icon": "/res/projects/mcsns_icon.png",
             "name": "Sticks n' Stones",
             "description": "The kitchen-sink modpack no one asked for.",
             "link": "https://modrinth.com/modpack/mc-sns",
             "textColor": "#10ad5f",
             "textColorDesc": "#fff",
-            "background": "https://mc-sns.github.io/res/background_alt.png",
+            "background": "/res/projects/mcsns_bg.png",
             "backgroundBrightness": 0.8,
             "backgroundBlur": true
         },
         {
-            "icon": "/res/undeadleather_icon.png",
+            "icon": "/res/projects/undeadleather_icon.png",
             "name": "Undead Leather",
             "description": "Just another rotten flesh to leather mod.",
             "link": "https://modrinth.com/mod/undead-leather",
             "textColor": "#c36340",
             "textColorDesc": "#fff",
-            "background": "/res/undeadleather_bg.png",
+            "background": "/res/projects/undeadleather_bg.png",
             "backgroundBrightness": 0.8,
             "backgroundBlur": true
         },
         {
-            "icon": "/res/moderntorch_icon.png",
+            "icon": "/res/projects/moderntorch_icon.png",
             "name": "Modern Torches",
             "description": "Updated torches that match Minecraft's art-style as close as possible.",
             "link": "https://modrinth.com/resourcepack/modern-torches",
             "textColor": "#dea121",
             "textColorDesc": "#fff",
-            "background": "/res/moderntorch_bg.png",
+            "background": "/res/projects/moderntorch_bg.png",
             "backgroundBrightness": 0.8,
             "backgroundBlur": true
         }

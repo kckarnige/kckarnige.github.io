@@ -76,8 +76,11 @@ if (document.getElementById("projects") || document.getElementById("topProjects"
         projectDescription.append(projectList.projects[i].description)
         projectDescription.setAttribute("id", "projectDescription")
         projectDescription.style.color = projectList.projects[i].textColorDesc
-
-        projectBg.setAttribute("src", projectList.projects[i].background)
+        if (!projectList.projects[i].background) {
+          projectBg.setAttribute("src", projectList.projects[i].icon)
+        } else {
+          projectBg.setAttribute("src", projectList.projects[i].background)
+        }
         projectBg.setAttribute("style", `filter:${projectBgBlur} ${projectBgBrightness};`)
         projectBg.setAttribute("id", "projectBg")
         projectBgContainer.append(projectBg)
@@ -119,7 +122,7 @@ if (document.getElementById("projects") || document.getElementById("topProjects"
         // Setup the "projects" page
         var i = 0;
         for (i; i < projectList.projects.length; i++) {
-          addProjectsTo(document.getElementById("projects"));
+          addProjectsTo(document.getElementById("projectsContainer"));
         }
       }
     })
@@ -341,7 +344,7 @@ if (document.getElementById("portfolio")) {
         portfolioEntry.setAttribute("src", portfolioList.portfolio[i].img)
         portfolioEntry.setAttribute("pixelated", portfolioList.portfolio[i].pixelated);
         portfolioEntry.setAttribute("imgId", i);
-        document.getElementById("portfolio").append(portfolioEntry)
+        document.getElementById("portfolioContainer").append(portfolioEntry)
         if (i + 1 == portfolioList.portfolio.length) {
           portfolioListNum = i;
         }
