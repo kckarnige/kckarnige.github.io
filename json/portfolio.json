@@ -1,123 +1,121 @@
-{
-    "portfolio": [
-        {
-            "title": "ArmCord Logo",
-            "img": "/res/portfolio/ac_icon.png",
-            "description": "The logo I made for ArmCord, RIP 2021 - 2024|link|https://github.com/Legcord/Legcord|link|Here's a link so you could check it out, it's called Legcord now!",
-            "pixelated": false
-        },
-        {
-            "title": "ArmCord Logo Redesign Concept 1",
-            "img": "/res/portfolio/ac_icon_round.png",
-            "description": "Logo redesign I did because of the little legal threat from ARM, they still weren't happy. :(",
-            "pixelated": false
-        },
-        {
-            "title": "ArmCord Logo Redesign Concept 2",
-            "img": "/res/portfolio/ac_logo_redesign.png",
-            "description": "Logo redesign I did because of the little legal threat from ARM, they still weren't happy. :(",
-            "pixelated": false
-        },
-        {
-            "title": "Legcord Icon",
-            "img": "/res/portfolio/lc_plug.png",
-            "description": "Took a whole month to make the actual (extremely simple) logo, depression's a pain.|link|https://github.com/Legcord/Legcord|link|Check out Legcord!",
-            "pixelated": false
-        },
-        {
-            "title": "Legcord Logo",
-            "img": "/res/portfolio/legcord-banner.png",
-            "description": "Took a whole month to make the (extremely simple) actual logo, depression's a pain.|link|https://github.com/Legcord/Legcord|link|Check out Legcord!",
-            "pixelated": false
-        },
-        {
-            "title": "Icon for this website",
-            "img": "/res/portfolio/icon.png",
-            "description": "A simple little icon for the website, nothing special.",
-            "pixelated": false
-        },
-        {
-            "title": "Minimalist SSBU Game Icon",
-            "img": "/res/portfolio/smash.png",
-            "description": "I still use this today as my game icon, it looks pretty. :)|link|https://gamebanana.com/mods/460343|link|You can set it as your game icon too",
-            "pixelated": false
-        },
-        {
-            "title": "stoopid",
-            "img": "/res/portfolio/Untitled-1.png",
-            "description": "dumb stinky",
-            "pixelated": true
-        },
-        {
-            "title": "what gta does to young children (100% true)",
-            "img": "/res/portfolio/violence.png",
-            "description": "[insert TomSka reference here]",
-            "pixelated": true
-        },
-        {
-            "title": "Greyscale Ness Render",
-            "img": "/res/portfolio/greyscale_ness.png",
-            "description": "My first notable attempt at using Blender. (Still used Photoshop for a few touchups)|link|https://gamebanana.com/mods/396920|link|Check out the mod!"
-        },
-        {
-            "title": "Minecraft Rerendered Final Logo",
-            "img": "/res/portfolio/rerenderderder.png",
-            "description": "A logo I made in a few minutes for a mod that took me a few years.|link|https://gamebanana.com/mods/27569|link|Check it out!",
-            "pixelated": false
-        },
-        {
-            "title": "Steve Rerendered",
-            "img": "/res/portfolio/RendaSteve00.png",
-            "description": "This was made using a mix of Mine-imator and Photopea, for fake lighting.|link|https://gamebanana.com/mods/27569|link|Check out the mod!",
-            "pixelated": false
-        },
-        {
-            "title": "Minecraft Mace Redesign",
-            "img": "/res/portfolio/mace.gif",
-            "description": "This is a mace redesign inspired by Daniel Krafft, based on a resource pack made by GugerOS.|link|https://modrinth.com/mod/wham-mace|link|Check out the mod!",
-            "pixelated": true
-        },
-        {
-            "title": "A Friend's Minecraft Skin: Front",
-            "img": "/res/portfolio/fireCreature0.png",
-            "description": "A Minecraft skin I made for a friend of mine.|link|https://www.pinterest.com/infbalk74|link|Follow them on Pinterest!",
-            "pixelated": false
-        },
-        {
-            "title": "A Friend's Minecraft Skin: Back",
-            "img": "/res/portfolio/fireCreature1.png",
-            "description": "A Minecraft skin I made for a friend of mine.|link|https://www.pinterest.com/infbalk74|link|Follow them on Pinterest!",
-            "pixelated": false
-        },
-        {
-            "title": "My Minecraft Skin: Front",
-            "img": "/res/portfolio/stinky0.png",
-            "description": "My personal Minecraft skin, I'm proud of this one!",
-            "pixelated": false
-        },
-        {
-            "title": "My Minecraft Skin: Back",
-            "img": "/res/portfolio/stinky1.png",
-            "description": "My personal Minecraft skin, I'm proud of this one!",
-            "pixelated": false
-        },
-        {
-            "title": "Upgraded Frisk Spritesheet (Take 2!)",
-            "img": "/res/portfolio/frisky.png",
-            "description": "Fun little thing I made :3",
-            "pixelated": false
-        },
-        {
-            "title": "Upgraded Chara Spritesheet (Take 2!)",
-            "img": "/res/portfolio/character.png",
-            "description": "Yet another fun little thing I made :)",
-            "pixelated": false
-        },
-        {
-            "title": "Upgraded Fandom-Style Frisk Spritesheet (Take 2!)",
-            "img": "/res/portfolio/frisky_fanon.png",
-            "description": "A varient of one of the fun little things I made :3",
-            "pixelated": false
-        }
-    ]
-}
+[
+    {
+        "title": "ArmCord Logo",
+        "img": "/res/portfolio/ac_icon.png",
+        "description": "The logo I made for ArmCord, RIP 2021 - 2024|link|https://github.com/Legcord/Legcord|link|Here's a link so you could check it out, it's called Legcord now!",
+        "pixelated": false
+    },
+    {
+        "title": "ArmCord Logo Redesign Concept 1",
+        "img": "/res/portfolio/ac_icon_round.png",
+        "description": "Logo redesign I did because of the little legal threat from ARM, they still weren't happy. :(",
+        "pixelated": false
+    },
+    {
+        "title": "ArmCord Logo Redesign Concept 2",
+        "img": "/res/portfolio/ac_logo_redesign.png",
+        "description": "Logo redesign I did because of the little legal threat from ARM, they still weren't happy. :(",
+        "pixelated": false
+    },
+    {
+        "title": "Legcord Icon",
+        "img": "/res/portfolio/lc_plug.png",
+        "description": "Took a whole month to make the actual (extremely simple) logo, depression's a pain.|link|https://github.com/Legcord/Legcord|link|Check out Legcord!",
+        "pixelated": false
+    },
+    {
+        "title": "Legcord Logo",
+        "img": "/res/portfolio/legcord-banner.png",
+        "description": "Took a whole month to make the (extremely simple) actual logo, depression's a pain.|link|https://github.com/Legcord/Legcord|link|Check out Legcord!",
+        "pixelated": false
+    },
+    {
+        "title": "Icon for this website",
+        "img": "/res/portfolio/icon.png",
+        "description": "A simple little icon for the website, nothing special.",
+        "pixelated": false
+    },
+    {
+        "title": "Minimalist SSBU Game Icon",
+        "img": "/res/portfolio/smash.png",
+        "description": "I still use this today as my game icon, it looks pretty. :)|link|https://gamebanana.com/mods/460343|link|You can set it as your game icon too",
+        "pixelated": false
+    },
+    {
+        "title": "stoopid",
+        "img": "/res/portfolio/Untitled-1.png",
+        "description": "dumb stinky",
+        "pixelated": true
+    },
+    {
+        "title": "what gta does to young children (100% true)",
+        "img": "/res/portfolio/violence.png",
+        "description": "[insert TomSka reference here]",
+        "pixelated": true
+    },
+    {
+        "title": "Greyscale Ness Render",
+        "img": "/res/portfolio/greyscale_ness.png",
+        "description": "My first notable attempt at using Blender. (Still used Photoshop for a few touchups)|link|https://gamebanana.com/mods/396920|link|Check out the mod!"
+    },
+    {
+        "title": "Minecraft Rerendered Final Logo",
+        "img": "/res/portfolio/rerenderderder.png",
+        "description": "A logo I made in a few minutes for a mod that took me a few years.|link|https://gamebanana.com/mods/27569|link|Check it out!",
+        "pixelated": false
+    },
+    {
+        "title": "Steve Rerendered",
+        "img": "/res/portfolio/RendaSteve00.png",
+        "description": "This was made using a mix of Mine-imator and Photopea, for fake lighting.|link|https://gamebanana.com/mods/27569|link|Check out the mod!",
+        "pixelated": false
+    },
+    {
+        "title": "Minecraft Mace Redesign",
+        "img": "/res/portfolio/mace.gif",
+        "description": "This is a mace redesign inspired by Daniel Krafft, based on a resource pack made by GugerOS.|link|https://modrinth.com/mod/wham-mace|link|Check out the mod!",
+        "pixelated": true
+    },
+    {
+        "title": "A Friend's Minecraft Skin: Front",
+        "img": "/res/portfolio/fireCreature0.png",
+        "description": "A Minecraft skin I made for a friend of mine.|link|https://www.pinterest.com/infbalk74|link|Follow them on Pinterest!",
+        "pixelated": false
+    },
+    {
+        "title": "A Friend's Minecraft Skin: Back",
+        "img": "/res/portfolio/fireCreature1.png",
+        "description": "A Minecraft skin I made for a friend of mine.|link|https://www.pinterest.com/infbalk74|link|Follow them on Pinterest!",
+        "pixelated": false
+    },
+    {
+        "title": "My Minecraft Skin: Front",
+        "img": "/res/portfolio/stinky0.png",
+        "description": "My personal Minecraft skin, I'm proud of this one!",
+        "pixelated": false
+    },
+    {
+        "title": "My Minecraft Skin: Back",
+        "img": "/res/portfolio/stinky1.png",
+        "description": "My personal Minecraft skin, I'm proud of this one!",
+        "pixelated": false
+    },
+    {
+        "title": "Upgraded Frisk Spritesheet (Take 2!)",
+        "img": "/res/portfolio/frisky.png",
+        "description": "Fun little thing I made :3",
+        "pixelated": false
+    },
+    {
+        "title": "Upgraded Chara Spritesheet (Take 2!)",
+        "img": "/res/portfolio/character.png",
+        "description": "Yet another fun little thing I made :)",
+        "pixelated": false
+    },
+    {
+        "title": "Upgraded Fandom-Style Frisk Spritesheet (Take 2!)",
+        "img": "/res/portfolio/frisky_fanon.png",
+        "description": "A varient of one of the fun little things I made :3",
+        "pixelated": false
+    }
+]
