@@ -145,7 +145,7 @@
         "icon": "/res/projects/mcsns_icon.png",
         "name": "Sticks n' Stones",
         "description": "The kitchen-sink modpack no one asked for.",
-        "link": "https://modrinth.com/modpack/mc-sns",
+        "link": "https://mc-sns.kckarnige.online",
         "textColor": "#10ad5f",
         "textColorDesc": "#fff",
         "background": "/res/projects/mcsns_bg.png",
