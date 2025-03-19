@@ -364,6 +364,7 @@ html body div#main div#recentProjects div#projectEntry div#projectInfo p#project
 html body div#main div#topProjects div#projectEntry div#projectInfo p#projectDescription {
   font-weight: 600;
   font-size: 14px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5333333333);
 }
 @media (max-width: 800px) {
   html body div#main div#projects div#projectEntry div#projectInfo p#projectDescription,

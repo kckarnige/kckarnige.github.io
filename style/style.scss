@@ -385,6 +385,7 @@ html {
                         p#projectDescription {
                             font-weight: 600;
                             font-size: 14px;
+                            text-shadow: 0 0 5px #0008;
                             @media (max-width: 800px) {
                                 font-size: 10px;
                             }

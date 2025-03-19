@@ -14,7 +14,7 @@
         "description": "Not my project, but I did help with the pre-rebrand, pre-TypeScript versions, and I made the logo!",
         "link": "https://legcord.app",
         "textColor": "#cdc6fd",
-        "textColorDesc": "#111725",
+        "textColorDesc": "#fff",
         "background": "linear-gradient(to bottom right, rgb(146, 51, 234), rgb(38, 99, 235))",
         "backgroundGradient": true
     },
