@@ -42,8 +42,8 @@ if (document.getElementById("projects") || document.getElementById("topProjects"
         } else {
           projectBgBrightness = ""
         }
-        if (projectList[i].backgroundGradient == true) {
-          projectEntryBg = projectList[i].background
+        if (projectList[i].backgroundGradient) {
+          projectEntryBg = `linear-gradient(to bottom right, ${projectList[i].backgroundGradient[0]}, ${projectList[i].backgroundGradient[1]})`
         } else {
           projectEntryBg = "transparent"
         }
@@ -65,7 +65,11 @@ if (document.getElementById("projects") || document.getElementById("topProjects"
         let projectBg = document.createElement("img");
         let projectBgContainer = document.createElement("div");
 
-        projectIcon.setAttribute("src", projectList[i].icon)
+        if (projectList[i].icon) {
+          projectIcon.setAttribute("src", projectList[i].icon)
+        } else {
+          projectIcon.setAttribute("src", "/res/projects/icon/" + projectList[i].id + ".png")
+        }
         projectIconContainer.append(projectIcon)
         projectIconContainer.setAttribute("id", "projectIconContainer")
 
@@ -76,11 +80,17 @@ if (document.getElementById("projects") || document.getElementById("topProjects"
         projectDescription.append(projectList[i].description)
         projectDescription.setAttribute("id", "projectDescription")
         projectDescription.style.color = projectList[i].textColorDesc
-        if (!projectList[i].background) {
-          projectBg.setAttribute("src", projectList[i].icon)
-        } else {
-          projectBg.setAttribute("src", projectList[i].background)
+
+        if (projectList[i].backgroundIsIcon == true) {
+          if (projectList[i].icon) {
+            projectBg.setAttribute("src", projectList[i].icon)
+          } else {
+            projectBg.setAttribute("src", "/res/projects/icon/" + projectList[i].id + ".png")
+          }
+        } else if (!projectList[i].backgroundGradient) {
+          projectBg.setAttribute("src", "/res/projects/background/" + projectList[i].id + ".png")
         }
+
         projectBg.setAttribute("style", `filter:${projectBgBlur} ${projectBgBrightness};`)
         projectBg.setAttribute("id", "projectBg")
         projectBgContainer.append(projectBg)
@@ -88,7 +98,7 @@ if (document.getElementById("projects") || document.getElementById("topProjects"
         projectInfo.append(projectName, projectDescription)
         projectInfo.setAttribute("id", "projectInfo")
 
-        if (projectList[i].backgroundGradient == true) {
+        if (projectList[i].backgroundGradient) {
           projectEntry.append(projectIconContainer, projectInfo)
         } else {
           projectEntry.append(projectIconContainer, projectInfo, projectBgContainer)
@@ -379,7 +389,7 @@ if (document.getElementById("warmSplashText") && !document.getElementById("huh")
             if (splashList[rng] == "mcVer") {
               document.getElementById("warmSplashText").innerText = "The latest Minecraft version is " + response.latest.release + ", btw.";
             }
-            
+
             if (splashList[rng] == "mcSnap") {
               document.getElementById("warmSplashText").innerText = "The latest Minecraft snapshot is " + response.latest.snapshot + ", btw.";
             }
