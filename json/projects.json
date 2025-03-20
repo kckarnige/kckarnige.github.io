@@ -68,7 +68,7 @@
         "backgroundGradient": true
     },
     {
-        "icon": "/res/fuckigg/fug-igg.png",
+        "icon": "/res/fug-igg/icon.png",
         "name": "FUG IGG",
         "description": "Fast Url Generator for IGG-games.com, because why wait to install cryptominers?",
         "link": "https://gist.github.com/kckarnige/6dfff1025b5da69399c26957ee47b445",
