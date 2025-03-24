@@ -241,6 +241,9 @@ html body div#topbar div#topbarContent div#warmWelcome p#warmSplashText {
   font-family: "MinecraftSeven";
   text-shadow: 2px 2px #3f3f00;
 }
+html body div#topbar div#topbarContent div#warmWelcome p#affiliationNotice {
+  font-size: 14px;
+}
 html body div#topbar div#topbarContent p {
   font-size: 24px;
 }
