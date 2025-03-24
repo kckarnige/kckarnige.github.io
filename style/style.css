@@ -1,1 +1,495 @@
-html{color-scheme:dark;margin:0}html body{color:#bfffcc;background:#141f16;font-family:"DM Sans",sans-serif}html body a[href]{transition:.3s;text-decoration:none;color:#bfffcc;fill:currentColor}html body a[href]:hover{transition:.3s;color:#52b766}html body div#imgPreviewOverlay{position:fixed;right:0;bottom:0;left:0;display:none;width:100%;height:100%;background:rgba(0,0,0,.533);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);animation:fadeIn .1s ease-in;z-index:2}html body div#imgPreviewOverlay div#closeImgPreview{float:right;width:64px;height:64px;line-height:64px;display:none;font-size:24px;cursor:pointer;z-index:10;text-align:center}html body div#imgPreviewOverlay div#closeImgPreview a{display:inline-block}html body div#imgPreviewOverlay div#imgPreviewContainer{overflow:auto;width:100%;z-index:3}@media(orientation: landscape){html body div#imgPreviewOverlay div#imgPreviewContainer img{position:fixed;top:-100%;right:-100%;left:-100%;bottom:-100%;height:75vh;max-height:80vh;max-width:80vw;-o-object-fit:contain;object-fit:contain;margin:auto;filter:drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));animation:zoomIn .5s ease}}@media(orientation: portrait){html body div#imgPreviewOverlay div#imgPreviewContainer img{position:fixed;top:-100%;right:-100%;left:-100%;bottom:-100%;width:75vw;max-height:80vh;max-width:80vw;-o-object-fit:contain;object-fit:contain;margin:auto;filter:drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));animation:zoomIn .5s ease}}html body div#imgPreviewOverlay div#imgContent{-webkit-user-select:text;-moz-user-select:text;user-select:text;background-color:rgba(0,0,0,.25);text-align:center;position:fixed;bottom:32px;padding-top:8px;padding-bottom:8px;width:100%;z-index:2;transition:.3s}html body div#imgPreviewOverlay div#imgContent h2#imgTitle,html body div#imgPreviewOverlay div#imgContent p#imgDesc{margin:8px;overflow:auto;display:block}html body div#imgPreviewOverlay div#imgContent a#imgLink{text-decoration:underline;font-style:italic !important;font-weight:bold !important}html body img[pixelated=true]{image-rendering:pixelated}html body .scrollByebye{overflow:hidden}html body a#navLeft,html body a#navRight{cursor:pointer}html body div.icon-navRight{display:block;position:fixed;right:0;float:right;bottom:50%;height:15%;transform:translate(-25%, 50%);content:url("/res/icons/navSpace.svg");-webkit-mask-image:url("/res/icons/navRight.svg");mask-image:url("/res/icons/navRight.svg");-webkit-mask-size:100%;mask-size:100%;-webkit-mask-position:center center;mask-position:center center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;background-repeat:no-repeat;background-color:currentColor;color:#bfffcc;transition:.15s ease-out;opacity:.5}html body div.icon-navRight:hover{transition:.15s ease-out;opacity:.75}html body div.icon-navLeft{display:block;position:fixed;left:0;float:left;bottom:50%;height:15%;transform:translate(25%, 50%);content:url("/res/icons/navSpace.svg");-webkit-mask-image:url("/res/icons/navLeft.svg");mask-image:url("/res/icons/navLeft.svg");-webkit-mask-size:100%;mask-size:100%;-webkit-mask-position:center center;mask-position:center center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;background-repeat:no-repeat;background-color:currentColor;color:#bfffcc;transition:.15s ease-out;opacity:.5}html body div.icon-navLeft:hover{transition:.15s ease-out;opacity:.75}html body div#sidebar{top:0;bottom:0;max-height:100vh;font-size:18px;width:82px;padding:6px;margin:12px 4px;border-radius:16px;background-color:#1f4527;position:fixed}html body div#sidebar div#sidebarContent a:has(img#profilePic){display:block;padding:0 !important}html body div#sidebar div#sidebarContent img#profilePic{display:block;margin-left:auto;margin-right:auto;border-radius:100%;padding:8px;top:0}html body div#sidebar div#sidebarContent div#sidebarNotice{color:#141f16;font-size:12px;font-weight:800;text-align:center;text-decoration:none;display:inline-block;position:absolute;bottom:0}html body div#sidebar div#sidebarContent a{text-align:center;margin-top:4px;padding:6px 8px;text-decoration:none;display:block}html body div#sidebar div#sidebarContent a#sidebarNav{color:#bfffcc;transition:ease-out .2s}html body div#sidebar div#sidebarContent a#sidebarNav:hover{color:#bfffcc;transition:ease-out .2s;opacity:.7}html body div#topbar{padding:6px;border-radius:16px;background-color:#1f4527}html body div#topbar div#topbarContent{margin:16px}html body div#topbar div#topbarContent div#warmWelcome{margin:0;text-align:center}html body div#topbar div#topbarContent div#warmWelcome p#warmSplashText{font-size:20px;color:#ff0;font-family:"MinecraftSeven";text-shadow:2px 2px #3f3f00}html body div#topbar div#topbarContent p{font-size:24px}html body div#main{top:0;bottom:0;position:fixed;max-height:100vh;width:calc(100vw - 164px + 32px);margin:12px 10px;margin-left:112px;border-radius:16px;background-color:#192e1d;overflow-y:scroll;overflow-x:hidden}html body div#main div#mainContent{margin:16px;bottom:0}html body div#main div#mainContent img#huh{left:50%;transform:translateX(calc(-50% - 0.5px));position:relative;width:32vw}@media(max-width: 800px){html body div#main div#mainContent img#huh{width:52vw}}html body div#main div#mainContent p#label{font-size:24px;text-align:center;transform:translateY(8px)}@media(max-width: 800px){html body div#main div#mainContent p#label{font-size:18px;transform:translateY(4px)}}html body div#main div#projects,html body div#main div#recentProjects,html body div#main div#topProjects{margin:0;padding:16px 8px;left:50%;transform:translateX(calc(-50% - 0.5px));position:relative;width:100%;margin-bottom:20px;text-align:center}html body div#main div#projects div#projectEntry,html body div#main div#recentProjects div#projectEntry,html body div#main div#topProjects div#projectEntry{height:182px;width:320px;margin:8px;padding:8px;display:inline-block;-webkit-backdrop-filter:blur(15px);backdrop-filter:blur(15px);background-size:cover !important;background-repeat:no-repeat !important;border-radius:8px;overflow:hidden}@media(max-width: 800px){html body div#main div#projects div#projectEntry,html body div#main div#recentProjects div#projectEntry,html body div#main div#topProjects div#projectEntry{height:142px;width:210px}}html body div#main div#projects div#projectEntry *,html body div#main div#recentProjects div#projectEntry *,html body div#main div#topProjects div#projectEntry *{transition:ease-out .2s}html body div#main div#projects div#projectEntry:hover>*,html body div#main div#recentProjects div#projectEntry:hover>*,html body div#main div#topProjects div#projectEntry:hover>*{transition:ease-out .2s}html body div#main div#projects div#projectEntry div#projectInfo,html body div#main div#recentProjects div#projectEntry div#projectInfo,html body div#main div#topProjects div#projectEntry div#projectInfo{font-family:"Open Sans";margin:2px;padding-right:5px;height:-moz-fit-content;height:fit-content;width:52%;display:block;position:absolute;top:50%;right:0;transform:translateY(calc(-50% - 0.5px))}html body div#main div#projects div#projectEntry div#projectInfo p#projectName,html body div#main div#recentProjects div#projectEntry div#projectInfo p#projectName,html body div#main div#topProjects div#projectEntry div#projectInfo p#projectName{font-weight:700;font-size:16px;background-color:rgba(0,0,0,.5);border-radius:8px;padding:4px 8px}@media(max-width: 800px){html body div#main div#projects div#projectEntry div#projectInfo p#projectName,html body div#main div#recentProjects div#projectEntry div#projectInfo p#projectName,html body div#main div#topProjects div#projectEntry div#projectInfo p#projectName{font-size:12px}}html body div#main div#projects div#projectEntry div#projectInfo p#projectDescription,html body div#main div#recentProjects div#projectEntry div#projectInfo p#projectDescription,html body div#main div#topProjects div#projectEntry div#projectInfo p#projectDescription{font-weight:600;font-size:14px;text-shadow:0 0 5px rgba(0,0,0,.5333333333)}@media(max-width: 800px){html body div#main div#projects div#projectEntry div#projectInfo p#projectDescription,html body div#main div#recentProjects div#projectEntry div#projectInfo p#projectDescription,html body div#main div#topProjects div#projectEntry div#projectInfo p#projectDescription{font-size:10px}}html body div#main div#projects div#projectEntry div#projectIconContainer,html body div#main div#recentProjects div#projectEntry div#projectIconContainer,html body div#main div#topProjects div#projectEntry div#projectIconContainer{text-align:left;display:block;position:absolute;top:50%;left:24%;transform:translate(-50%, -50%);height:128px;width:128px}@media(max-width: 800px){html body div#main div#projects div#projectEntry div#projectIconContainer,html body div#main div#recentProjects div#projectEntry div#projectIconContainer,html body div#main div#topProjects div#projectEntry div#projectIconContainer{max-width:90px;max-height:90px}}html body div#main div#projects div#projectEntry div#projectIconContainer>img,html body div#main div#recentProjects div#projectEntry div#projectIconContainer>img,html body div#main div#topProjects div#projectEntry div#projectIconContainer>img{margin:0;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);border-radius:8px;max-width:128px;max-height:128px;z-index:20}@media(max-width: 800px){html body div#main div#projects div#projectEntry div#projectIconContainer>img,html body div#main div#recentProjects div#projectEntry div#projectIconContainer>img,html body div#main div#topProjects div#projectEntry div#projectIconContainer>img{max-width:90px;max-height:90px}}html body div#main div#projects div#projectEntry div#projectBgContainer,html body div#main div#recentProjects div#projectEntry div#projectBgContainer,html body div#main div#topProjects div#projectEntry div#projectBgContainer{margin:0;display:block;position:absolute;-o-object-fit:cover;object-fit:cover;top:50%;left:50%;transform:translate(-50%, -50%);height:100%;width:100%;overflow:hidden;z-index:-1}html body div#main div#projects div#projectEntry div#projectBgContainer>img,html body div#main div#recentProjects div#projectEntry div#projectBgContainer>img,html body div#main div#topProjects div#projectEntry div#projectBgContainer>img{margin:0;display:inline;top:50%;left:50%;transform:translate(-50%, -50%);position:absolute;-o-object-fit:cover;object-fit:cover;width:125%}html body div#main div#portfolio{margin:0;padding:16px 8px;width:100%;margin-bottom:20px}html body div#main div#portfolio img.imgPreviewable{margin:3px;cursor:pointer;height:192px;width:initial}@media(max-width: 800px){html body div#main div#portfolio img.imgPreviewable{height:initial !important;width:45% !important}}@keyframes zoomIn{0%{transform:scale(0, 0)}100%{transform:scale(1, 1)}}@keyframes zoomOut{0%{transform:scale(1, 1)}100%{transform:scale(0, 0)}}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}/*# sourceMappingURL=style.css.map */
+html {
+  color-scheme: dark;
+  margin: 0;
+}
+html body {
+  color: #bfffcc;
+  background: #141f16;
+  font-family: "DM Sans", sans-serif;
+}
+html body a[href] {
+  transition: 0.3s;
+  text-decoration: none;
+  color: #bfffcc;
+  fill: currentColor;
+}
+html body a[href]:hover {
+  transition: 0.3s;
+  color: #52b766;
+}
+html body div#imgPreviewOverlay {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.533);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  animation: fadeIn 0.1s ease-in;
+  z-index: 2;
+}
+html body div#imgPreviewOverlay div#closeImgPreview {
+  float: right;
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  text-align: center;
+}
+html body div#imgPreviewOverlay div#closeImgPreview a {
+  display: inline-block;
+}
+html body div#imgPreviewOverlay div#imgPreviewContainer {
+  overflow: auto;
+  width: 100%;
+  z-index: 3;
+}
+@media (orientation: landscape) {
+  html body div#imgPreviewOverlay div#imgPreviewContainer img {
+    position: fixed;
+    top: -100%;
+    right: -100%;
+    left: -100%;
+    bottom: -100%;
+    height: 75vh;
+    max-height: 80vh;
+    max-width: 80vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: auto;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+    animation: zoomIn 0.5s ease;
+  }
+}
+@media (orientation: portrait) {
+  html body div#imgPreviewOverlay div#imgPreviewContainer img {
+    position: fixed;
+    top: -100%;
+    right: -100%;
+    left: -100%;
+    bottom: -100%;
+    width: 75vw;
+    max-height: 80vh;
+    max-width: 80vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: auto;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+    animation: zoomIn 0.5s ease;
+  }
+}
+html body div#imgPreviewOverlay div#imgContent {
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
+  background-color: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  position: fixed;
+  bottom: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  z-index: 2;
+  transition: 0.3s;
+}
+html body div#imgPreviewOverlay div#imgContent h2#imgTitle,
+html body div#imgPreviewOverlay div#imgContent p#imgDesc {
+  margin: 8px;
+  overflow: auto;
+  display: block;
+}
+html body div#imgPreviewOverlay div#imgContent a#imgLink {
+  text-decoration: underline;
+  font-style: italic !important;
+  font-weight: bold !important;
+}
+html body img[pixelated=true] {
+  image-rendering: pixelated;
+}
+html body .scrollByebye {
+  overflow: hidden;
+}
+html body a#navLeft,
+html body a#navRight {
+  cursor: pointer;
+}
+html body div.icon-navRight {
+  display: block;
+  position: fixed;
+  right: 0;
+  float: right;
+  bottom: 50%;
+  height: 15%;
+  transform: translate(-25%, 50%);
+  content: url("/res/icons/navSpace.svg");
+  -webkit-mask-image: url("/res/icons/navRight.svg");
+          mask-image: url("/res/icons/navRight.svg");
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-position: center center;
+          mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-color: currentColor;
+  color: #bfffcc;
+  transition: 0.15s ease-out;
+  opacity: 0.5;
+}
+html body div.icon-navRight:hover {
+  transition: 0.15s ease-out;
+  opacity: 0.75;
+}
+html body div.icon-navLeft {
+  display: block;
+  position: fixed;
+  left: 0;
+  float: left;
+  bottom: 50%;
+  height: 15%;
+  transform: translate(25%, 50%);
+  content: url("/res/icons/navSpace.svg");
+  -webkit-mask-image: url("/res/icons/navLeft.svg");
+          mask-image: url("/res/icons/navLeft.svg");
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-position: center center;
+          mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-color: currentColor;
+  color: #bfffcc;
+  transition: 0.15s ease-out;
+  opacity: 0.5;
+}
+html body div.icon-navLeft:hover {
+  transition: 0.15s ease-out;
+  opacity: 0.75;
+}
+html body div#sidebar {
+  top: 0;
+  bottom: 0;
+  max-height: 100vh;
+  font-size: 18px;
+  width: 82px;
+  padding: 6px;
+  margin: 12px 4px;
+  border-radius: 16px;
+  background-color: #1f4527;
+  position: fixed;
+}
+html body div#sidebar div#sidebarContent a:has(img#profilePic) {
+  display: block;
+  padding: 0 !important;
+}
+html body div#sidebar div#sidebarContent img#profilePic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  padding: 8px;
+  top: 0;
+}
+html body div#sidebar div#sidebarContent div#sidebarNotice {
+  color: #141f16;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+}
+html body div#sidebar div#sidebarContent a {
+  text-align: center;
+  margin-top: 4px;
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+}
+html body div#sidebar div#sidebarContent a#sidebarNav {
+  color: #bfffcc;
+  transition: ease-out 0.2s;
+}
+html body div#sidebar div#sidebarContent a#sidebarNav:hover {
+  color: #bfffcc;
+  transition: ease-out 0.2s;
+  opacity: 0.7;
+}
+html body div#topbar {
+  padding: 6px;
+  border-radius: 16px;
+  background-color: #1f4527;
+}
+html body div#topbar div#topbarContent {
+  margin: 16px;
+}
+html body div#topbar div#topbarContent div#warmWelcome {
+  margin: 0;
+  text-align: center;
+}
+html body div#topbar div#topbarContent div#warmWelcome p#warmSplashText {
+  font-size: 20px;
+  color: #ffff00;
+  font-family: "MinecraftSeven";
+  text-shadow: 2px 2px #3f3f00;
+}
+html body div#topbar div#topbarContent p {
+  font-size: 24px;
+}
+html body div#main {
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  max-height: 100vh;
+  width: calc(100vw - 164px + 32px);
+  margin: 12px 10px;
+  margin-left: 112px;
+  border-radius: 16px;
+  background-color: #192e1d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+html body div#main div#mainContent {
+  margin: 16px;
+  bottom: 0;
+}
+html body div#main div#mainContent img#huh {
+  left: 50%;
+  transform: translateX(calc(-50% - 0.5px));
+  position: relative;
+  width: 32vw;
+}
+@media (max-width: 800px) {
+  html body div#main div#mainContent img#huh {
+    width: 52vw;
+  }
+}
+html body div#main div#mainContent p#label {
+  font-size: 24px;
+  text-align: center;
+  transform: translateY(8px);
+}
+@media (max-width: 800px) {
+  html body div#main div#mainContent p#label {
+    font-size: 18px;
+    transform: translateY(4px);
+  }
+}
+html body div#main div#projects,
+html body div#main div#recentProjects,
+html body div#main div#notableProjects {
+  margin: 0;
+  padding: 16px 8px;
+  left: 50%;
+  transform: translateX(calc(-50% - 0.5px));
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+html body div#main div#projects div#projectEntry,
+html body div#main div#recentProjects div#projectEntry,
+html body div#main div#notableProjects div#projectEntry {
+  height: 182px;
+  width: 320px;
+  margin: 8px;
+  padding: 8px;
+  display: inline-block;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  border-radius: 8px;
+  overflow: hidden;
+}
+@media (max-width: 800px) {
+  html body div#main div#projects div#projectEntry,
+  html body div#main div#recentProjects div#projectEntry,
+  html body div#main div#notableProjects div#projectEntry {
+    height: 142px;
+    width: 210px;
+  }
+}
+html body div#main div#projects div#projectEntry *,
+html body div#main div#recentProjects div#projectEntry *,
+html body div#main div#notableProjects div#projectEntry * {
+  transition: ease-out 0.2s;
+}
+html body div#main div#projects div#projectEntry:hover > *,
+html body div#main div#recentProjects div#projectEntry:hover > *,
+html body div#main div#notableProjects div#projectEntry:hover > * {
+  transition: ease-out 0.2s;
+}
+html body div#main div#projects div#projectEntry div#projectInfo,
+html body div#main div#recentProjects div#projectEntry div#projectInfo,
+html body div#main div#notableProjects div#projectEntry div#projectInfo {
+  font-family: "Open Sans";
+  margin: 2px;
+  padding-right: 5px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 52%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(calc(-50% - 0.5px));
+}
+html body div#main div#projects div#projectEntry div#projectInfo p#projectName,
+html body div#main div#recentProjects div#projectEntry div#projectInfo p#projectName,
+html body div#main div#notableProjects div#projectEntry div#projectInfo p#projectName {
+  font-weight: 700;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+@media (max-width: 800px) {
+  html body div#main div#projects div#projectEntry div#projectInfo p#projectName,
+  html body div#main div#recentProjects div#projectEntry div#projectInfo p#projectName,
+  html body div#main div#notableProjects div#projectEntry div#projectInfo p#projectName {
+    font-size: 12px;
+  }
+}
+html body div#main div#projects div#projectEntry div#projectInfo p#projectDescription,
+html body div#main div#recentProjects div#projectEntry div#projectInfo p#projectDescription,
+html body div#main div#notableProjects div#projectEntry div#projectInfo p#projectDescription {
+  font-weight: 600;
+  font-size: 14px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5333333333);
+}
+@media (max-width: 800px) {
+  html body div#main div#projects div#projectEntry div#projectInfo p#projectDescription,
+  html body div#main div#recentProjects div#projectEntry div#projectInfo p#projectDescription,
+  html body div#main div#notableProjects div#projectEntry div#projectInfo p#projectDescription {
+    font-size: 10px;
+  }
+}
+html body div#main div#projects div#projectEntry div#projectIconContainer,
+html body div#main div#recentProjects div#projectEntry div#projectIconContainer,
+html body div#main div#notableProjects div#projectEntry div#projectIconContainer {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+  height: 128px;
+  width: 128px;
+}
+@media (max-width: 800px) {
+  html body div#main div#projects div#projectEntry div#projectIconContainer,
+  html body div#main div#recentProjects div#projectEntry div#projectIconContainer,
+  html body div#main div#notableProjects div#projectEntry div#projectIconContainer {
+    max-width: 90px;
+    max-height: 90px;
+  }
+}
+html body div#main div#projects div#projectEntry div#projectIconContainer > img,
+html body div#main div#recentProjects div#projectEntry div#projectIconContainer > img,
+html body div#main div#notableProjects div#projectEntry div#projectIconContainer > img {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  max-width: 128px;
+  max-height: 128px;
+  z-index: 20;
+}
+@media (max-width: 800px) {
+  html body div#main div#projects div#projectEntry div#projectIconContainer > img,
+  html body div#main div#recentProjects div#projectEntry div#projectIconContainer > img,
+  html body div#main div#notableProjects div#projectEntry div#projectIconContainer > img {
+    max-width: 90px;
+    max-height: 90px;
+  }
+}
+html body div#main div#projects div#projectEntry div#projectBgContainer,
+html body div#main div#recentProjects div#projectEntry div#projectBgContainer,
+html body div#main div#notableProjects div#projectEntry div#projectBgContainer {
+  margin: 0;
+  display: block;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+html body div#main div#projects div#projectEntry div#projectBgContainer > img,
+html body div#main div#recentProjects div#projectEntry div#projectBgContainer > img,
+html body div#main div#notableProjects div#projectEntry div#projectBgContainer > img {
+  margin: 0;
+  display: inline;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 125%;
+}
+html body div#main div#portfolio {
+  margin: 0;
+  padding: 16px 8px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+html body div#main div#portfolio img.imgPreviewable {
+  margin: 3px;
+  cursor: pointer;
+  height: 192px;
+  width: initial;
+}
+@media (max-width: 800px) {
+  html body div#main div#portfolio img.imgPreviewable {
+    height: initial !important;
+    width: 45% !important;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes zoomOut {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0, 0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

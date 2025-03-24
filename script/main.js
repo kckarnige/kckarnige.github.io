@@ -1,4 +1,4 @@
-var topProjectNums = [0, 1, 9, 12];
+var topProjectNums = [15, 4, 2, 0];
 let portfolioListNum;
 function disableScroll() {
   document.documentElement.classList.add("scrollByebye")
@@ -14,7 +14,7 @@ function enableScroll() {
 }
 
 // Projects
-if (document.getElementById("projects") || document.getElementById("topProjects") || document.getElementById("recentProjects")) {
+if (document.getElementById("projects") || document.getElementById("notableProjects") || document.getElementById("recentProjects")) {
   let projectList;
   fetch("/json/projects.json", {
     method: "GET",
@@ -55,6 +55,7 @@ if (document.getElementById("projects") || document.getElementById("topProjects"
           projectEntryContainer.setAttribute("href", projectList[i].link)
         }
         projectEntryContainer.setAttribute("target", "_blank")
+        projectEntryContainer.setAttribute("id", "projectEntryContainer")
 
 
         let projectIcon = document.createElement("img");
@@ -64,6 +65,16 @@ if (document.getElementById("projects") || document.getElementById("topProjects"
         let projectInfo = document.createElement("div");
         let projectBg = document.createElement("img");
         let projectBgContainer = document.createElement("div");
+
+        
+        if (projectList[i].font) {
+          projectName.style.fontFamily = projectList[i].font;
+          projectDescription.style.fontFamily = projectList[i].font;
+          if (projectList[i].fontWeight) {
+            projectName.style.fontWeight = projectList[i].fontWeight;
+            projectDescription.style.fontWeight = projectList[i].fontWeight;
+          }
+        }
 
         if (projectList[i].icon) {
           projectIcon.setAttribute("src", projectList[i].icon)
@@ -107,7 +118,7 @@ if (document.getElementById("projects") || document.getElementById("topProjects"
         addTo.append(projectEntryContainer)
       }
 
-      if (document.getElementById("topProjects")) {
+      if (document.getElementById("notableProjects")) {
         // Get the 4 top projects
         var e = 0;
         for (e; e < topProjectNums.length; e++) {
@@ -115,7 +126,7 @@ if (document.getElementById("projects") || document.getElementById("topProjects"
           for (i; i < projectList.length; i++) {
             if (topProjectNums[e] == i) {
               //console.log(`Iteration ${e}|${i}`)
-              addProjectsTo(document.getElementById("topProjects"))
+              addProjectsTo(document.getElementById("notableProjects"))
             }
           }
         }

@@ -11,9 +11,29 @@
         "backgroundBlur": true
     },
     {
+        "id": "hoat",
+        "name": "hell of a time",
+        "description": "my first contribution to the internet: a poorly made undertale self-insert mod for bad time simulator: hard mode.",
+        "link": "/hoat",
+        "textColor": "#ff0302",
+        "textColorDesc":"#fff",
+        "backgroundGradient": ["rgb(0, 0, 0)", "rgb(0, 0, 0)"],
+        "font": "\"Comic Sans MS\", sans-serif"
+    },
+    {
+        "id": "badtimesimre",
+        "name": "bad time sim: reimagined",
+        "description": "my first big game-related project. to anybody still waiting for v5, stop.",
+        "link": "/BadTimeRevamped",
+        "textColor": "#53f3fb",
+        "textColorDesc":"#fff",
+        "backgroundGradient": ["rgb(0, 0, 0)", "rgb(0, 0, 0)"],
+        "font": "\"Comic Sans MS\", sans-serif"
+    },
+    {
         "id": "legcord",
         "name": "Legcord",
-        "description": "Not my project, but I did help with the pre-rebrand, pre-TypeScript versions, and I made the logo!",
+        "description": "Not my project, but I made the logo and contributed a bunch before the rebrand, starting from as far back as 2.0!",
         "link": "https://legcord.app",
         "textColor": "#cdc6fd",
         "textColorDesc": "#fff",
