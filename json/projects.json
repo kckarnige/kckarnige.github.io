@@ -18,7 +18,8 @@
         "textColor": "#ff0302",
         "textColorDesc":"#fff",
         "backgroundGradient": ["rgb(0, 0, 0)", "rgb(0, 0, 0)"],
-        "font": "\"Comic Sans MS\", sans-serif"
+        "font": "\"Comic Sans UT\", sans-serif",
+        "fontWeight": "normal"
     },
     {
         "id": "badtimesimre",
@@ -28,7 +29,8 @@
         "textColor": "#53f3fb",
         "textColorDesc":"#fff",
         "backgroundGradient": ["rgb(0, 0, 0)", "rgb(0, 0, 0)"],
-        "font": "\"Comic Sans MS\", sans-serif"
+        "font": "\"Comic Sans UT\", sans-serif",
+        "fontWeight": "normal"
     },
     {
         "id": "legcord",
