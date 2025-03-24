@@ -117,5 +117,29 @@
         "img": "/res/portfolio/frisky_fanon.png",
         "description": "A varient of one of the fun little things I made :3",
         "pixelated": false
+    },
+    {
+        "title": "Teachiisan's Steve: Front",
+        "img": "/res/portfolio/teachiisanSteve0.png",
+        "description": "My take on Teachiisan's Steve as an actual Minecraft skin!|link|https://x.com/teachiisan|link|Check out her art!",
+        "pixelated": false
+    },
+    {
+        "title": "Teachiisan's Steve: Back",
+        "img": "/res/portfolio/teachiisanSteve1.png",
+        "description": "My take on Teachiisan's Steve as an actual Minecraft skin!|link|https://x.com/teachiisan|link|Check out her art!",
+        "pixelated": false
+    },
+    {
+        "title": "Teachiisan's Herobrine: Front",
+        "img": "/res/portfolio/teachiisanBrine0.png",
+        "description": "My take on Teachiisan's Herobrine as an actual Minecraft skin!|link|https://x.com/teachiisan|link|Check out her art!",
+        "pixelated": false
+    },
+    {
+        "title": "Teachiisan's Herobrine: Back",
+        "img": "/res/portfolio/teachiisanBrine1.png",
+        "description": "My take on Teachiisan's Herobrine as an actual Minecraft skin!|link|https://x.com/teachiisan|link|Check out her art!",
+        "pixelated": false
     }
 ]
