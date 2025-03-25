@@ -184,5 +184,14 @@
         "textColorDesc": "#fff",
         "backgroundBrightness": 0.8,
         "backgroundBlur": true
+    },
+    {
+        "id": "customnwjsforc2",
+        "name": "Neo NWjs4C2",
+        "description": "My own very scuffed installer for NW.js for Construct 2.",
+        "link": "https://github.com/kckarnige/CustomNWjsForC2",
+        "textColor": "#ff81ce",
+        "textColorDesc": "#fff",
+        "backgroundGradient": ["rgb(105, 113, 163)", "rgb(133, 139, 203)"]
     }
 ]
