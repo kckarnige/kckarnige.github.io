@@ -188,7 +188,7 @@
     {
         "id": "customnwjsforc2",
         "name": "Neo NWjsForC2",
-        "description": "My own very scuffed installer for NW.js for Construct 2.",
+        "description": "My own modern replacement for \"NW.js for Construct 2\".",
         "link": "https://github.com/kckarnige/CustomNWjsForC2",
         "textColor": "#ff81ce",
         "textColorDesc": "#fff",
