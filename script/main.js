@@ -1,4 +1,4 @@
-var topProjectNums = [15, 4, 2, 0];
+var topProjectNums = [15, 4, 19, 0];
 let portfolioListNum;
 function disableScroll() {
   document.documentElement.classList.add("scrollByebye")
@@ -411,4 +411,8 @@ if (document.getElementById("warmSplashText") && !document.getElementById("huh")
     })
 } else if (document.getElementById("huh")) {
   document.getElementById("warmSplashText").innerText = "404: Page does not exist";
+}
+
+if (document.getElementById("affiliationNotice")) {
+  document.getElementById("affiliationNotice").innerText = "Not affiliated with Scirra, ARM, Discord Inc, Meta, Microsoft, Mojang, or Nintendo."
 }
