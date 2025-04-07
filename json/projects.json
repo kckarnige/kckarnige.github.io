@@ -186,12 +186,12 @@
         "backgroundBlur": true
     },
     {
-        "id": "neonwjsforc2",
-        "name": "Neo NW for Construct 2",
+        "id": "freshnw",
+        "name": "Fresh NW for Construct 2",
         "description": "My own modern replacement for \"NW.js for Construct 2\".",
         "link": "https://github.com/kckarnige/NeoNWjsForC2",
-        "textColor": "#ff81ce",
+        "textColor": "#98a993",
         "textColorDesc": "#fff",
-        "backgroundGradient": ["rgb(105, 113, 163)", "rgb(133, 139, 203)"]
+        "backgroundGradient": ["#222621", "#222621"]
     }
 ]
