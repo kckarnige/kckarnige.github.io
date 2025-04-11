@@ -17,7 +17,7 @@
         "link": "/hoat",
         "textColor": "#ff0302",
         "textColorDesc":"#fff",
-        "backgroundGradient": ["rgb(0, 0, 0)", "rgb(0, 0, 0)"],
+        "backgroundGradient": ["rgb(0, 0, 0)","rgb(0, 0, 0)"],
         "font": "\"Comic Sans UT\", sans-serif",
         "fontWeight": "normal"
     },
@@ -28,7 +28,7 @@
         "link": "/sans",
         "textColor": "#53f3fb",
         "textColorDesc":"#fff",
-        "backgroundGradient": ["rgb(0, 0, 0)", "rgb(0, 0, 0)"],
+        "backgroundGradient": ["rgb(0, 0, 0)","rgb(0, 0, 0)"],
         "font": "\"Comic Sans UT\", sans-serif",
         "fontWeight": "normal"
     },
@@ -39,7 +39,7 @@
         "link": "https://github.com/Legcord/Legcord",
         "textColor": "#cdc6fd",
         "textColorDesc": "#fff",
-        "backgroundGradient": ["rgb(146, 51, 234)", "rgb(38, 99, 235)"]
+        "backgroundGradient": ["rgb(146, 51, 234)","rgb(38, 99, 235)"]
     },
     {
         "id": "mcrerender",
@@ -56,7 +56,7 @@
         "link": "https://gamebanana.com/mods/396920",
         "textColor": "#d14b48",
         "textColorDesc": "#fff",
-        "backgroundGradient": ["#3d3d3d", "#1d1d1d"]
+        "backgroundGradient": ["#3d3d3d","#1d1d1d"]
     },
     {
         "id": "oculusKS",
@@ -65,7 +65,7 @@
         "link": "https://github.com/kckarnige/OculusKillSwitch",
         "textColor": "#0f0",
         "textColorDesc": "#fff",
-        "backgroundGradient": ["rgb(13, 17, 37)", "rgb(38, 14, 28)"]
+        "backgroundGradient": ["rgb(13, 17, 37)","rgb(38, 14, 28)"]
     },
     {
         "id": "oculusDummy",
@@ -74,7 +74,7 @@
         "link": "https://github.com/kckarnige/OculusDummy",
         "textColor": "#fab939",
         "textColorDesc": "#fff",
-        "backgroundGradient": ["rgb(13, 17, 37)", "rgb(38, 14, 28)"]
+        "backgroundGradient": ["rgb(13, 17, 37)","rgb(38, 14, 28)"]
     },
     {
         "id": "ecsta",
@@ -83,7 +83,7 @@
         "link": "https://github.com/kckarnige/EcstaTab",
         "textColor": "#fff",
         "textColorDesc": "#fff",
-        "backgroundGradient": ["rgb(1, 222, 219)", "rgb(30, 135, 253)"]
+        "backgroundGradient": ["rgb(1, 222, 219)","rgb(30, 135, 253)"]
     },
     {
         "id": "fug-igg",
@@ -93,7 +93,7 @@
         "link": "https://gist.github.com/kckarnige/6dfff1025b5da69399c26957ee47b445",
         "textColor": "#ec9044",
         "textColorDesc": "#fff",
-        "backgroundGradient": ["rgb(75, 124, 143)", "rgb(58, 91, 88)"]
+        "backgroundGradient": ["rgb(75, 124, 143)","rgb(58, 91, 88)"]
     },
     {
         "id": "consisnetherite",
@@ -189,9 +189,9 @@
         "id": "freshnw",
         "name": "Fresh NW for Construct 2",
         "description": "My own modern replacement for \"NW.js for Construct 2\".",
-        "link": "https://github.com/kckarnige/NeoNWjsForC2",
+        "link": "https://github.com/kckarnige/FreshNWjsForC2",
         "textColor": "#98a993",
         "textColorDesc": "#fff",
-        "backgroundGradient": ["#222621", "#222621"]
+        "backgroundGradient": ["#0d1117","#182130"]
     }
 ]
