@@ -188,7 +188,7 @@
     {
         "id": "freshnw",
         "name": "Fresh NW for Construct 2",
-        "description": "My own modern replacement for \"NW.js for Construct 2\".",
+        "description": "My own modern replacement for the official NW.js support installer for Construct 2.",
         "link": "https://github.com/kckarnige/FreshNWjsForC2",
         "textColor": "#98a993",
         "textColorDesc": "#fff",
