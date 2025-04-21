@@ -141,5 +141,23 @@
         "img": "/res/portfolio/teachiisanBrine1.png",
         "description": "My take on Teachiisan's Herobrine as an actual Minecraft skin!|link|https://x.com/teachiisan|link|Check out her art!",
         "pixelated": false
+    },
+    {
+        "title": "My Jappa-fied Skin: Front",
+        "img": "/res/portfolio/stinknt0.png",
+        "description": "My personal Minecraft skin in a style heavily inspired by Minecraft developer Jasper Boerstra. I'm incredibly proud of this one!",
+        "pixelated": false
+    },
+    {
+        "title": "My Jappa-fied Skin (Alt): Front",
+        "img": "/res/portfolio/stinknt0.5.png",
+        "description": "My personal Minecraft skin in a style heavily inspired by Minecraft developer Jasper Boerstra. I'm incredibly proud of this one!",
+        "pixelated": false
+    },
+    {
+        "title": "My Jappa-fied Skin: Back",
+        "img": "/res/portfolio/stinknt1.png",
+        "description": "My personal Minecraft skin in a style heavily inspired by Minecraft developer Jasper Boerstra. I'm incredibly proud of this one!",
+        "pixelated": false
     }
 ]

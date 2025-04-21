@@ -1,9 +1,9 @@
 html {
-    $textColor: #bfffcc;
-    $textHoverColor: #52b766;
-    $foregroundColor: #1f4527;
-    $backgroundColor2: #192e1d;
-    $backgroundColor: #141f16;
+    --textColor: #bfffcc;
+    --textColorHover: #3ebb57;
+    --foregroundColor: #164621;
+    --midgroundColor: #0f2c15;
+    --backgroundColor: #0f1d11;
 
     $sidebarWidth: 112px;
     @media (max-width: 800px) {
@@ -16,8 +16,8 @@ html {
     margin: 0;
 
     body {
-        color: $textColor;
-        background: $backgroundColor;
+        color: var(--textColor);
+        background: var(--backgroundColor);
         font-family: 'DM Sans', sans-serif;
 
         a[href] {
@@ -25,14 +25,14 @@ html {
             -webkit-transition: 0.3s;
             transition: 0.3s;
             text-decoration: none;
-            color: $textColor;
+            color: var(--textColor);
             fill: currentColor;
 
             &:hover {
                 -moz-transition: 0.3s;
                 -webkit-transition: 0.3s;
                 transition: 0.3s;
-                color: $textHoverColor;
+                color: var(--textColorHover);
             }
         }
 
@@ -165,7 +165,7 @@ html {
             mask-repeat: no-repeat;
             background-repeat: no-repeat;
             background-color: currentColor;
-            color: $textColor;
+            color: var(--textColor);
             transition: 0.15s ease-out;
             opacity: 0.5;
 
@@ -190,7 +190,7 @@ html {
             mask-repeat: no-repeat;
             background-repeat: no-repeat;
             background-color: currentColor;
-            color: $textColor;
+            color: var(--textColor);
             transition: 0.15s ease-out;
             opacity: 0.5;
 
@@ -209,25 +209,25 @@ html {
             padding: 6px;
             margin: 12px 4px;
             border-radius: 16px;
-            background-color: $foregroundColor;
+            background-color: var(--foregroundColor);
             position: fixed;
 
             div#sidebarContent {
                 a:has(img#profilePic) {
                     display: block;
-                    padding: 0 !important;
+                    padding: 8px;
                 }
                 img#profilePic {
                     display: block;
                     margin-left: auto;
                     margin-right: auto;
                     border-radius: 100%;
-                    padding: 8px;
+                    border: 2px solid var(--backgroundColor);
                     top: 0;
                 }
 
                 div#sidebarNotice {
-                    color: $backgroundColor;
+                    color: var(--backgroundColor);
                     font-size: 12px;
                     font-weight: 800;
                     text-align: center;
@@ -245,11 +245,11 @@ html {
                     display: block;
 
                     &#sidebarNav {
-                        color: $textColor;
+                        color: var(--textColor);
                         transition: ease-out 0.2s;
 
                         &:hover {
-                            color: $textColor;
+                            color: var(--textColor);
                             transition: ease-out 0.2s;
                             opacity: 0.7;
                         }
@@ -261,7 +261,7 @@ html {
         div#topbar {
             padding: 6px;
             border-radius: 16px;
-            background-color: $foregroundColor;
+            background-color: var(--foregroundColor);
 
             div#topbarContent {
                 margin: 16px;
@@ -297,7 +297,7 @@ html {
             margin: 12px 10px;
             margin-left: $contentMargin;
             border-radius: 16px;
-            background-color: $backgroundColor2;
+            background-color: var(--midgroundColor);
             overflow-y: scroll;
             overflow-x: hidden;
 
@@ -339,7 +339,7 @@ html {
 
                 div#projectEntry {
                     height: 182px;
-                    width: 320px;
+                    width: 388px;
                     margin: 8px;
                     padding: 8px;
                     display: inline-block;
@@ -366,6 +366,8 @@ html {
                     div#projectInfo {
                         font-family: 'Open Sans';
                         margin: 2px;
+                        margin-right: 8px;
+                        padding-left: 5px;
                         padding-right: 5px;
                         height: fit-content;
                         width: 52%;
@@ -374,6 +376,7 @@ html {
                         top: 50%;
                         right: 0;
                         transform: translateY(calc(-50% - .5px));
+                        overflow: visible;
 
                         p#projectName {
                             font-weight: 700;
@@ -381,16 +384,21 @@ html {
                             background-color: rgba(0, 0, 0, 0.5);
                             border-radius: 8px;
                             padding: 4px 8px;
+                            margin-bottom: -5px;
                             @media (max-width: 800px) {
+                            transform: translateX(10px);
                                 font-size: 12px;
                             }
                         }
 
                         p#projectDescription {
+                            width: 176px;
                             font-weight: 600;
                             font-size: 14px;
                             text-shadow: 0 0 5px #0008;
+                            transform: translateX(10px);
                             @media (max-width: 800px) {
+                                width: 106px;
                                 font-size: 10px;
                             }
                         }
