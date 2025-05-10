@@ -193,5 +193,14 @@
         "textColor": "#98a993",
         "textColorDesc": "#fff",
         "backgroundGradient": ["#0d1117","#182130"]
+    },
+    {
+        "id": "bloxratp",
+        "name": "Blox R.A.T. Proxy",
+        "description": "Get whatever basic Roblox user info you need like username, display name, etc. Say \"thanks\" to Louie!",
+        "link": "https://bloxratp.kckarnige.online",
+        "textColor": "#fecb16",
+        "textColorDesc": "#fff",
+        "backgroundGradient": ["#2c3827","#2c3827"]
     }
 ]
