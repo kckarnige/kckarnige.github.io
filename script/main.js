@@ -66,7 +66,7 @@ if (document.getElementById("projects") || document.getElementById("notableProje
         let projectBg = document.createElement("img");
         let projectBgContainer = document.createElement("div");
 
-        
+
         if (projectList[i].font) {
           projectName.style.fontFamily = projectList[i].font;
           projectDescription.style.fontFamily = projectList[i].font;
@@ -413,6 +413,23 @@ if (document.getElementById("warmSplashText") && !document.getElementById("huh")
   document.getElementById("warmSplashText").innerText = "404: Page does not exist";
 }
 
+// Profile Icon Rotation
+if (document.getElementById("profilePic")) {
+  let pfpList = [
+    "https://api.lanyard.rest/634168893644210186.png",
+    "https://avatars.githubusercontent.com/u/32397453",
+    "https://blox-ratp.vercel.app/api/avatar-thumbnail?userId=154248006&type=avatar-headshot",
+    "/res/notburgerking.jpg"
+  ]
+  let min = 0;
+  let max = pfpList.length - 1;
+  let rng = Math.floor(Math.random() * (max - min + 1)) + min;
+
+  
+    document.getElementById("profilePic").setAttribute("src", pfpList[rng])
+}
+
+// Affiliation Notice
 if (document.getElementById("affiliationNotice")) {
   document.getElementById("affiliationNotice").innerText = "Not affiliated with Scirra, ARM, Discord Inc, Meta, Microsoft, Mojang, or Nintendo."
 }

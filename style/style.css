@@ -190,15 +190,16 @@ html body div#sidebar {
   background-color: var(--foregroundColor);
   position: fixed;
 }
-html body div#sidebar div#sidebarContent a:has(img#profilePic) {
+html body div#sidebar div#sidebarContent a#profilePicLink {
   display: block;
   padding: 8px;
 }
-html body div#sidebar div#sidebarContent img#profilePic {
+html body div#sidebar div#sidebarContent a#profilePicLink img#profilePic {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 100%;
+  background-color: var(--midgroundColor);
   border: 2px solid var(--backgroundColor);
   top: 0;
 }

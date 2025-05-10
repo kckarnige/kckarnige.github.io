@@ -6,6 +6,7 @@ html {
     --backgroundColor: #0f1d11;
 
     $sidebarWidth: 112px;
+
     @media (max-width: 800px) {
         $sidebarWidth: 82px;
     }
@@ -213,17 +214,19 @@ html {
             position: fixed;
 
             div#sidebarContent {
-                a:has(img#profilePic) {
+                a#profilePicLink {
                     display: block;
                     padding: 8px;
-                }
-                img#profilePic {
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    border-radius: 100%;
-                    border: 2px solid var(--backgroundColor);
-                    top: 0;
+
+                    img#profilePic {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-radius: 100%;
+                        background-color: var(--midgroundColor);
+                        border: 2px solid var(--backgroundColor);
+                        top: 0;
+                    }
                 }
 
                 div#sidebarNotice {
@@ -304,19 +307,23 @@ html {
             div#mainContent {
                 margin: 16px;
                 bottom: 0;
+
                 img#huh {
                     left: 50%;
                     transform: translateX(calc(-50% - .5px));
                     position: relative;
                     width: 32vw;
+
                     @media (max-width: 800px) {
                         width: 52vw;
                     }
                 }
+
                 p#label {
                     font-size: 24px;
                     text-align: center;
                     transform: translateY(8px);
+
                     @media (max-width: 800px) {
                         font-size: 18px;
                         transform: translateY(4px);
@@ -348,6 +355,7 @@ html {
                     background-repeat: no-repeat !important;
                     border-radius: 8px;
                     overflow: hidden;
+
                     @media (max-width: 800px) {
                         height: 142px;
                         width: 210px;
@@ -385,8 +393,9 @@ html {
                             border-radius: 8px;
                             padding: 4px 8px;
                             margin-bottom: -5px;
+
                             @media (max-width: 800px) {
-                            transform: translateX(10px);
+                                transform: translateX(10px);
                                 font-size: 12px;
                             }
                         }
@@ -397,6 +406,7 @@ html {
                             font-size: 14px;
                             text-shadow: 0 0 5px #0008;
                             transform: translateX(10px);
+
                             @media (max-width: 800px) {
                                 width: 106px;
                                 font-size: 10px;
@@ -413,6 +423,7 @@ html {
                         transform: translate(-50%, -50%);
                         height: 128px;
                         width: 128px;
+
                         @media (max-width: 800px) {
                             max-width: 90px;
                             max-height: 90px;
@@ -428,10 +439,12 @@ html {
                         border-radius: 8px;
                         max-width: 128px;
                         max-height: 128px;
+
                         @media (max-width: 800px) {
                             max-width: 90px;
                             max-height: 90px;
                         }
+
                         z-index: 20;
                     }
 
@@ -467,11 +480,13 @@ html {
                 padding: 16px 8px;
                 width: 100%;
                 margin-bottom: 20px;
+
                 img.imgPreviewable {
                     margin: 3px;
                     cursor: pointer;
                     height: 192px;
                     width: initial;
+
                     @media (max-width: 800px) {
                         height: initial !important;
                         width: 45% !important;
