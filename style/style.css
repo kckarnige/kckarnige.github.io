@@ -202,6 +202,8 @@ html body div#sidebar div#sidebarContent a#profilePicLink img#profilePic {
   background-color: var(--midgroundColor);
   border: 2px solid var(--backgroundColor);
   top: 0;
+  height: 68px;
+  width: 68px;
 }
 html body div#sidebar div#sidebarContent div#sidebarNotice {
   color: var(--backgroundColor);
