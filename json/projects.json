@@ -202,5 +202,14 @@
         "textColor": "#fecb16",
         "textColorDesc": "#fff",
         "backgroundGradient": ["#2c3827","#2c3827"]
+    },
+    {
+        "id": "e694",
+        "name": "e694",
+        "description": "For anyone who wants to send someone an e621 post.",
+        "link": "https://e694.net",
+        "textColor": "#fdbe2f",
+        "textColorDesc": "#fff",
+        "backgroundGradient": ["#003e59","#00435f"]
     }
 ]
