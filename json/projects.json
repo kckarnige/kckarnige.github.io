@@ -211,5 +211,15 @@
         "textColor": "#fd2fc5",
         "textColorDesc": "#fff",
         "backgroundGradient": ["#003e59","#00435f"]
+    },
+    {
+        "id": "tooltouchups",
+        "name": "Tool Touch-Ups",
+        "description": "Tweaks Minecraft tool progression by adding diamond ingots and copper tools!",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/tooltouchups",
+        "textColor": "#77b395",
+        "textColorDesc": "#fff",
+        "backgroundBrightness": 0.8,
+        "backgroundBlur": true
     }
 ]
