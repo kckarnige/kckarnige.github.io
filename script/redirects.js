@@ -30,7 +30,7 @@ if (window.location.pathname.split('/')[1] == "BoundFight") {
     document.getElementById("main").remove();
 } else if (window.location.pathname.split('/')[1] == "sans") {
     // Bad Time Sim: Reimagined
-    document.location.href = "https://kckarnige.github.io/BadTimeRevamped";
+    document.location.href = "https://kckarnige.github.io/BadTimeReimagined";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
 } else if (window.location.pathname.split('/')[1] == "redir") {
