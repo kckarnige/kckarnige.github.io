@@ -60,7 +60,7 @@ if (window.location.pathname.split('/')[1] == "BoundFight") {
     document.getElementById("main").remove();
 } else if (window.location.pathname.split('/')[1] == "atlyss-pack") {
     // ATLYSS: TheKCKModpack
-    document.location.href = "https://thunderstore.io/c/atlyss/p/kckarnige/TheKCKModpack/";
+    document.location.href = "https://thunderstore.io/c/atlyss/p/kckarnige/The_KiCK_Modpack/";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
 }
