@@ -28,9 +28,14 @@ if (window.location.pathname.split('/')[1] == "BoundFight") {
     document.location.href = "https://github.com/Legcord/Legcord";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
-} else if (window.location.pathname.split('/')[1] == "sans") {
-    // Bad Time Sim: Reimagined
+} else if (window.location.pathname.split('/')[1] == "sans" && window.location.pathname.split('/')[2] != "gamejolt") {
+    // Bad Time Sim: Reimagined (GitHub)
     document.location.href = "https://kckarnige.github.io/BadTimeReimagined";
+    document.title = "Redirecting..";
+    document.getElementById("main").remove();
+} else if (window.location.pathname.split('/')[1] == "sans" && window.location.pathname.split('/')[2] == "gamejolt") {
+    // Bad Time Sim: Reimagined (GameJolt)
+    document.location.href = "https://gamejolt.com/games/badtimesimre/694456";
     document.title = "Redirecting..";
     document.getElementById("main").remove();
 } else if (window.location.pathname.split('/')[1] == "redir") {
