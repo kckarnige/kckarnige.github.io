@@ -157,8 +157,8 @@
     },
     {
         "id": "mcsns",
-        "name": "Sticks n' Stones",
-        "description": "The kitchen-sink modpack no one asked for.",
+        "name": "MC: Sticks n' Stones",
+        "description": "A modpack focused on what I think Minecraft should be.",
         "link": "/mc-sns",
         "textColor": "#10ad5f",
         "textColorDesc": "#fff",
