@@ -159,5 +159,17 @@
         "img": "/res/portfolio/stinknt1.png",
         "description": "My personal Minecraft skin in a style heavily inspired by Minecraft developer Jasper Boerstra. I'm incredibly proud of this one!",
         "pixelated": false
+    },
+    {
+        "title": "My Skin, but Goat: Front",
+        "img": "/res/portfolio/bah0.png",
+        "description": "I saw a goat Minecraft skin once and thought it was cool, but now I'm obsessed with goats. Help me, I have a problem.",
+        "pixelated": false
+    },
+    {
+        "title": "My Skin, but Goat: Back",
+        "img": "/res/portfolio/bah1.png",
+        "description": "I saw a goat Minecraft skin once and thought it was cool, but now I'm obsessed with goats. Help me, I have a problem.",
+        "pixelated": false
     }
 ]

@@ -419,14 +419,34 @@ if (document.getElementById("profilePic")) {
     "https://api.lanyard.rest/634168893644210186.png",
     "https://avatars.githubusercontent.com/u/32397453",
     "https://bloxrat.kckarnige.online/api?userId=154248006&type=avatar-bust",
-    "/res/notburgerking.jpg"
+    "modrinth"
+  ]
+
+  let pfpListLink = [
+    "https://discord.com/users/634168893644210186",
+    "https://github.com/kckarnige",
+    "https://www.roblox.com/users/154248006/profile",
+    "https://modrinth.com/user/KiCKTheBucket"
   ]
   let min = 0;
   let max = pfpList.length - 1;
   let rng = Math.floor(Math.random() * (max - min + 1)) + min;
 
-  
+  if (pfpList[rng] == "modrinth") {
+    fetch("https://api.modrinth.com/v2/user/NX46xZR9", {
+      method: "GET",
+      headers: {
+        Accept: "application/json"
+      }
+    })
+      .then((response) => response.json())
+      .then((response) => {
+        document.getElementById("profilePic").setAttribute("src", response.avatar_url)
+      })
+  } else {
     document.getElementById("profilePic").setAttribute("src", pfpList[rng])
+  }
+  document.getElementById("profilePicLink").setAttribute("href", pfpListLink[rng])
 }
 
 // Affiliation Notice
