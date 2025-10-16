@@ -418,7 +418,7 @@ if (document.getElementById("profilePic")) {
   let pfpList = [
     "https://api.lanyard.rest/634168893644210186.png",
     "https://avatars.githubusercontent.com/u/32397453",
-    "https://bloxrat.kckarnige.online/api/avatar-thumbnail?userId=154248006&type=avatar",
+    "https://bloxrat.kckarnige.online/api?userId=154248006&type=avatar-bust",
     "/res/notburgerking.jpg"
   ]
   let min = 0;
