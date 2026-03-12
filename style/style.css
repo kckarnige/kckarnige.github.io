@@ -4,6 +4,8 @@ html {
   --foregroundColor: #164621;
   --midgroundColor: #0f2c15;
   --backgroundColor: #0f1d11;
+}
+html {
   color-scheme: dark;
   margin: 0;
 }
@@ -31,8 +33,7 @@ html body div#imgPreviewOverlay {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.533);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   animation: fadeIn 0.1s ease-in;
   z-index: 2;
 }
@@ -243,7 +244,7 @@ html body div#topbar div#topbarContent div#warmWelcome {
   margin: 0;
   text-align: center;
 }
-html body div#topbar div#topbarContent div#warmWelcome p#warmSplashText {
+html body div#topbar div#topbarContent div#warmWelcome div#warmSplashText p#warmSplashTextContent {
   font-size: 20px;
   color: #ffff00;
   font-family: "MinecraftSeven";
@@ -314,8 +315,7 @@ html body div#main div#notableProjects div#projectEntry {
   margin: 8px;
   padding: 8px;
   display: inline-block;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   background-size: cover !important;
   background-repeat: no-repeat !important;
   border-radius: 8px;
@@ -423,7 +423,6 @@ html body div#main div#notableProjects div#projectEntry div#projectIconContainer
   border-radius: 8px;
   max-width: 128px;
   max-height: 128px;
-  z-index: 20;
 }
 @media (max-width: 800px) {
   html body div#main div#projects div#projectEntry div#projectIconContainer > img,
@@ -432,6 +431,11 @@ html body div#main div#notableProjects div#projectEntry div#projectIconContainer
     max-width: 90px;
     max-height: 90px;
   }
+}
+html body div#main div#projects div#projectEntry div#projectIconContainer > img,
+html body div#main div#recentProjects div#projectEntry div#projectIconContainer > img,
+html body div#main div#notableProjects div#projectEntry div#projectIconContainer > img {
+  z-index: 20;
 }
 html body div#main div#projects div#projectEntry div#projectBgContainer,
 html body div#main div#recentProjects div#projectEntry div#projectBgContainer,

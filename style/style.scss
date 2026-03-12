@@ -275,11 +275,13 @@ html {
                     margin: 0;
                     text-align: center;
 
-                    p#warmSplashText {
-                        font-size: 20px;
-                        color: #ffff00;
-                        font-family: 'MinecraftSeven';
-                        text-shadow: 2px 2px #3f3f00;
+                    div#warmSplashText {
+                        p#warmSplashTextContent {
+                            font-size: 20px;
+                            color: #ffff00;
+                            font-family: 'MinecraftSeven';
+                            text-shadow: 2px 2px #3f3f00;
+                        }
                     }
 
                     p#affiliationNotice {

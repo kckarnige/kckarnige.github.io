@@ -374,7 +374,7 @@ if (document.getElementById("portfolio")) {
 };
 
 // Splash Text
-if (document.getElementById("warmSplashText") && !document.getElementById("huh")) {
+if (document.getElementById("warmSplashTextContent") && !document.getElementById("huh")) {
   let splashList;
   fetch("/json/splashes.json", {
     method: "GET",
@@ -398,19 +398,19 @@ if (document.getElementById("warmSplashText") && !document.getElementById("huh")
           .then((response) => response.json())
           .then((response) => {
             if (splashList[rng] == "mcVer") {
-              document.getElementById("warmSplashText").innerText = "The latest Minecraft version is " + response.latest.release + ", btw.";
+              document.getElementById("warmSplashTextContent").innerText = "The latest Minecraft version is " + response.latest.release + ", btw.";
             }
 
             if (splashList[rng] == "mcSnap") {
-              document.getElementById("warmSplashText").innerText = "The latest Minecraft snapshot is " + response.latest.snapshot + ", btw.";
+              document.getElementById("warmSplashTextContent").innerText = "The latest Minecraft snapshot is " + response.latest.snapshot + ", btw.";
             }
           })
       } else {
-        document.getElementById("warmSplashText").innerText = splashList[rng];
+        document.getElementById("warmSplashTextContent").innerText = splashList[rng];
       }
     })
 } else if (document.getElementById("huh")) {
-  document.getElementById("warmSplashText").innerText = "404: Page does not exist";
+  document.getElementById("warmSplashTextContent").innerText = "404: Page does not exist";
 }
 
 // Profile Icon Rotation
