@@ -176,16 +176,6 @@
         "backgroundBlur": true
     },
     {
-        "id": "moderntorch",
-        "name": "Modern Torches",
-        "description": "Updated torches that match Minecraft's art-style as close as possible.",
-        "link": "https://modrinth.com/resourcepack/modern-torches",
-        "textColor": "#dea121",
-        "textColorDesc": "#fff",
-        "backgroundBrightness": 0.8,
-        "backgroundBlur": true
-    },
-    {
         "id": "freshnw",
         "name": "Fresh NW for Construct 2",
         "description": "My own modern replacement for the official NW.js support installer for Construct 2.",
@@ -218,6 +208,16 @@
         "description": "Tweaks Minecraft tool progression by adding diamond ingots and copper tools!",
         "link": "https://modrinth.com/mod/tooltouchups",
         "textColor": "#77b395",
+        "textColorDesc": "#fff",
+        "backgroundBrightness": 0.8,
+        "backgroundBlur": true
+    },
+    {
+        "id": "moderntorch",
+        "name": "KiCK's Torches",
+        "description": "Updated torches that match Minecraft's art-style as close as possible.",
+        "link": "https://modrinth.com/resourcepack/modern-torches",
+        "textColor": "#dea121",
         "textColorDesc": "#fff",
         "backgroundBrightness": 0.8,
         "backgroundBlur": true
