@@ -454,9 +454,15 @@ if (document.getElementById("affiliationNotice")) {
   document.getElementById("affiliationNotice").innerText = "Not affiliated with Scirra, ARM, Discord Inc, Meta, Microsoft, Mojang, or Nintendo."
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const sillyImg = document.createElement("img");
-    sillyImg.src = "./res/posed_model.png"
-    sillyImg.id = "baaa"
-    document.body.prepend(sillyImg)
-})
+function addSillyImage () {
+  const sillyImg = document.createElement("img");
+  sillyImg.src = "/res/posed_model.png"
+  sillyImg.id = "baaa"
+  document.body.prepend(sillyImg)
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", addSillyImage());
+} else {
+  addSillyImage()
+}
