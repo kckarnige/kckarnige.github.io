@@ -9,6 +9,14 @@ html {
   color-scheme: dark;
   margin: 0;
 }
+html img#baaa {
+  pointer-events: none;
+  position: fixed;
+  z-index: 999999;
+  width: 80px;
+  bottom: 0;
+  left: 90px;
+}
 html body {
   color: var(--textColor);
   background: var(--backgroundColor);

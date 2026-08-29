@@ -453,3 +453,10 @@ if (document.getElementById("profilePic")) {
 if (document.getElementById("affiliationNotice")) {
   document.getElementById("affiliationNotice").innerText = "Not affiliated with Scirra, ARM, Discord Inc, Meta, Microsoft, Mojang, or Nintendo."
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const sillyImg = document.createElement("img");
+    sillyImg.src = "./res/posed_model.png"
+    sillyImg.id = "baaa"
+    document.body.prepend(sillyImg)
+})

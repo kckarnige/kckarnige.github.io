@@ -6,9 +6,11 @@ html {
     --backgroundColor: #0f1d11;
 
     $sidebarWidth: 112px;
+    $funnyBun: 100px;
 
     @media (max-width: 800px) {
         $sidebarWidth: 82px;
+        $funnyBun: 80px;
     }
 
     $contentMargin: $sidebarWidth + 30px;
@@ -16,6 +18,14 @@ html {
     color-scheme: dark;
     margin: 0;
 
+    img#baaa {
+        pointer-events: none;
+        position: fixed;
+        z-index: 999999;
+        width: $funnyBun;
+        bottom: 0;
+        left: 90px;
+    }
     body {
         color: var(--textColor);
         background: var(--backgroundColor);
