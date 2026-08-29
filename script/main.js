@@ -462,7 +462,7 @@ if (document.getElementById("affiliationNotice")) {
 
 function addSillyImage() {
   const sillyImg = document.createElement("img");
-  sillyImg.src = "/res/posed_model.png"
+  sillyImg.src = "/res/portfolio/posed_model_nill.png"
   sillyImg.id = "baaa"
   document.body.prepend(sillyImg)
 }

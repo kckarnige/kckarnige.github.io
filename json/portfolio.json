@@ -171,5 +171,17 @@
         "img": "/res/portfolio/bah1.png",
         "description": "I saw a goat Minecraft skin once and thought it was cool, but now I'm obsessed with goats. Help me, I have a problem.",
         "pixelated": false
+    },
+    {
+        "title": "Goat Model",
+        "img": "/res/portfolio/model_nill.png",
+        "description": "Hey, remember that Minecraft skin? Say 'hi' to \"Nill\"!",
+        "pixelated": false
+    },
+    {
+        "title": "Goat Model: Posed",
+        "img": "/res/portfolio/posed_model_nill.png",
+        "description": "Hype moments and aura.",
+        "pixelated": false
     }
 ]
