@@ -1,3 +1,9 @@
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", addSillyImage());
+} else {
+  addSillyImage()
+}
+
 var topProjectNums = [19, 2, 22, 0];
 let portfolioListNum;
 function disableScroll() {
@@ -454,15 +460,10 @@ if (document.getElementById("affiliationNotice")) {
   document.getElementById("affiliationNotice").innerText = "Not affiliated with Scirra, ARM, Discord Inc, Meta, Microsoft, Mojang, or Nintendo."
 }
 
-function addSillyImage () {
+function addSillyImage() {
   const sillyImg = document.createElement("img");
   sillyImg.src = "/res/posed_model.png"
   sillyImg.id = "baaa"
   document.body.prepend(sillyImg)
 }
 
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", addSillyImage());
-} else {
-  addSillyImage()
-}
