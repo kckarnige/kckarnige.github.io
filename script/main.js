@@ -432,7 +432,7 @@ if (document.getElementById("profilePic")) {
     "https://discord.com/users/634168893644210186",
     "https://github.com/kckarnige",
     "https://www.roblox.com/users/154248006/profile",
-    "https://modrinth.com/user/KiCKTheBucket"
+    "https://modrinth.com/user/KiCKinTheBucket"
   ]
   let min = 0;
   let max = pfpList.length - 1;
